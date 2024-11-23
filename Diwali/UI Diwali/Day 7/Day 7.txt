@@ -1,0 +1,15 @@
+Day 7
+
+1. What are IFrames, and how can they be used to create a navigation system on a webpage?
+IFrames (Inline Frames) allow embedding another HTML document within the current page. They can be used to create a navigation system by loading different pages inside the IFrame when a user clicks on a navigation link. Instead of opening new tabs or refreshing the whole page, only the content in the IFrame changes.
+
+In the example above, the About and Contact links load their respective pages inside the IFrame on the main page without reloading the entire webpage, providing a seamless navigation experience.
+
+2. Explain the difference between target="_blank", target="_self", _parent, and _top when specified with a link in an IFrame.
+target="_blank": Opens the link in a new tab or window.
+target="_self": Opens the link in the same frame or window (default behavior).
+target="_parent": Opens the link in the parent frame. If the current page is inside an IFrame, the link will open in the parent page (one level up).
+target="_top": Opens the link in the entire window, breaking out of all frames. This is useful to ensure the link opens in the full browser window, removing any nested frames.
+
+3. What is the title attribute in an IFrame, and is it mandatory to specify?
+The title attribute in an IFrame provides additional information about the embedded content. It’s typically used for accessibility purposes, allowing screen readers to convey the purpose of the IFrame to users with disabilities. While not mandatory, it is highly recommended to improve accessibility and make your webpage more user-friendly.

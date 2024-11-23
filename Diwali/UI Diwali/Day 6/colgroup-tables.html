@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sales Performance Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        colgroup {
+            /* Styles for individual columns */
+        }
+        col {
+            border: 1px solid black; /* Adds a border to each column */
+        }
+        .salesperson {
+            width: 20%; /* Salesperson Name column width */
+            background-color: #f0f8ff; /* Light blue background */
+        }
+        .q1, .q2, .q3, .q4 {
+            width: 15%; /* Each Sales column width */
+            background-color: #e6f7ff; /* Lighter blue for sales quarters */
+        }
+        .total {
+            width: 20%; /* Total Sales column width */
+            background-color: #b3e0ff; /* Medium blue background */
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Company Sales Performance</h1>
+    <table>
+        <caption>Sales Data for 2024</caption>
+        <colgroup>
+            <col class="salesperson">
+            <col class="q1">
+            <col class="q2">
+            <col class="q3">
+            <col class="q4">
+            <col class="total">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Salesperson Name</th>
+                <th>Q1 Sales</th>
+                <th>Q2 Sales</th>
+                <th>Q3 Sales</th>
+                <th>Q4 Sales</th>
+                <th>Total Sales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Amit Sharma</td>
+                <td>10000</td>
+                <td>15000</td>
+                <td>20000</td>
+                <td>25000</td>
+                <td>70000</td>
+            </tr>
+            <tr>
+                <td>Priya Gupta</td>
+                <td>12000</td>
+                <td>14000</td>
+                <td>18000</td>
+                <td>22000</td>
+                <td>66000</td>
+            </tr>
+            <tr>
+                <td>Rahul Verma</td>
+                <td>9000</td>
+                <td>13000</td>
+                <td>17000</td>
+                <td>21000</td>
+                <td>60000</td>
+            </tr>
+            <tr>
+                <td>Neha Reddy</td>
+                <td>11000</td>
+                <td>16000</td>
+                <td>19000</td>
+                <td>24000</td>
+                <td>70000</td>
+            </tr>
+            <tr>
+                <td>Suresh Bansal</td>
+                <td>13000</td>
+                <td>18000</td>
+                <td>22000</td>
+                <td>26000</td>
+                <td>79000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

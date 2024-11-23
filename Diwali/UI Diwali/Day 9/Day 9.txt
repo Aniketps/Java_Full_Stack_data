@@ -1,0 +1,18 @@
+1. What is the purpose of the <strong> and <em> tags, and how do they differ from using bold and italic styles in CSS?
+<strong>: Indicates important text, usually displayed in bold.
+<em>: Emphasizes text, usually displayed in italic.
+Difference: These tags add meaning (importance or emphasis) to the text, while CSS styles (like font-weight: bold; or font-style: italic;) only change appearance without adding semantic value.
+
+2. What effect does using the <mark> tag have on text, and when would you typically use it?
+Effect: The <mark> tag highlights text, usually with a yellow background.
+Use: Typically used to highlight important or relevant text, such as key points or search results.
+
+3. Examples using <blockquote>, <q>, <sup>, and <sub>:
+
+<blockquote cite="https://www.goodreads.com/quotes/3270-success-is-not-final-failure-is-not-fatal-it-is">
+    "Success is not final, failure is not fatal: It is the courage to continue that counts." — Winston Churchill
+</blockquote>
+
+<p>Churchill once said, <q>failure is not fatal</q>.</p>
+
+<p>The formula for water is H<sub>2</sub>O, and Einstein's equation is E = mc<sup>2</sup>.</p>

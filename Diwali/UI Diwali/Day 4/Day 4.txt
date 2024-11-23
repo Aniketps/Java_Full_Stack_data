@@ -1,0 +1,13 @@
+Day 4
+
+1. What is the difference between an ordered list (<ol>) and an unordered list (<ul>) in HTML?
+
+An ordered list displays items in a numbered sequence, while an unordered list displays items with bullet points or other markers.
+
+2. Provide an example of a nested list and explain a scenario where this structure would be useful.
+
+A nested list example is a list of fruits where each fruit has sub-items for their nutritional benefits. This structure is useful for organizing related information clearly.
+
+3. What is the use of the start and type attributes?
+
+The start attribute in an ordered list specifies the starting number for the list items. The type attribute defines the type of marker for the list items, such as numbers, letters, or Roman numerals.

@@ -1,0 +1,60 @@
+// Q3. Write a menu-driven program to take a input from user and solve following oprations:
+
+//	1. find area of circle.
+//	2. find area of reactangle.
+//	3. find area of triangle.
+//	4. find area of circumference.
+//	5. calculate area of equilateral triangle.
+
+
+import java.util.*;
+
+public class FindAreaOperations
+{
+	public static void main(String x[])
+	{
+		Scanner Ani = new Scanner(System.in);
+		int operation;
+		System.out.println("1. find area of circle\n2. find area of reactangle\n3. find area of triangle\n4. find area of circumference\n5. Calculate area of equilateral triangle");
+		operation = Ani.nextInt();
+		switch(operation)
+		{
+			case 1:
+				System.out.print("Enter circle radius : ");
+				int radius = Ani.nextInt();
+				float area = 3.14*radius*radius;
+				System.out.println("Area of circle is : " + area);			
+				break;
+			case 2:
+				System.out.print("Enter w and l : ");
+				int w = Ani.nextInt();
+				int l = Ani.nextInt();
+				float area = w*l;
+				System.out.println("Area of reactangle is : " + area);
+				break;
+			case 3:
+				System.out.print("Enter h and b : ");
+				int h = Ani.nextInt();
+				int b = Ani.nextInt();
+				float area = (1/2)*h*b;
+				System.out.println("Area of triangle is : " + area);
+				break;
+			case 4:
+				System.out.print("Enter C and r : ");
+				int c = Ani.nextInt();
+				int r = Ani.nextInt();
+				float area = (c/2)*r;
+				System.out.println("Area of circumference is : " + area);
+				break;
+			case 5:
+				System.out.print("Enter C and r : ");
+				int c = Ani.nextInt();
+				int r = Ani.nextInt();
+				float area = (c/2)*r;
+				System.out.println("Area of circumference is : " + area);
+				break;
+			default:
+				System.out.println("Wrong choise");
+		}
+	}
+}

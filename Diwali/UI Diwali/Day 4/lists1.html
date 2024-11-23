@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customized Lists in HTML</title>
+    <style>
+        ul {
+            list-style-type: square; /* Squares instead of bullets */
+        }
+        ol {
+            list-style-type: upper-roman; /* Roman numerals for ordered list */
+        }
+        .nested-list {
+            list-style-type: circle; /* Circles for nested lists */
+        }
+    </style>
+</head>
+<body>
+    <h1>My Favorite Fruits</h1>
+    <ul>
+        <li>Apple
+            <ul class="nested-list">
+                <li>Rich in dietary fiber</li>
+                <li>Good source of Vitamin C</li>
+            </ul>
+        </li>
+        <li>Banana
+            <ul class="nested-list">
+                <li>High in potassium</li>
+                <li>Provides quick energy</li>
+            </ul>
+        </li>
+        <li>Orange
+            <ul class="nested-list">
+                <li>Excellent source of Vitamin C</li>
+                <li>Rich in antioxidants</li>
+            </ul>
+        </li>
+        <li>Mango
+            <ul class="nested-list">
+                <li>High in Vitamin A</li>
+                <li>Contains digestive enzymes</li>
+            </ul>
+        </li>
+        <li>Strawberry
+            <ul class="nested-list">
+                <li>Rich in antioxidants</li>
+                <li>Good source of folate</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h1>Favorite Recipe Steps</h1>
+    <ol>
+        <li>Gather all ingredients</li>
+        <li>Preheat the oven</li>
+        <li>Mix the ingredients</li>
+        <li>Pour into a baking dish</li>
+        <li>Bake for 30 minutes</li>
+    </ol>
+
+    <h1>Course List</h1>
+    <dl>
+        <dt>Web Development</dt>
+        <dd>Learn to build websites using HTML, CSS, and JavaScript.</dd>
+        <dt>Data Science</dt>
+        <dd>Explore data analysis, machine learning, and statistical methods.</dd>
+        <dt>Mobile App Development</dt>
+        <dd>Learn to create applications for iOS and Android platforms.</dd>
+        <dt>Cloud Computing</dt>
+        <dd>Understand cloud services and how to deploy applications.</dd>
+        <dt>Cybersecurity</dt>
+        <dd>Learn techniques to protect systems and networks from attacks.</dd>
+    </dl>
+</body>
+</html>

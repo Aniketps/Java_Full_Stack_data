@@ -1,0 +1,167 @@
+Diwali Theory Questions
+1. What are decision-making statements in Java?
+
+Decision making statements are those were decision taken on certain conditions and there are 4 way by which decision is taken
+a. If statement
+b. If else statement
+c. If else if statement
+d. Nested if statement
+
+2. Explain the if-else statement in Java.
+Syntax
+if(condition) {
+statement
+}else{
+statement
+}
+in this conditional statement condition is checked first and then as per condition task is executed if condition in "if" is true then it doesn't go to "else" part if "if" condition is false then it moves to "else" condition
+
+3. What is the difference between if-else and switch statements in Java?
+if-else statement
+in this statement we check condition and then execute statement, no matter what value we are comparing if condition is true it will execute that statement and ends there
+switch
+in switch we define what value will be there and is we get desired value then only execute that case as well as if we want to go farther even after execute that one statement we will not use break statement so next part will be execute as well
+
+4. What is the syntax and use of the switch statement in Java?
+switch statement is used to execute a certain case when the desired value is equal to case value and then after that execution we use break to end that statement
+
+Syntax
+switch(value) {
+case 1:
+    statement 
+    break;
+case 2:
+    statement
+    break;
+default:
+    statement
+}
+
+5. What types of values can be evaluated in a switch statement in Java ?
+switch statement need desired values
+such as Integer, String, Character, byte and short
+
+6. What are the benefits of using the ternary (? :) operator?
+ternary operators used in which situation we want to when a certain conditions and there will be only two possibilities
+
+7. How can you handle multiple conditions in an if-else statement?
+by writing multiple if-else inside like an nested if-else statement
+
+8. What happens if a switch statement does not include a break?
+if there is no break included then when the case is true then all code below that statement will be executed
+
+9. How do labeled loops work in Java?
+when we declare a loop on top of that loop we declare name of that loop and if we want to end that loop in certain condition all we have to do is break that label of loop
+
+10. What are the use cases for a do-while loop over a while loop?
+First is when we want to execute loop once no matter what 
+second is we want to execute statement first then check condition
+
+11. How do you prevent infinite loops in Java?
+limit of loop must be set
+loop must have finite number of steps
+
+12. What is the impact of performance in using switch vs. if-else in large programs?
+first is lines of code
+second code Complexity
+third code efficiency by time 
+fourth user friendly
+
+13. What happens if you omit the condition in a for loop or a while loop?
+if we omit condition then that empty space is known to be true so what loop will execute for infinite times
+
+14. Explain how a for loop with multiple variables works in Java.
+if we want to declare multiple variables in for loop then we need to use (,) comma to separate them
+
+15. What is the impact of performance in using switch vs. if-else in large programs?
+skip
+
+16. Explain the fall-through behavior in the switch statement. How do you prevent it?
+fall-through behavior mean when we do not use break in cases then all cases get execute once first case is true
+
+17. What are looping statements in Java?
+a. for loop
+b. while loop
+c. do while loop
+
+18. Explain the syntax and working of the for loop in Java.
+syntax
+for(initialisation; condition; increase/decrease) {
+statement
+}
+
+first we initialize variables then check condition and then increase or decrease variable value but value only change after statement execute
+
+19. What is the difference between a while loop and a do-while loop in Java?
+while check condition then execute statement
+do while
+execute statement then check condition
+
+20. What is an infinite loop? How can it occur in Java?
+infinite loop is when loop execute for infinite times no end
+when we do not stop or use a condition in which decision will always be true then infinite loop occurs
+
+21. How does the break statement work in loops?
+break statement in loop entirely stop loop
+
+22. What is the continue statement in Java, and how is it used in loops?
+when we want to skip any iteration then we use continue statement/keyword
+
+23. What is the difference between break and continue statements in Java loops?
+break stop entire loop
+but
+continue only skip current iteration
+
+24. What is the syntax of a nested loop, and how does it work in Java?
+loop inside loop is called nested loop
+top loop is known as number of rows and inner loop are known as columns
+syntax
+for() {
+for() {
+}
+}
+
+25. How does a for loop differ from a while loop in terms of initialization, condition, and 
+iteration?
+for loop
+in for loop initialization, condition, and increament decrement all happens same place
+in while loop initialization happens before loop start, condition checked in while and increament decrement happens when statement is execute
+
+26. What are the components of a for loop in Java?
+a. initialisation
+b. condition
+c. increase or decrement
+
+27. Can you write a for loop without any initialization, condition, or increment expressions
+and Why ?
+Yes, But we should use there positions as where they are
+for(;;;) 
+
+28. What is Java Explain In Details?
+Java is a high-level, object-oriented programming language developed by Sun Microsystems in 1995, now managed by Oracle. It’s known for its "write once, run anywhere" principle, meaning code compiled in Java can run on any platform with a Java Virtual Machine (JVM). Java's design focuses on simplicity, security, and robustness, avoiding complex features like pointers and offering a strong memory management system. As an object-oriented language, Java structures programs around objects and classes, using key principles like inheritance, encapsulation, polymorphism, and abstraction to create modular and reusable code.
+
+Java applications are compiled into bytecode, which the JVM interprets or compiles into machine code, making them platform-independent. Its features include multithreading for concurrent tasks and built-in networking capabilities, making it ideal for both standalone and networked applications. The Java platform consists of the Java Development Kit (JDK) for development, the Java Runtime Environment (JRE) for running applications, and the JVM. Java's extensive standard libraries, combined with frameworks like Spring and Hibernate, make it a versatile choice for everything from web applications to Android development. Overall, Java’s simplicity, scalability, and cross-platform capabilities have cemented it as one of the most popular languages in modern programming.
+
+29. What are the main features of Java?
+Java's main features include:
+
+Platform Independence: "Write once, run anywhere" with JVM support.
+Object-Oriented: Focuses on objects and classes for organized code.
+Simple and Secure: Easy to learn, with a robust security model.
+Robust: Strong memory management and error handling.
+Multi threaded: Supports concurrent tasks for high performance.
+High Performance: Uses Just-In-Time (JIT) compilation for speed.
+Distributed: Built-in networking support for distributed apps.
+Dynamic: Loads classes as needed at runtime.
+
+30. How to create the program in java give example?
+Write Code: Create a file named HelloWorld.java with:
+Copy code
+public class HelloWorld {
+    public static void main(String[] x) {
+        System.out.println("Hello, World!");
+    }
+}
+Compile: Run javac HelloWorld.java in the terminal.
+
+Run: Execute java HelloWorld to see the output: Hello, World!

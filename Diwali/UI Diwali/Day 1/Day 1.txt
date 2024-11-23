@@ -1,0 +1,14 @@
+Day 1.
+1. What is the difference between an absolute URL and a relative URL, and when would you use each?
+
+Absolute URL: An absolute URL includes the full path to a resource, including the protocol (e.g., https://), domain name, and any additional path. Use it when linking to an external website or when the resource's location might change relative to the current document.
+Relative URL: A relative URL provides a path to a resource based on the current document's location, omitting the protocol and domain. Use it for internal links within the same website to ensure the link remains valid even if the site's domain changes.
+
+2. What does the target="_blank" attribute do, and why should it be used with caution?
+
+The target="_blank" attribute opens the linked document in a new tab or window. It should be used with caution because it can lead to usability issues, such as users losing track of their original page, or potential security risks if proper measures are not taken.
+
+3. How would you link to a specific section within the same page, and what is the purpose of anchor links (#)? Provide an example of using an anchor link.
+
+To link to a specific section within the same page, use an anchor link by specifying the id of the target section preceded by a #. The purpose of anchor links is to enable direct navigation to specific parts of a page without scrolling.
+Example: <a href="#chapter1">Go to Chapter 1</a> links to the section with id="chapter1" in the document.

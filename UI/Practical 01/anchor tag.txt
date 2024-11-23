@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Image <</title>
+</head>
+<body>
+	<h1> Anchor Tag </h1>
+	<h2> Absolute anchor tag </h2>
+	<h3> _Black attribute </h3>
+	<a href="https://attackontitan.fandom.com/wiki/Eren_Yeager" target="_blank"> Eren Yeager blank link </a>
+	<h3> _Self Attribute </h3>
+	<a href="https://attackontitan.fandom.com/wiki/Eren_Yeager" target="_self"> Eren Yeager self link </a>
+	
+	<h2> Relative anchor tag </h2>
+	<h3> _Black Attribute </h3>
+	<a href="img_code.html" target="_blank"></a>
+	<h3> _Self Attribute </h3>
+	<a href="img_code,html" target="_self"></a>
+<body>
+
+</html>

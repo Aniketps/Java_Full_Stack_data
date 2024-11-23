@@ -1,0 +1,22 @@
+Day 5
+
+1. What are the main elements of a table in HTML, and how do they work together?
+
+The main elements of a table in HTML include:
+<table>: The container for the table.
+<thead>: The header section of the table, containing column titles.
+<tbody>: The body section, which contains the actual data of the table.
+<tr>: Table rows, which group a set of table cells.
+<th>: Table header cells, usually bold and centered, representing column headings.
+<td>: Table data cells, which hold the data for each row.
+Together, these elements define the structure and organization of tabular data.
+
+2. How do colspan and rowspan attributes work in tables?
+
+The colspan attribute allows a cell to span multiple columns, combining those columns into one cell horizontally. For example, a cell with colspan="2" will take up the space of two columns.
+The rowspan attribute allows a cell to span multiple rows, merging those rows into one cell vertically. For example, a cell with rowspan="2" will take up the space of two rows.
+
+3. What do text-align and vertical-align attributes do in a table cell?
+
+The text-align attribute in a table cell (e.g., td or th) specifies the horizontal alignment of the text within the cell. Common values include left, right, and center.
+The vertical-align attribute determines the vertical alignment of the text within a cell. Common values include top, middle, and bottom. This attribute is particularly useful when working with cells that contain images or varying heights of content

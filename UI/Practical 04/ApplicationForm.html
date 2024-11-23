@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Application Form</title>
+</head>
+<body>
+	<h1>Application Form</h1>
+	<form action="" method="get">
+
+		<label for="fname">First name</label>
+		<input name="fname" id="fname" >
+
+		<label for="lname">Last name</label>
+		<input name="lname" id="lname" >
+
+		<br>
+
+		<label for="date" >Date of birth</label>
+		<input type="date" name="date" id="date" placeholder="mm / dd / yyyy">
+
+		<label for="age">Age</label>
+		<input type="number" name="age" id="age">
+
+		<br>
+
+		<label for="gender" >Gender</label>
+		<select id="gender">
+			<option value="Male">Male</option>
+			<option value="Female">Female</option>
+		</select>
+		
+		<label for="email" >Email Address</label>
+		<input type="email" name="email" id="email" placeholder="Enter email address">
+
+		<br>
+
+		<label >Position Available :</label>
+		<input type="radio" name="position" id="junior_dev" value="Junior Developer" >
+		<label for="junior_dev">Junior Developer</label>
+
+		<input type="radio" name="position" id="mid_dev" value="Mid-level Developer" >
+		<label for="mid_dev">Mid-level Developer</label>
+
+		<input type="radio" name="position" id="senior_dev" value="Senior Developer" >
+		<label for="senior_dev">Senior Developer</label>
+
+		<br>
+
+		<label for="mid_dev">Programming Languages: </label>
+		<input type="checkbox" name="java" id="java" value="Java" >
+		<label for="junior_dev">Junior Developer</label>
+
+		<input type="checkbox" name="javascript" id="javascript" value="JavaScript" >
+		<label for="mid_dev">Mid-level Developer</label>
+
+		<input type="checkbox" name="python" id="python" value="Python" >
+		<label for="senior_dev">Senior Developer</label>
+
+		<br>
+
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password" >
+
+		<label for="confirmpassword">Confirm Password</label>
+		<input type="password" name="confirmpassword" id="confirmpassword" >
+
+		<br>
+		
+		<button type="submit">Submit</button>
+		<button type="button">Reset</button>
+		
+	</form>
+</body>
+</html>

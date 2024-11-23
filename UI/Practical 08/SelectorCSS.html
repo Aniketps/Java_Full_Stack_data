@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Selectors</title>
+	<style>
+		.section01{
+			padding-left: 100px;
+		}
+
+		span {
+			color: red;
+		}
+		.classSelect {
+			color: yellow;
+		}
+		#ElementID {
+			color: green;
+		}
+
+		#DescendantP p {
+			color: blue;
+		}	
+		.ChildP > p {
+			color: orange;
+		}
+		h2 + p {
+			color: grey;
+		}
+		h3:hover{
+			color:red;
+		}
+		h4::first-letter{
+			color: #ff0000;
+  			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div class="section01">
+	<h1>Basic Selectors</h1>
+	<h2>1. Element</h2>
+	<span>This is Element Selector</span>
+	<h2>2. Class</h2>
+	<p class="classSelect">This is Class Selector</p>
+	<h2>3. id</h2>
+	<p id="ElementID">This is id Selector</p>
+
+	<h1>Coordinators</h1>
+	<h2>1. Descendant</h2>
+	<div id="DescendantP">
+		<p>This is Descendant Selector</p>
+	</div>
+	<h2>2. Child</h2>
+	<div class="ChildP">
+		<p>This is Child Selector</p>
+	</div>
+	<h2>3. Adjacent</h3>
+	<p>This is Adjacent Selector</p>
+	<h2>4. Attributes</h2>
+
+	<h1>Pseudo Class</h1>
+	<h3>1. This is Pseudo Class Selector</h3>
+	<h1>Pseudo Element</h1>
+	<h4>This is Pseudo Element Selector</h4>
+	</div>
+</body>
+</html>

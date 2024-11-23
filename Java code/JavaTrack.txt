@@ -1,0 +1,10 @@
+Completed Points
+
+1. Operators
+2. Data Types
+3. Loops
+4. Control statements
+5. Function
+6. Recursion
+7. Array
+8. 

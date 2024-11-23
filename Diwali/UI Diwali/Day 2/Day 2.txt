@@ -1,0 +1,13 @@
+Day 2
+
+1. What is the purpose of the alt attribute in the <img> tag, and why is it important for accessibility?
+
+The alt attribute provides a textual description of an image. This is crucial for accessibility because it allows screen readers to convey the content of the image to visually impaired users, ensuring that they can understand the context and meaning of the image. Additionally, if the image fails to load, the text in the alt attribute will be displayed instead, giving users a sense of what the image was meant to convey. It also helps search engines index images better, contributing to SEO.
+
+2. What is the difference between setting dimensions with the width and height attributes versus using CSS?
+
+Setting dimensions with the width and height attributes in the <img> tag directly specifies the size of the image in the HTML. This approach can reserve space for the image before it loads, potentially improving layout stability. However, using CSS to set dimensions provides greater flexibility, as it allows for responsive design, media queries, and easy adjustments across multiple images without altering the HTML structure. CSS also enables more advanced styling options, such as scaling and positioning.
+
+3. How can you make an image a clickable link in HTML? Provide an example of how you would implement this, including how to make the image open in a new tab.
+
+To make an image a clickable link, you wrap the <img> tag in an <a> tag. You can use the target="_blank" attribute in the <a> tag to ensure that the link opens in a new tab.

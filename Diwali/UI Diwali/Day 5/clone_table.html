@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar Schedule</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        .day {
+            background-color: #00cccc; /* Cyan background for day */
+            font-weight: bold;
+        }
+        .time-orange {
+            background-color: #ff9900; /* Orange background */
+        }
+        .time-blue {
+            background-color: #0033cc; /* Blue background */
+            color: white;
+        }
+        .time-green {
+            background-color: #006600; /* Green background */
+            color: white;
+        }
+        .topic {
+            background-color: white; /* White background for topics */
+            color: black;
+        }
+        .bottom-text {
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <table align="center">
+        <tr>
+            <th rowspan="2" class="day">day</th>
+            <th colspan="2">schedule</th>
+            <th rowspan="2">seminar topic</th>
+        </tr>
+        <tr>
+            <th>begin</th>
+            <th>end</th>
+        </tr>
+        <tr>
+            <td class="day">Monday</td>
+            <td class="time-orange">8:00 a.m.</td>
+            <td class="time-blue">5:00 p.m.</td>
+            <td class="topic">Introduction to XML</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2"></td> <!-- Spanning the two time columns -->
+            <td class="topic">Validity: DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td class="day" rowspan="3">Tuesday</td> <!-- Spanning over three rows for Tuesday -->
+            <td class="time-orange">8:00 a.m.</td>
+            <td class="time-orange">11:00 a.m.</td>
+            <td class="topic">XPath</td>
+        </tr>
+        <tr>
+            <td class="time-orange">11:00 a.m.</td>
+            <td class="time-green">2:00 p.m.</td>
+            <td class="topic">XSL Transformations</td>
+        </tr>
+        <tr>
+            <td class="time-green">2:00 p.m.</td>
+            <td class="time-blue">5:00 p.m.</td>
+            <td class="topic">XSL Formatting Objects</td>
+        </tr>
+        <tr>
+            <td class="day">Wednesday</td>
+            <td class="time-orange">8:00 a.m.</td>
+            <td class="time-green">12:00 p.m.</td>
+            <td class="topic">XSL Formatting Objects</td>
+        </tr>
+    </table>
+
+    <p align="center" class="bottom-text">Table By-Aniket Pardeshi</p>
+
+</body>
+</html>

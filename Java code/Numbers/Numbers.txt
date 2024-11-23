@@ -1,0 +1,102 @@
+1. Natural Numbers
+Definition: Positive integers starting from 1 (or sometimes 0, depending on the context).
+Examples: 1,2,3,4,…
+
+2. Whole Numbers
+Definition: Non-negative integers, including zero.
+Examples: 0,1,2,3,4,…
+
+3. Integers
+Definition: All whole numbers and their negatives.
+Examples: −3,−2,−1,0,1,2,3
+
+4. Even Numbers
+Definition: Integers divisible by 2 without a remainder.
+Examples: −4,0,2,4,6
+
+5. Odd Numbers
+Definition: Integers not divisible by 2.
+Examples: −3,1,3,5,7
+
+6. Prime Numbers
+Definition: Natural numbers greater than 1 that are divisible only by 1 and themselves.
+Examples: 2,3,5,7,11
+
+7. Composite Numbers
+Definition: Natural numbers greater than 1 that are not prime.
+Examples: 4,6,8,9,12
+
+8. Perfect Numbers
+Definition: Positive integers that are equal to the sum of their proper divisors (excluding themselves).
+Examples: 6(1+2+3),28(1+2+4+7+14)
+
+9. Palindromic Numbers
+Definition: Numbers that read the same backward as forward.
+Examples: 121,454,12321
+
+10. Fibonacci Numbers
+Definition: Numbers in a sequence where each number is the sum of the two preceding ones.
+Examples: 0,1,1,2,3,5,8
+
+11. Triangular Numbers
+Definition: Numbers that can form an equilateral triangle when arranged as dots.
+Examples: 1,3,6,10 (e.g., 1,1+2,1+2+3)
+
+12. Square Numbers
+Definition: Numbers that are squares of integers.
+Examples: 1,4,9,16,25
+
+13. Cube Numbers
+Definition: Numbers that are cubes of integers.
+Examples: 1,8,27,64,125
+
+14. Negative Numbers
+Definition: Numbers less than zero.
+Examples: −1,−2,−5
+
+15. Positive Numbers
+Definition: Numbers greater than zero.
+Examples: 1,2,3
+
+16. Perfect Squares
+Definition: Same as square numbers; integers that are squares of whole numbers.
+Examples: 1,4,9,16,25
+
+17. Kaprekar Numbers
+Definition: A number whose square can be split into two parts that add up to the original number.
+Examples: 45 (45^2 = 2025; 20 + 25 = 45), 55,99
+
+18. Armstrong Numbers (or Narcissistic Numbers)
+Definition: Numbers equal to the sum of their own digits raised to the power of the number of digits.
+Examples: 153(1^3+5^3+3^3 =153),9474
+
+19. Harshad Numbers
+Definition: Numbers divisible by the sum of their digits.
+Examples: 18,21,27
+
+20. Strong Number
+Definition: A number is called a Strong Number if the sum of the factorials of its digits is equal to the number itself.
+Example: 145(1!=1, 4!=24, 5!=120), 2, 40585
+
+21. Duck Number
+Definition: A Duck Number is a number that contains at least one zero in its digits but the zero(s) cannot be at the beginning of the number.
+It can be represented in any positional numeral system but is commonly checked in base-10.
+Example: 3210,105,5023
+Contains a zero, and the zero is not at the start.
+
+22. Happy Number
+Definition: A Happy Number is a number that eventually reduces to 1 when replaced repeatedly by the sum of the squares of its digits.
+If this process results in an endless cycle of numbers that does not include 1, the number is called an Unhappy (or Sad) Number.
+Example: Start with 19
+19 =1^2+9^2=82
+
+Replace with 82
+82 =6^2+2^2=68
+
+Replace with 68
+68 = 6^2+8^2=100
+
+Replace with 100
+100 = 1^2+0^2+0^2=1
+
+Since the process ends at 1, 9 is a Happy Number.

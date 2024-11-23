@@ -1,0 +1,146 @@
+body{
+    background-color: powderblue;
+}
+.AppBar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(228, 244, 243, 0.895);
+    width: 100%;
+    height: 80px;
+    margin: 0 20px 0;
+}
+
+.AppBar h3,h2{
+    font-size: 30px;
+}
+
+.ProfileSection{
+    display: flex;
+    height: 600px;
+    width: 100%;
+    background-color: white;
+}
+
+.ProfileSectionDetails{
+    align-content: center;
+}
+
+.ProfileSectionDetails p{
+    font-size: 20px;
+}
+
+.ProfileSection button{
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+    height: 60px;
+    padding: 15px;
+    font-size: 25px;
+}
+
+.Capabilities{
+    height: 600px;
+    width: 100%;
+    background-color: red;
+    display: block;
+    justify-items: center;
+    align-content: center;
+}
+
+.Capabilities h1{
+    justify-self: center;
+    font-size:40px;
+    color: white;
+}
+
+.Capabilities p{
+    color: white;
+    font-size: 22px;
+    width: 70%;
+}
+.CapabilityCards{
+    display: flex;
+    gap: 50px;
+}
+
+.CapabilitySection{
+    width: 260px;
+    height: 300px;
+    background-color: white;
+    justify-items: center;
+    border-radius: 10px;
+}
+
+.CapabilitySection h4{
+    font-size: 28px;
+}
+
+.CapabilitySection ul{
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}
+
+.Designs{
+    height: 900px;
+    background-color: white;
+}
+
+.DesignHead{
+    padding: 25px;
+}
+
+.DesignHead h1{
+    width: 350px;
+    font-size: 35px;
+}
+
+.DesignHead p{
+    font-size: 20px;
+}
+
+.DesignBody{
+    display: flex;
+}
+
+.Designcards{
+    width: 70%;
+    margin: 20px;
+}
+
+.CardContainer{
+    display: flex;
+    gap: 20px;
+}
+
+.CardDetails{
+    box-shadow: 1px 0.5px 1px rgba(0, 0, 0, 0.499);
+    background-color: rgba(247, 248, 250, 0.832);
+    margin: 10px;
+    padding: 10px;
+    height: 270px;
+    border-radius: 10px;
+}
+
+.GetInTouch{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(102, 26, 26);
+}
+.GetInTouch h1{
+    font-size: 30px;
+}
+
+.GetInTouch p{
+    font-size: 20px;
+    width: 400px;
+}
+
+.contact, .Attributes{
+    align-content: center;
+    /* justify-items: center; */
+}

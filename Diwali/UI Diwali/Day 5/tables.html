@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Table in HTML</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>People Information Table</h1>
+    <table>
+        <caption>Details of Individuals</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aarav</td>
+                <td>30</td>
+                <td>Mumbai</td>
+            </tr>
+            <tr>
+                <td>Vivaan</td>
+                <td>25</td>
+                <td>Bangalore</td>
+            </tr>
+            <tr>
+                <td>Aditya</td>
+                <td>35</td>
+                <td>Delhi</td>
+            </tr>
+            <tr>
+                <td>Siddharth</td>
+                <td colspan="2">Chennai</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Isha</td>
+                <td>28</td>
+                <td>Pune</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>Kolkata</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

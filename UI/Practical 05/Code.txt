@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Datalist</title>
+</head>
+<body>
+	<input type="text" list="data">
+	<datalist id="data">
+		<option value="Volvo">
+		<option value="BMW">
+		<option value="Mercedes">
+		<option value="Ford">
+	</datalist>
+</body>
+</html>
