@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vw;
+    width: 100vw;
+    overflow: auto;
+    font-family: "Apple Color Emoji";
+}
+
+.logo-links{
+    border: 1px solid black;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo-links img{
+    height: 60px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 50px;
+}
+
+.nav-links a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.about{
+    height: 300px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+    gap: 50px;
+}
+
+.cards{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    pad: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card{
+    height: 280px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.services > h1{
+    text-align: center;
+    margin: 30px;
+}
+
+.footer{
+    background-color: #eef3f9;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.address{
+    display: flex;
+    gap: 70px;
+    padding: 30px;
+}
+
+.map img{
+    height: 200px;
+}
+
+.address-data, .quick-links{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.quick-links a{
+    text-decoration: none;
+}
+
+.poweredby{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poweredby img{
+    height: 40px;
+}
+
+.poweredby p{
+    font-size: 18px;
+    text-align: center;
+    font-weight: none;
+}
