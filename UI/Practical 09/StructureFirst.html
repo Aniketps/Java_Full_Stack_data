@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Read Articals</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            overflow: auto;
+        }
+        .header{
+            display: flex;
+            height: 70px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+            background-color: lightgreen;
+        }
+        .nav-links{
+            display: flex;
+            gap: 50px;
+        }
+        .nav-links a{
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .main-artical{
+            min-height: 400px;
+            width: 100%;
+            display: flex;
+
+        }
+        .nav{
+            width: 18%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 30px;
+            margin-top: 0;
+        }
+        .nav a{
+            font-size: 20px;
+            text-decoration: none;
+        }
+        .section{
+            width: 60%;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .section p{
+            font-size: 30px;
+            font-style: italic;
+        }
+        .section h2{
+            font-size: 20px;
+            font-weight: lighter;
+        }
+        .aside{
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            gap: 20px;
+        }
+        .aside a{
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .footer{
+            background-color: gray;
+            min-height: 200px;
+        }
+        .connection{
+            height: 150px;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            gap: 100px;            
+        }
+        .contact{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .suggest{
+            display: flex;
+            gap: 10px;
+        }
+        .suggest input{
+            height: 30px;
+            width: 200px;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+        .suggest button{
+            width: 80px;
+            height: 30px;
+            border-radius: 10px;
+            border: none;
+            font-weight: bold;
+            font-size: 15px;
+            background-color: green;
+            color: white;
+        }
+        .poweredby{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            padding: 10px;
+        }
+        .poweredby h1{
+            font-size: 22px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Read Articals</h1>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Login</a>
+        </div>
+    </div>
+    <div class="main-artical">
+        <div class="nav">
+            <h1>Writters</h1>
+            <a href="#">Dr. Emily Carter</a>
+            <a href="#">Sarah Green</a>
+            <a href="#">Prof. James Reynolds</a>
+            <a href="#">Maria Lopez</a>
+            <a href="#">Michael Anderson</a>
+        </div>
+        <div class="section">
+            <h1>The Future of Artificial Intelligence in Healthcare</h1>
+            <p>
+                The integration of artificial intelligence (AI) into healthcare systems is revolutionizing the industry. From predictive analytics to robotic-assisted surgeries, AI is enhancing the precision and efficiency of medical care. For instance, AI-driven algorithms can analyze patient data to predict potential health issues before they become critical, enabling preventative measures. Despite its immense potential, AI adoption raises concerns about data privacy, ethics, and the need for regulatory oversight. As technology advances, collaboration between medical professionals and AI experts will be crucial to ensure its benefits outweigh the risks.
+            </p>
+            <h2><span style="font-weight: bold;">Author:</span> Dr. Emily Carter, AI Specialist and Researcher</h2>
+        </div>
+        <div class="aside">
+            <h1>Reccomended</h1>
+            <a href="#">Creativity</a>
+            <a href="#">Decision Making</a>
+            <a href="#">Focus</a>
+            <a href="#">Habits</a>
+            <a href="#">Motivation</a>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="connection">
+            <div class="contact">
+                <h1>Contacts</h1>
+                <p>Mail. aniket@gmail.com</p>
+                <p>Phone. 9000000000</p>
+            </div>
+            <div class="suggest">
+                <input type="text" placeholder="Suggest us an artical">
+                <button type="button">Send</button>
+            </div>
+        </div>
+        <div class="poweredby">
+            <h1>Aniket Pardeshi</h1>
+            <a href="#">Privacy & Term of Use</a>
+        </div>
+    </div>
+</body>
+</html>
