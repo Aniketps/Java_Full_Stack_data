@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewpoint" content="width: device-width, initial-scale:1.0">
+    <title>Playing With Flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: serif;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            min-height: 100hw;
+            overflow: auto;
+        }
+        .header{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 70px;
+            width: 100%;
+            justify-content: space-between;
+            padding: 30px;
+            border-width: 0 0 1px;
+            border-style: solid;
+            border-color: blue;
+        }
+        .links{
+            width: 30%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .links a{
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+        .slider-image{
+            width: 100%;
+            min-height: 300px;
+            margin: auto;
+            padding: 20px;
+        }
+        .slider-image img{
+            width: 100%;
+            height: 300px;
+        }
+        .spacer{
+            height: 50px;
+            width: 100%;
+            background-color: rgba(16, 16, 16, 0.902);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .spacer h1{
+            font-size: 18px;
+            color: white;
+        }
+        .part-first-articles{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 250px;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            row-gap: 20px;
+        }
+        .part-first-article{
+            height: 200px;
+            width: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.774);
+        }
+        .part-second-articles{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 250px;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            row-gap: 20px;
+        }
+        .part-second-article{
+            height: 180px;
+            width: 250px;
+            background-color: rgba(0, 0, 0, 0.774);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .read-article{
+            min-height: 400px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: rgba(0, 0, 0, 0.774);
+        }
+        .article-space{
+            height: 350px;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .part-article-third{
+            height: 40%;
+            width: 80%;
+            display: flex;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.774);
+            align-items: center;
+            justify-content: center;
+        }
+        p{
+            font-size: 20px;
+            text-align: center;
+            font-family: serif;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>ARTICLE PLACE</h1>
+        </div>
+        <div class="links">
+            <a href="">HOME</a>
+            <a href="">LOG IN</a>
+            <a href="">SIGN UP</a>
+        </div>
+    </div>
+    <div class="slider-image">
+        <img src="./article.jpg" alt="Article image">
+    </div>
+    <div class="spacer">
+        <h1>PAGE BREAKER</h1>
+    </div>
+    <div class="part-first-articles">
+        <div class="part-first-article">
+            <p>The Most Important Question of Your Life</p>
+        </div>
+        <div class="part-first-article">
+            <p>The Complete Guide to Goal Setting (Backed by Science)</p>
+        </div>
+        <div class="part-first-article">
+            <p>5 Boring Ways to Become More Creative</p>
+        </div>
+    </div>
+    <div class="part-second-articles">
+        <div class="part-second-article">
+            <p>5 Simple Ideas That Can Change Your Life</p>
+        </div>
+        <div class="part-second-article">
+            <p>The Hidden Costs of Happiness</p>
+        </div>
+        <div class="part-second-article">
+            <p>Life Is a Video Game—Here Are the Cheat Codes</p>
+        </div>
+        <div class="part-second-article">
+            <p>The Most Important Skill in Life</p>
+        </div>
+    </div>
+    <div class="read-article">
+        <div class="article-space">
+            <p>Depending on your perspective, Immanuel Kant was either the most boring person on the planet or a productivity hacker’s wet dream. For over 40 years, he woke up every morning at 5:00 AM and wrote for exactly three hours. He would then lecture at the same university for exactly four hours. He followed that up with lunch at the same restaurant each day. Then, in the afternoon, he would go on an extended walk through the same park, on the same route, leaving and returning home at the exact same time. Every day.</p>
+        </div>
+        <div class="article-space">
+            <div class="part-article-third">
+                <p>How to Take Risks</p>
+            </div>
+            <div class="part-article-third">
+                <p>Screw Finding Your Passion</p>                
+            </div>
+        </div>
+    </div>
+    <div class="part-first-articles">
+        <div class="part-first-article">
+            <p>Find What You Love and Let It Kill You</p>
+        </div>
+        <div class="part-first-article">
+            <p>The Four Stages of Life</p>
+        </div>
+        <div class="part-first-article">
+            <p>The One Rule for Life</p>
+        </div>
+    </div>
+</body>
+</html>
