@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewpoint" content="width:device-width, initial-scale:1.0">
+    <title>Clone Elitmus</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vw;
+            width: 100vw;
+            overflow: auto;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+            height: 70px;
+            background-color: black;
+        }
+
+        .header img {
+            height: 60px;
+        }
+
+        .header a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .features {
+            min-height: 450px;
+            display: flex;
+            width: 100%;
+            margin: auto;
+            align-items: center;
+            padding: 10px 30px 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .jobs {
+            min-height: 450px;
+            width: 350px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            box-shadow: 0 1px 2px blue;
+            border-radius: 10px;
+        }
+
+        .jobs a, tr {
+            font-size: 15px;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+
+        .test {
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hiring h1, .test h1 {
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: lighter;
+            padding-bottom: 20px;
+        }
+
+        .hiring p, .test p {
+            text-align: end;
+            font-size: 18px;
+        }
+
+        .test td, .hiring td {
+            width: 50%;
+            padding: 5px 0 0;
+        }
+
+        .about {
+            height: 450px;
+            width: 700px;
+        }
+
+        .login {
+            height: 450px;
+            width: 350px;
+            box-shadow: 0 1px 2px blue;
+            border-radius: 10px;
+        }
+        .about{
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .about h1{
+            font-size: 25px;
+            font-family: sans-serif;
+            font-weight: lighter;
+        }
+        .about li{
+            padding: 5px;
+            font-size: 15px;
+            font-family: sans-serif;
+        }
+        .about button{
+            height: 40px;
+            width: 140px;
+            margin: auto;
+            background-color: blue;
+            color: wheat;
+            border-radius: 10px;
+            border: none;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="./image.png" alt="elitmus logo">
+        <div class="links">
+            <a href="">About</a>
+            <a href="">Gift Card</a>
+            <a href="">SCALE</a>
+            <a href="">Adda</a>
+            <a href="">Blog</a>
+            <a href="">Help</a>
+            <a href="">Login</a>
+            <a href="">Register</a>
+            <a href="">Contact</a>
+        </div>
+    </div>
+    <div class="features">
+        <div class="jobs">
+            <div class="test">
+                <h1>Upcoming Tests</h1>
+                <table>
+                    <tr>
+                        <td><a href="">Online - Take From Home</a></td>
+                        <td>8th Dec</td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Online - Take From Home</a></td>
+                        <td>22nd Dec</td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Online - Take From Home</a></td>
+                        <td>5th Jan</td>
+                    </tr>
+                </table>
+                <p>See full list »</p>
+            </div>
+            <div class="hiring">
+                <h1>Companies Hiring</h1>
+                <table>
+                    <tr>
+                        <td><a href="">eLitmus</a></td>
+                        <td>20th Oct</td>
+                    </tr>
+                    <tr>
+                        <td><a href="">eLitmus</a></td>
+                        <td>1st Aug</td>
+                    </tr>
+                    <tr>
+                        <td><a href="">eLitmus</a></td>
+                        <td>17th Jun/td>
+                    </tr>
+                    <tr>
+                        <td><a href="">MountBlue</a></td>
+                        <td>7th Dec</td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Company</a></td>
+                        <td>3rd Dec</td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Company</a></td>
+                        <td>30th Nov</td>
+                    </tr>
+                </table>
+                <p>All Jobs »</p>
+            </div>
+        </div>
+        <div class="about">
+            <h1>We are Indias largest assessment and recruitment company.</h1>
+            <ul>
+                <li>Enables companies to hire talent which performs on the job.</li>
+                <li>65% of candidates who found jobs through us had an existing offer.</li>
+                <li>All companies serviced since Dec 2009 have reported high satisfaction level.</li>
+                <li>Customers include - start-ups to Fortune 100 R&D to services companies.</li>
+            </ul>
+            <p>Our superior service offering is enabled by a combination of deep business insights, superior assessment (pH Test) and unparalleled reach amongst quality candidates.</p>
+            <button>For Employers »</button>
+        </div>
+        <div class="login">
+
+        </div>
+    </div>
+</body>
+
+</html>
