@@ -1,0 +1,13 @@
+Sep-24  Batch Today's Practical Task...
+
+Q 1. Write java program to sort array in ascending and descending order.
+
+Q 2. Write java program to check whether array is majority or not.
+
+Q 3. Write java program to frequency of each digit in array.
+
+Q 4.Write java program to find second highest element in array.(Already Done)
+
+Q 5.Write java program to find a pair with given sum in the array.
+
+Q 6. Write a  java program to find the union and intersection of two
