@@ -1,0 +1,329 @@
+     
+       Pronouns
+
+       - Words that we use instead of nouns to avoid the repetition of them.
+       - Used as replacements for nouns.
+       - Are gender specific mainly.
+
+
+
+        1.Subjective - used for subjects 
+      e.g. I, We, He, She, It, They, You, Who, Someone
+
+        2.Objective - used for objects
+      e.g. me, us ,her, him, them
+
+        3.Possessive - Used to show ownership
+      e.g. My, mine, our, ours, his, her, their, theirs, whose
+
+        1} Personal pronouns
+        2} Indefinite pronouns
+        3} Relative pronouns
+        4} Intensive pronoun
+        5} Demonstrative pronoun
+        6} Interrogative pronoun
+        7} Reflexive pronoun
+
+
+        1} Personal pronouns
+
+           (a) First person
+                                          Singular                Plural
+ 
+                        Subjective          I                       We
+                      
+                         Possessive         My, Mine                Our/Ours
+ 
+                         Objective          Me                      Us
+
+
+            (b) Second Person
+                                          Singular                 Plural
+
+                        Subjective          You                      You
+
+                        Objective           You                      You
+
+                        Possessive          Your/Yours               Your/Yours
+
+
+             (c) Third Person
+
+                                           Singular                        Plural
+
+                      Subjective         He, She, It                       They  
+                                    (Is, Has, Does, Was, Had)         (Are, Have, Do, Were, had)
+
+                      Possessive         His, Her, Its                    Their, Theirs
+
+                      Objective          Him, Her, It                      Them
+ 
+
+
+
+
+
+          2} Indefinite pronoun 
+
+            e.g. anybody, anyone, nobody, every, all, some, much, more,
+            enough, very, few, someday, one day, lot, many
+
+            Persons - 
+            1)Anybody/anyone - Is anybody there?
+              Is anyone of you going to answer this question? 
+ 
+            2)Somebody/someone - Someone is writing something.
+              Somebody is coming from there.
+
+            3)Everybody/everyone - Everyone is doing full stack developer course.
+              Everybody was very happy
+ 
+            4)Nobody/No one- No one is there today.
+              Nobody is talking to me.
+
+            Places -
+            1)Anywhere - I am not going anywhere.
+              Have you seen him/her anywhere?
+ 
+            2)Somewhere - It is raining somewhere.
+              I have seen him/her somewhere.
+ 
+            3)Everywhere - God is everywhere.
+              I have searched him/her everywhere.
+
+            4)Nowhere - I am going nowhere.
+              I have got nowhere to sit.
+  
+            Things -
+            1)Anything - Is anything there?
+              You can do anything.
+              I do not have anything to eat.
+ 
+            2)Something - Something is happening outside.
+              I have got something.
+ 
+            3)Everything - Everything is too expensive here.
+              Is everything fine?
+              Everything is possible.
+ 
+            4)Nothing - Nothing is impossible in the world.
+              Nothing is permanent, except the change.
+              There is nothing.
+
+
+
+          3} Relative pronouns
+             Used to connect two sentences, used for previously used
+             subject.
+      
+           e.g. 
+               Who, whom, which, where, that, whose, whosoever
+ 
+             - I am the person who have finished that task.
+             - The person who got the placement worked hard.
+             - This is the place where we met/learnt/studied.
+             - You are the person whom I met yesterday.
+             - He is the person whom I called in the morning.
+             - I need a person with whom I can practice everyday.
+             - I am not getting to whom you are pointing.
+             - Those students will get the placement calls whose score is above 50% marks.
+             - I don't know whose chair is this.
+             - We will not provide placements whose attendance is less than 50%.
+             - I am telling you something which is very important.
+             - Tell me something which I need to improve.
+             - Tell me something which I don't know.
+
+
+           4} Intensive Pronoun/Emphatic pronouns
+              Emphasize a noun or pronoun and gives additional or more importance to the sentence.
+              (extra weightage)
+  
+            e.g. himself, itself, herself, yourself, ourselves, themselves, myself
+ 
+               - He himself is responsible for this situation.
+               - Laptop itself is very useful for IT jobs.
+               - She herself baked a cake.
+               - Sita herself sewed the dress. or
+               - Sita sewed her dress herself.
+               - Practice itself is very useful for everyone.
+               - Laughing itself is a good medicine.
+               - He himself did that work.
+               - We made a project by ourselves.
+               - He/ She himself/herself is one man/woman army.
+               - You yourself can solve this problem.
+ 
+
+
+
+            5} Demonstrative Pronouns     Demonstrate - to point out something
+
+               Pointing out something specific within a sentence and it 
+               represents a thing & situation near or far in both 
+               distance & time.
+                  
+            e.g.   This    - These
+                 (singular)  (Plural)
+
+                   That    - Those 
+                 (singular)  (Plural)
+
+                   Such 
+
+               - This is a laptop.
+               - This is my pen.
+               - This is my watch.
+               - I got this gift from my uncle.
+               - Both cars are good, but/however, this is better than that.
+               - Ratnagiri mangoes are better than that of Pune mangoes.
+               - Those were the days when I used to study at Giri's Tec Hub.
+               - These are the days when you need to work on yourself.
+               - I may have done it, but such was not my intention.
+               - The stranger is welcomed as such the member of the family.
+               - These are the days when you have to take proper rest.
+               - These are my friends.
+               - These are the shops where I purchase my clothes and other things.
+
+
+
+
+             6} Interrogative Pronouns
+
+              - Used to begin a sentence with a "WH" question 
+           
+              - Whom did you admire?
+              - To whom you are talking?
+              - With whom you were talking?
+              - About whom you are talking?
+              - Whom do you want on your team?
+              - What is the issue or matter?
+    
+  
+             7} Reflexive pronouns
+            
+                They are object pronouns that we use when the subject 
+                and object is the same noun & ends in 'self' or 'selves' 
+      
+            e.g. myself, himself, herself, themselves, ourselves, 
+                 yourself, yourselves, itself 
+
+               - Tell me something about yourself.
+               - Introduce yourself.
+               - What is that one thing which you admire about yourself?
+               - Which is that one strength you like about yourself?
+               - Do you know yourself?
+               - Are you proud of yourself? Why?
+               - Don't cheat yourself.
+               - I am talking about myself.
+               - I bought a new car for myself.
+               - He is writing about himself.
+               - She started thinking about herself.
+       
+
+
+
+
+
+
+
+
+     
+
+ 
+
+   
+            
+ 
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+ 
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+

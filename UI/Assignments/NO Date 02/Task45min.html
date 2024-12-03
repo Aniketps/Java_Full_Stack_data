@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewpoint" content="width:device-width, initial-scale:1.0">
+    <title>UI Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            width: 100vw;
+            overflow: auto;
+        }
+
+        .headerDesign {
+            color: white;
+            height: 700px;
+            width: 100%;
+            background-image: url("https://img.freepik.com/premium-photo/rear-view-security-guard-watching-parking-area-isolated-with-white-highlights_660230-167984.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .logo {
+            background-color: rgba(0, 0, 0, 0.03);
+        }
+
+        .blur {
+            background-color: rgba(0, 0, 0, 0.477);
+            height: 100%;
+            width: 100%;
+        }
+
+        .header {
+            height: 70px;
+            width: 100%;
+            display: flex;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 70px 0;
+        }
+
+        .header a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+
+        }
+
+        .links {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .contacts {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: end;
+        }
+        .contacts p{
+            font-size: 18px;
+        }
+        .contacts a{
+            font-size: 12px;
+        }
+        .numberImage img{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+        }
+
+        .background {
+            min-height: 600px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            color: white;
+            font-family: serif;
+            padding: 100px 20px 20px;
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/023/132/391/small_2x/a-haunted-building-from-the-inside-a-terrifying-view-with-darkness-and-dim-lights-ai-generated-photo.jpg");
+            background-size: cover;
+        }
+
+        .smallHead {
+            font-size: 10px;
+            font-weight: lighter;
+        }
+
+        .cards {
+            width: 80%;
+            min-height: 400px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.219);
+        }
+
+        .cards img {
+            height: 50px;
+            width: 50px;
+        }
+
+        .card {
+            min-height: 200px;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .card p {
+            text-align: center;
+        }
+
+        .card h1 {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .headerContents {
+            width: 40%;
+            margin-left: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+
+        .number {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .textContents h1 {
+            font-size: 100px;
+        }
+
+        .growth {
+            min-height: 400px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            background-color: red;
+        }
+
+        .info {
+            min-height: 480px;
+            width: 50%;
+            padding: 70px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: white;
+        }
+
+        .past {
+            width: 50%;
+            padding: 70px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }
+
+        .past h2 {
+            font-size: 12px;
+        }
+
+        .past h1 {
+            font-size: 70px;
+        }
+
+        .info a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+
+        .pastCards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .growthCard {
+            height: 150px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+
+        .services {
+            min-height: 500px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .ourService {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            gap: 20px;
+            padding: 50px;
+        }
+
+        .ourService p {
+            text-align: center;
+        }
+
+        .servicesCards img {
+            height: 200px;
+            width: 350px;
+            border: 1px solid black;
+        }
+
+        .servicesCards {
+            min-height: 500px;
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .serviceCard {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            min-height: 400px;
+            width: 350px;
+        }
+
+        .viewMore {
+            padding: 50px;
+        }
+
+        .viewMore button {
+            border: 2px solid green;
+            padding: 15px;
+            background-color: transparent;
+            font-weight: bold;
+        }
+
+        .testimonial {
+            min-height: 400px;
+            width: 100%;
+            padding: 100px;
+        }
+
+        .testimonialHead {
+            height: 70px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .testimonialHead h1 {
+            font-size: 40px;
+        }
+
+        .testimonial a {
+            text-decoration: none;
+            color: green;
+        }
+
+        .testimonialBody {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .testimonialCard {
+            width: 350px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .testimonialProfile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .testimonialProfile img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        .testimonialProfile h1 {
+            font-size: 18px;
+        }
+
+        .footer {
+            min-height: 400px;
+            width: 100%;
+            background-color: rgba(128, 128, 128, 0.249);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .request {
+            width: 50%;
+            padding: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .request ul {
+            padding-left: 12px;
+        }
+
+        .userDetails {
+            padding: 100px;
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            margin-right: 150px;
+            gap: 20px;
+        }
+        .userDetailField{
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        .userDetailField input{
+            padding: 10px;
+            background-color: rgba(128, 128, 128, 0.046);
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid grey;
+        }
+        .userDetails button{
+            padding: 10px;
+            width: 150px;
+            border: 2px solid green;
+            background-color: transparent;
+            color: green;
+        }
+        .footerLinks{
+            background-color: rgba(0, 0, 0, 0.842);
+            height: 400px;
+            width: 100%;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            padding: 100px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footerpart{
+            height: 300px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .footerpart h1{
+            padding-bottom: 15px;
+        }
+        .social{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+        .copyright{
+            height: 70px;
+            color: rgba(255, 255, 255, 0.548);
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.842);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.584);
+            padding: 0 100px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="headerDesign">
+        <div class="blur">
+            <div class="header">
+                <div class="logo">
+                    <h1>ALIQUAM</h1>
+                </div>
+                <div class="links">
+                    <a href="">HOME</a>
+                    <a href="">SERVICES</a>
+                    <a href="">ABOUT</a>
+                    <a href="">CONTACT</a>
+                </div>
+                <div class="contacts">
+                    <a href="">Have any question?</a>
+                    <p>+1 123-456-789</p>
+                </div>
+            </div>
+            <div class="headerContents">
+                <div class="textContents">
+                    <p>15+ YEARS EXPERIENCE</p>
+                    <H1>Best Private Security</H1>
+                    <p>Felis etiam pellenteque scalerisque eleifend in aliquam Felis etiam pellenteque scalerisque
+                        eleifend
+                        in aliquam </p>
+                </div>
+                <div class="number">
+                    <div class="numberImage">
+                        <img src="https://www.freeiconspng.com/thumbs/phone-icon/phone-icon-png--clipart-best-17.png" alt="">
+                    </div>
+                    <div class="callText">
+                        <p>Call Us Today:</p>
+                        <h1>1-234-SECURE90</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="growth">
+        <div class="info">
+            <h1>Providing Seattle With Superior Security Solutions</h1>
+            <p>We keep a close eye on industry innovation and work closely with industry professionals and suppliers to
+                regularly review and expand the range of security solutions available to you, our customer. Today we
+                provide solutions across the full spectrum of security products and services. This gives our customers
+                confidence knowing they can deal with one integrated security firm that will achieve their optimum
+                solution.</p>
+            <a href="">CLICK HERE</a>
+        </div>
+        <div class="past">
+            <h2>LETS NUMBERS TALK</h2>
+            <div class="pastCards">
+                <div class="growthCard">
+                    <h1>15+</h1>
+                    <p>Year is Business</p>
+                </div>
+                <div class="growthCard">
+                    <h1>500+</h1>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="growthCard">
+                    <h1>128+</h1>
+                    <p>Licensed Officers</p>
+                </div>
+                <div class="growthCard">
+                    <h1>2K+</h1>
+                    <p>Assents Protected</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services">
+        <div class="ourService">
+            <h1>Our Services</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quos sit velit, totam ex aliquam
+                distinctio harum hic optio veritatis magni laborum nemo at, officia nesciunt maxime exercitationem nihil
+                laboriosam!</p>
+        </div>
+        <div class="servicesCards">
+            <div class="serviceCard">
+                <img src="https://www.safetynetfiresolutions.com/wp-content/uploads/2024/01/access-control-services.jpg"
+                    alt="">
+                <h1>Access Solutions</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi suscipit id illo eum officiis culpa!
+                    Incidunt, ipsam possimus? Eaque veritatis ratione soluta neque doloremque quod at ipsam quis eos
+                    ipsa!</p>
+            </div>
+            <div class="serviceCard">
+                <img src="https://cdn.lanars.com/thumbnails/industries_previews/smart-home_industry_large_aJQjNI6.webp"
+                    alt="">
+                <h1>Alarm System</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi suscipit id illo eum officiis culpa!
+                    Incidunt, ipsam possimus? Eaque veritatis ratione soluta neque doloremque quod at ipsam quis eos
+                    ipsa!</p>
+            </div>
+            <div class="serviceCard">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStDZgY1-NO96U0lNvnIGjBlMyv0wL8GWJ1Y05s7NOa20-J3oJ2"
+                    alt="">
+                <h1>Buzzers</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi suscipit id illo eum officiis culpa!
+                    Incidunt, ipsam possimus? Eaque veritatis ratione soluta neque doloremque quod at ipsam quis eos
+                    ipsa!</p>
+            </div>
+            <div class="serviceCard">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNTkdBAlFf_RJxCAWguQtACfjaEKTg0ak853wmqPVLEWSVbNR5"
+                    alt="">
+                <h1>Security Cameras</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi suscipit id illo eum officiis culpa!
+                    Incidunt, ipsam possimus? Eaque veritatis ratione soluta neque doloremque quod at ipsam quis eos
+                    ipsa!</p>
+            </div>
+            <div class="serviceCard">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShtKAxktA-x60FJkZOO4mpci9-FYRhqNZPOnkIGlM2WQckICQi"
+                    alt="">
+                <h1>Intercom System</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi suscipit id illo eum officiis culpa!
+                    Incidunt, ipsam possimus? Eaque veritatis ratione soluta neque doloremque quod at ipsam quis eos
+                    ipsa!</p>
+            </div>
+            <div class="serviceCard">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQN1zHZAIif7w2_BMLdGQX0yiqgAmfhV2W47M-77g8dQBDOMh9p"
+                    alt="">
+                <h1>Locksmith Services</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi suscipit id illo eum officiis culpa!
+                    Incidunt, ipsam possimus? Eaque veritatis ratione soluta neque doloremque quod at ipsam quis eos
+                    ipsa!</p>
+            </div>
+        </div>
+        <div class="viewMore">
+            <button type="button">VIEW ALL SERVICES</button>
+        </div>
+    </div>
+    <div class="background">
+        <div class="smallHead">
+            <h2>WHY CHOOSE US</h2>
+        </div>
+        <div class="bigHead">
+            <h1>What Sets Us Apart</h1>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2784/2784399.png"
+                    alt="Circle">
+                <h1>Perfection Anytime</h1>
+                <p>Whether your goal is to scale your business, collaborate more efficiently, or grow your social media,
+                    there's a smarter approach to it - systems that cut through the clutter, freeing you to pour more
+                    energy into the work that truly fuels you.</p>
+            </div>
+            <div class="card">
+                <img src="https://www.clipartmax.com/png/full/281-2817623_icon-chats-green-engage-png-icon.png"
+                    alt="Circle">
+                <h1>24/7 Communications</h1>
+                <p>Whether your goal is to scale your business, collaborate more efficiently, or grow your social media,
+                    there's a smarter approach to it - systems that cut through the clutter, freeing you to pour more
+                    energy into the work that truly fuels you.</p>
+            </div>
+            <div class="card">
+                <img src="https://icones.pro/wp-content/uploads/2021/03/icone-de-voiture-symbole-png-verte.png"
+                    alt="Circle">
+                <h1>Our Feet</h1>
+                <p>Whether your goal is to scale your business, collaborate more efficiently, or grow your social media,
+                    there's a smarter approach to it - systems that cut through the clutter, freeing you to pour more
+                    energy into the work that truly fuels you.</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/10683/10683076.png"
+                    alt="Circle">
+                <h1>Emergency Help</h1>
+                <p>Whether your goal is to scale your business, collaborate more efficiently, or grow your social media,
+                    there's a smarter approach to it - systems that cut through the clutter, freeing you to pour more
+                    energy into the work that truly fuels you.</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/128/3110/3110239.png"
+                    alt="Circle">
+                <h1>Advance Technologies</h1>
+                <p>Whether your goal is to scale your business, collaborate more efficiently, or grow your social media,
+                    there's a smarter approach to it - systems that cut through the clutter, freeing you to pour more
+                    energy into the work that truly fuels you.</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/128/13326/13326369.png"
+                    alt="Circle">
+                <h1>Licensed Officers</h1>
+                <p>Whether your goal is to scale your business, collaborate more efficiently, or grow your social media,
+                    there's a smarter approach to it - systems that cut through the clutter, freeing you to pour more
+                    energy into the work that truly fuels you.</p>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="testimonialHead">
+            <h1>Testimonial</h1>
+            <a href="">VIEW ALL</a>
+        </div>
+        <div class="testimonialBody">
+            <div class="testimonialCard">
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt eum eos saepe. Modi
+                    similique repudiandae corrupti tempore, voluptatibus magni minima temporibus provident fuga, alias
+                    consectetur quis illo, maxime delectus."</p>
+                <div class="testimonialProfile">
+                    <img src="https://mrbusinessmagazine.com/wp-content/uploads/2024/07/1.3-Source-pinterest.jpg"
+                        alt="">
+                    <div class="profileDetails">
+                        <h1>TONY HAWK</h1>
+                        <p>Google Reviewer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonialCard">
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt eum eos saepe. Modi
+                    similique repudiandae corrupti tempore, voluptatibus magni minima temporibus provident fuga, alias
+                    consectetur quis illo, maxime delectus."</p>
+                <div class="testimonialProfile">
+                    <img src="https://witonline.wordpress.com/wp-content/uploads/2022/10/julia_miles_thumb-300x300-2.jpg" alt="">
+                    <div class="profileDetails">
+                        <h1>JULIA MILES</h1>
+                        <p>Yelp Reviewer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonialCard">
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt eum eos saepe. Modi
+                    similique repudiandae corrupti tempore, voluptatibus magni minima temporibus provident fuga, alias
+                    consectetur quis illo, maxime delectus."</p>
+                <div class="testimonialProfile">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-683967820.jpg?crop=1xw:1.0xh;center,top&resize=640:*" alt="">
+                    <div class="profileDetails">
+                        <h1>JOHN GOODMAN</h1>
+                        <p>Google Reviewer</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="request">
+            <h1>Request Info</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime facere magnam tenetur molestias modi
+                officia fugit, explicabo optio ducimus asperiores eum ipsa. Odit ratione quod quidem doloribus sunt quia
+                animi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam quisquam laborum possimus modi quam
+                libero, non, quidem quos consequuntur saepe ratione deleniti dolores reprehenderit aut! Fugiat tempore
+                magni nulla amet!</p>
+            <ul>
+                <li>Nvo N Ono no Jn jno</li>
+                <li>Nvo N Ono no Jn jno</li>
+                <li>Nvo N Ono no Jn jno</li>
+                <li>Nvo N Ono no Jn jno</li>
+            </ul>
+        </div>
+        <div class="userDetails">
+            <div class="userDetailField">
+                <label for="">Name*</label>
+                <input type="text" placeholder="Full name">
+            </div>
+            <div class="userDetailField">
+                <label for="">Email*</label>
+                <input type="text" placeholder="Email address">
+            </div>
+            <div class="userDetailField">
+                <label for="">Company*</label>
+                <input type="text" placeholder="Company name">
+            </div>
+            <div class="userDetailField">
+                <label for="">Mesage*</label>
+                <input type="text" placeholder="Your message here">
+            </div>
+            <button type="button">SEND ME QUOTE</button>
+        </div>
+    </div>
+    <div class="footerLinks">
+        <div class="footerpart">
+            <h1>ALIQUAM</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, consectetur maiores accusantium quia quas ad. Earum, repellat sint animi doloribus optio commodi totam officiis inventore voluptates rem debitis adipisci cum?</p>
+            <div class="social">
+                <p>G</p>
+                <p>G</p>
+                <p>G</p>
+            </div>
+        </div>
+        <div class="footerpart">
+            <h1>Services</h1>
+            <p>Access Solutions</p>
+            <p>Alarm Systsem</p>
+            <p>Security Cameras</p>
+            <p>Intercom System</p>
+        </div>
+        <div class="footerpart">
+            <h1>Company</h1>
+            <p>About Us</p>
+            <p>Traning</p>
+            <p>Careers</p>
+            <p>Contact Us</p>
+        </div>
+        <div class="footerpart">
+            <h1>Address</h1>
+            <p>1234 5th Ave S, Seattle, WA 5678</p>
+            <p>United State</p>
+            <p>mail@gmail.com</p>
+            <p>+1 234 567 890</p>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright@2021 Security Services</p>
+        <p>Powered by Security Services</p>
+    </div>
+</body>
+
+</html>
