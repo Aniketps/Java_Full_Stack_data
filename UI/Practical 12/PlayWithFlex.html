@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewpoint" content="width:device-width, initial-scale:1.0">
+    <title>Play with flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: rgb(255, 255, 255);
+            box-sizing: border-box;
+            font-family: sans-serif;
+            font-size: 40px;
+            font-weight: lighter;
+        }
+        body{
+            width: 100vw;
+            background-color: rgba(64, 62, 62, 0.153);
+            overflow: hidden-auto;
+        }
+        .header{
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            background-color: rgba(0, 0, 255, 0.128);
+            justify-self: center;
+            margin-top: 50px;
+        }
+        .mainBody{
+            min-height: 500px;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            justify-content: space-between;
+            flex-direction: row;   
+        }
+        .aside{
+            width: 30%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(137, 43, 226, 0.29);
+        }
+        .articles{
+            height: 500px;
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+            padding: 50px;
+            gap: 30px;
+            background-color: rgba(255, 0, 0, 0.539);
+        }
+        .images{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .image{
+            height: 200px;
+            width: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(240, 248, 255, 0.735);
+        }
+        .footer{
+            justify-self: center;
+            background-color: rgba(0, 0, 255, 0.128);
+            width: 90%;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+    <div class="mainBody">
+        <div class="aside">
+            <h1>Aside</h1>
+        </div>
+        <div class="articles">
+            <div class="title">
+                <h1>Article</h1>
+            </div>
+            <div class="images">
+                <div class="image">
+                    <h1>Image</h1>
+                </div>
+                <div class="image">
+                    <h1>Image</h1>
+                </div>
+                <div class="image">
+                    <h1>Image</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h1>Footer</h1>
+    </div>
+</body>
+</html>
