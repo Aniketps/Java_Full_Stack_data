@@ -1,0 +1,26 @@
+Basic Practice Program Using Pojo Class 
+—------------------------------------------------------------------------------------------
+1. Employee Salary Increment
+Task:
+ Create an Employee class with fields: name, salary, and department.
+ In the main method:
+Create an Employee object.
+Increase the employee's salary by 10% and print the updated salary.
+Explanation:
+ This introduces instance variable manipulation and basic arithmetic operations.
+2. Person Age Verification
+Task:
+ Create a Person class with fields: name and age.
+ In the main method:
+Create a Person object.
+Check if the person is eligible to vote (age >= 18) and print the result.
+Explanation:
+ This demonstrates condition checking using instance variables.
+3. Student Grade Evaluation
+Task:
+ Create a Student class with fields: name, marks, and subject.
+ In the main method:
+Create a Student object.
+Check if the student has passed or failed the subject (passing marks >= 40) and print the result.
+Explanation:
+ This task involves condition checking and field manipulation.

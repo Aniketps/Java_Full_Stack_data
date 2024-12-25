@@ -1,0 +1,249 @@
+1.    Find the Maximum Value in an Array
+o   Write a class with a method to find and return the maximum value in an integer array.
+ Explanation: Learn how to traverse an array and find the largest element using methods.
+----------------------------------------------------------------------------------------
+import java.util.*;
+ public class MaxFromArray {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a[]=new int[5];
+                System.out.println("Enter element in array.");
+                for(int i=0;i<5;i++)
+                {
+                    a[i]=sc.nextInt();
+                }
+                System.out.println("Element in array");
+                for(int i=0;i<5;i++)
+                {
+                    System.out.print(" "+a[i]);
+                }
+                System.out.println(" ");
+                findMe(a);
+            }
+        static void findMe(int a[])
+        {
+            int max=a[0];
+            for(int i=0;i<5;i++)
+            {
+                if(a[i]>max)
+                { 
+                    max=a[i];
+                }
+            }
+            System.out.println("maaximum element from array: "+max);
+        }
+}
+----------------------------------------------------------------------------------------
+2.    Calculate the Average of an Array
+o   Write a class to create a method to calculate the average of elements in an integer array.
+ Explanation: Practice basic arithmetic operations and array traversal.
+----------------------------------------------------------------------------------------
+import java.util.Scanner;
+public class AvearageOfarray {
+    public static void main(String[] args) {
+        int a[]=new int[5];
+        Avg obj=new Avg();
+        obj.takeInput(a);
+        obj.calsum(a);
+        obj.calAvg();
+    }
+}
+class Avg{
+    Scanner sc=new Scanner(System.in);
+    int sum=0;
+    void takeInput(int a[])
+    {
+        System.out.println("Enter element:");
+        for(int i=0;i<5;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+    }
+    void calsum(int a[])
+    {
+        for(int i=0;i<5;i++)
+        {
+            sum=sum+a[i];
+        }
+    }
+    void calAvg()
+    {
+        float avg=sum/5;
+        System.out.println("avg of array element: "+avg);
+    }
+}
+---------------------------------------------------------------------------------------------------
+3.    Count Even and Odd Numbers in an Array
+o   Write a class to implement a method to count how many numbers are even and odd in an integer array.
+ Explanation: Learn conditional checks and iteration in arrays.
+------------------------------------------------------------------------------------------------
+import java.util.Scanner;
+public class CountHEvenOdd {
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=5;
+        int a[]=new int[n];
+        System.out.println("Enter array element:");
+        for(int i=0;i<n;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+        Count c=new Count();
+        c.countInt(a);
+    }
+}
+class Count{
+    int oddcnt=0,evencnt=0;
+
+    void countInt(int a[])
+    {
+        for(int i=0;i<5;i++)
+        {
+            if(a[i]%2==0)
+            {
+                 evencnt++;
+            }
+            else
+            {
+                oddcnt++;
+            }
+        }
+        System.out.println("even number count: "+evencnt);
+        System.out.println("odd number count: "+oddcnt);
+    }
+}
+---------------------------------------------------------------------------------------------------------
+4.    Reverse an Array
+o   Write a class to write a method to reverse the elements of an integer array.
+ Explanation: Work with array indexing and swapping
+---------------------------------------------------------------------------------------------------------
+import java.util.*;
+public class RevClass_fub {
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+     int a[]=new int[5];
+     System.out.println("Enter a element in Array:");
+     for(int i=0;i<5;i++)
+     {
+        a[i]=sc.nextInt();
+     }
+     Rev r=new Rev();
+     r.rev(a);
+    }
+}
+class Rev{
+    void rev(int a[])
+    {
+    System.out.println("Array in reverse order:");
+    int i,j;
+    for(i=0, j=a.length-1 ; i<=a.length/2; i++,j--)
+    {
+       int temp=a[i];
+       a[i]=a[j];
+       a[j]=temp;
+    }
+    for(int k=0;k<a.length ; k++)//array printing
+    {
+        System.out.print(a[k]+" ");
+    }
+   }
+}
+-----------------------------------------------------------------------------------------------------
+5. Find Duplicates in an Array
+o   Write a class to create a method to identify and display duplicate elements in an integer array.
+ Explanation: Practice nested loops to compare elements.
+-----------------------------------------------------------------------------------------------------
+import java.util.Scanner;
+ public class Duplicate {
+      public static void main(String[] args) {
+        int a[]=new int[5];
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a element in Array:");
+        for(int i=0;i<5;i++)
+        {
+           a[i]=sc.nextInt();
+        }
+        Duplicate1 d=new Duplicate1();  //creating object of class 
+        d.findMe(a);   //calling function
+     }
+ }
+ class Duplicate1{
+    int count=0; 
+    void findMe(int a[])
+    {
+        int D[]=new int[a.length];      //array for storing duplicate element
+        for(int i=0;i<5;i++)
+        {
+            for(int j=i;j<5;j++)
+            {
+                if(a[i]==a[j] && i!=j)  //checking number is duplicate
+                {  
+                    D[count]=a[i];   //addining duplicate element in array index 
+                    count++;
+                }
+            }
+        }
+        System.out.println("duplicate elements in array are.");
+        for(int i=0;i<count;i++)
+        {
+           
+           System.out.print(D[i]+" ");
+        }
+    }  
+}
+------------------------------------------------------------------------------------------------
+6. Sort an Array (Bubble Sort)
+o   Write a class to implement a method to sort an integer array using bubble sort.
+ Explanation: Learn basic sorting algorithms and their implementation.
+------------------------------------------------------------------------------------------------
+7.Find the Second Largest Element in an Array
+o   Write a class to write a method to find the second largest element in an integer array.
+ Explanation: Practice logic building and conditional checks.
+-----------------------------------------------------------------------------------------------
+import java.util.Scanner;
+public class SecLargeClass_fun {
+    public static void main(String[] args) {
+        int n=7;
+        int a[]=new int[n];
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a element in Array:");
+        for(int i=0;i<5;i++)
+        {
+           a[i]=sc.nextInt();
+        }
+        SecondLargeee s=new SecondLargeee();
+        s.findMe(a);
+    }
+}
+class SecondLargeee{
+    void findMe(int a[])
+    {
+        int max=a[0];
+        int secMax=a[0];
+        for(int i=0;i<7;i++)
+        {
+            if(a[i]>max)
+            {
+                secMax=max;
+                max=a[i];
+            }
+        }
+        System.out.println("Max: "+max);
+        System.out.println("second large: "+secMax);
+    }
+}
+-------------------------------------------------------------------------------------------------
+8. Shift Array Elements to the Left
+o   Write a class to create a method to shift all elements in an array one position to the left.
+ Explanation: Work with array indexes and element reassignment.
+-----------------------------------------------------------------------------------------------
+9.Check if an Array is Sorted
+o Write a class to implement a method to check whether an integer array is sorted in ascending order.
+ Explanation: Understand conditions and comparisons in loops.
+-------------------------------------------------------------------------------------------------
+10.Merge Two Integer Arrays
+Write a class to write a method to merge two integer arrays into a single array.
+ Explanation: Practice combining arrays and managing their sizes.
+-----------------------------------------------------------------------------------------------
+

@@ -1,0 +1,218 @@
+Date: 13/12/2024
+_________________________________________________________________________________
+Home work Interview Question(read notes understand the concept and write after 
+preparation without reference and check you remember the topic or not) 
+_________________________________________________________________________________
+Q1.* What is class and explain the proper definition?
+
+class is a combination of state and behavior here state means variable declared 
+within class and behavior means function define within class
+                                 or
+class is combination of instance variable , static or class variable , methods ,
+ constructor, instance initializer, static initializer and nested classes
+------------------------------------------------------------------------------------
+Q2.* Why use the class to explain with an example?
+There are three benefits of class
+ 
+1. Ability to store different type of data --int id,long salary,date DOB,string name 
+different type of data class can hold
+2. Reusability of code--we can use class code multiple type by usimg object of class
+3. Provide encapsulation
+---------------------------------------------------------------------------------------
+Q3.* Is it true class is user defined data type if yes then give explanation
+ if no then give explanation with example?
+
+Yes class is user define data type.user can decide name of class as well as user 
+can decide what type of data can store & use in class structure and data is 100%  depend
+on user so we can say that class is user defined data type
+----------------------------------------------------------------------------------------
+Q4.* How can we reuse class more than one time?
+
+If we want to reuse class more than one time we can object or by using object we can
+reuse class more than one time
+------------------------------------------------------------------------------------------
+Q5.* What is an object and explain with a memory diagram and example?
+Object is block of memory where class data store 
+or 
+It is instance of class 
+or 
+It is runtime entity 
+or 
+It is photocopy of class.
+---------------------------------------------------------------------------------------
+Q6.* What is the difference between object and reference?
+
+Referance is variable which hold address of object and object is block of memory where 
+class data is store
+--------------------------------------------------------------------------------------------
+Lab Assignments 
+Note: solve first class room example in lab and after that try following assignments 
+
+Q1. WAP to create class name as Table with two functions 
+void setValue(): this function is used for accept number from keyboard 
+void showTable(): this function can display the table of number 
+-----------------------------------------------------------------------------------
+import java.util.Scanner;
+public class MakeTableusing_fun {
+    public static void main(String[] args) {
+        Table t=new Table();
+        t.setValue();
+        t.showTable();
+    }
+}
+ class  Table {
+    Scanner sc=new Scanner(System.in);
+    int n;
+    void setValue(){
+        System.out.println("Enter an number :");
+        n=sc.nextInt();
+    }
+    void showTable()
+    {
+        for(int i=1;i<=10;i++)
+        {
+            System.out.println(n +"*"+i+"="+n*i);
+        }
+    }
+}
+-------------------------------------------------------------------------------------
+Q2. WAP to create class name as Factorial with two functions 
+void setNumber(): this function can accept the number as parameter
+void displayFactorial(): this function can display the factorial of number  
+-------------------------------------------------------------------------------------
+public class Fact_using_classFun {
+    public static void main(String[] args) {
+       Factorial fc=new Factorial();
+       fc.setNumber(3);
+       fc.displayFactorial(3);
+        
+    }
+
+
+}
+class Factorial{
+    int setNumber(int n)
+    {
+        return n;
+    }
+    void displayFactorial(int n)
+    {
+        setNumber(3);
+        int fact=1;
+        for(int i=1;i<=n;i++)
+        {
+             fact=fact*i;
+        }
+        System.out.println("Factorial is  "+fact);
+    }
+
+}
+-----------------------------------------------------------------------------------
+Q3. WAP to create class name as Perfect with two functions 
+void setValue(): this function can accept number as parameter 
+void checkPerfect(): this function can check number is perfect or not if perfec
+ the show message number is perfect if not then show message number is not perfect
+-----------------------------------------------------------------------------------
+import java.util.*;
+public class PerfectOrNot_usingClassFun {
+   public static void main(String[] args) {
+    Perfect p=new Perfect();
+    p.setValue(6);
+    p.checkPerfect(6);
+   }
+}
+class Perfect{
+    Scanner sc=new Scanner(System.in);
+    int sum=0;
+
+    int setValue(int n)
+    {
+        return n;
+    }
+    void checkPerfect(int n)
+    {
+        int temp=n;
+        for(int i=1;i<n;i++)
+        {
+            if(n%i==0)
+            {
+                 sum=sum+i;
+            }
+        }
+        if(sum==temp)
+        {
+            System.out.println("yes it is an perfect number.");
+        }
+        else{
+            System.out.println("not perfect");
+        }
+    }
+}
+---------------------------------------------------------------------------------
+Home Work 
+********************************************************************************
+Q1. WAP to create class name as Reverse with two functions 
+void setNumber(): this function can accept the number from keyboard 
+void reverseNumber(): this function can reverse the number and display it
+---------------------------------------------------------------------------------
+import java.util.Scanner;
+public class Reverse_usingClassfun {
+    public static void main(String[] args) {
+        Reverse re=new Reverse();
+        re.setNumber();
+        re.reverseNumber();
+     }
+}
+class Reverse{
+    Scanner sc=new Scanner(System.in);
+    int n;
+    int rev=0;
+    int Ldigit=0;
+    void setNumber()
+    {
+        System.out.println("Enter a number to reverse:");
+        n=sc.nextInt();
+    }
+    void reverseNumber()
+    {
+        while (n!=0){
+            Ldigit=n%10;
+            n=n/10;
+            rev=rev*10+Ldigit;
+         }
+        System.out.println("Reverse:"+rev);
+    }
+}
+----------------------------------------------------------------------------------
+Q2. WAP to create class name as CountDigit with two functions 
+ void setValue(): this function can accept number from keyboard 
+ void showDigitCount(): this function can count the digit and display it.
+ --------------------------------------------------------------------------------
+import java.util.Scanner;
+public class CountDigit_classFun {
+    public static void main(String[] args) {
+        CountDigit c=new CountDigit();
+        c.setValue();
+        c.showDigitCount();
+    }
+}
+class CountDigit{
+    Scanner sc=new Scanner(System.in);
+    int n;
+    int count=0;
+    void setValue()
+    {
+        System.out.println("Enter element to count digit");
+        n=sc.nextInt();
+    }
+    void showDigitCount()
+    {
+        while (n!=0)
+        {
+            n=n/10;
+            count++;
+        }
+        System.out.println("digits in the numbers are:"+count);
+    } 
+}
+----------------------------------------------------------------------------------

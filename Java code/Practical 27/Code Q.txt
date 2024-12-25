@@ -1,0 +1,12 @@
+Interview Question
+Q1. What is POJO class?
+Q2. Explain rules of POJO class?
+Q3. Why do we need to use POJO class?
+
+Q1. WAP to create POJO class name as Player with id, name and run and input the data from keyboard and display it.
+
+Q2. WAP to create POJO class name as Book  with field id,name and price and author and input the book details and display it.
+
+Q3. WAP to create POJO class name as Laptop with field id, name ,price and ramspace,harddiskspace etc and input the details of laptop and display it
+
+Q4. WAP to create class name as Person with field id,name,age and address and input data and display it

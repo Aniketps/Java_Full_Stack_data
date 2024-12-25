@@ -1,0 +1,17 @@
+Date: 11/12/2024
+___________________________________________________
+Interview Question:
+Q. What is function overloading and why use it?
+Q. Explain the function overloading rules?
+Q. What is polymorphism and explain with example?
+Q. Explain types of polymorphism?
+Q. How to implement the compile time polymorphism?
+
+Program for lab
+Q1. WAP to create function name as 
+void sort(int a[]): this function can accept integer type of array and sort it 
+void sort(char[]): this function can accept character type of array and sort it
+
+Q2. WAP to create function name as 
+void sort(int a[],int value): this function can search the value in array if value found show the message value found otherwise show the message value ot found
+void sort(char [],char ch): this function can search the character in array if found show the message found otherwise not found
