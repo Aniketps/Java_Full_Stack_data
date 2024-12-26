@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NicePage</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header{
+            height: 70px;
+            width: 100%;
+            top: 0;
+            z-index: 5;
+            background-color: white;
+            position: fixed;
+            border: 1px solid rgb(154, 151, 151);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 50px;
+            padding-right: 50px;
+            align-items: center;
+        }
+        .searchBar{
+            height: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid rgb(134, 132, 132);
+            padding: 7px;
+        }
+        .searchBar input{
+            height: 30px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            background: transparent;
+        }
+        .menu{
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .searchBar img{
+            height: 20px;
+        }
+        .menu img{
+            height: 25px;
+        }
+
+        .frame{
+            margin-top: 70px;
+            height: 600px;
+            width: 100%;
+            display: flex;
+            background-image: url("https://wallpapers.com/images/hd/beautiful-ocean-pictures-2127-x-1414-23w8x3i28f65mf4d.jpg");
+            flex-direction: row;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            align-items: center;
+        }
+        .framData{
+            height: 220px;
+            width: 500px;
+            position: absolute;
+            display: flex;
+            z-index: 1;
+            flex-direction: column;
+            align-items: end;
+            right: 15%;
+        }
+        .framData p{
+            font-family: sans-serif;
+            width: 320px;
+            font-size: 20px;
+            text-align: end;
+        }
+        .framData h1{
+            font-size: 35px;
+            color: rgb(18, 18, 18);
+            font-family: sans-serif;
+            text-align: end;
+        }
+        .framData a{
+            color: rgb(18, 18, 18);
+            font-family: sans-serif;
+            text-align: end;
+            font-weight: bold;
+        }
+
+
+        .cards{
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            position: absolute;
+            top: 600px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .card{
+            padding: 20px;
+            background-color: white;
+        }
+        .card img{
+            height: 260px;
+            width: 100%;
+        }
+        .card h1{
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: lighter;
+        }
+
+        .informationBack{
+            color: white;
+            min-height: 900px;
+            margin-top: 300px;
+            width: 100%;
+            background-color: rgb(21, 20, 20);
+            padding: 50px;
+            border: 1px solid black;
+        }
+        .information{
+            min-height: 800px;
+            width: 80%;
+            margin: auto;
+        }
+        .informationData{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .information h1{
+            font-size: 32px;
+            font-family: sans-serif;
+        }
+        .information p{
+            font-size: 22px;
+            font-family: sans-serif;
+            font-weight: lighter;
+        }
+        .information a{
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            font-family: sans-serif;
+            font-weight: lighter;
+        }
+        .design{
+            width: 100%;
+            height: 800px;
+            position: relative;
+        }
+        .manPic{
+            height: 250px;
+            bottom: 390px;
+            left: 110px;
+            background-image: url("https://images02.nicepage.com/c461c07a441a5d220e8feb1a/e45c62619410548a9b8c0cf4/photo-1535037235175-a6884f8444e6.jpg");
+            background-size: cover;
+            width: 250px;
+            position: absolute;
+        }
+        .oceanPic1{
+            height: 450px;
+            width: 400px;
+            background-image: url("https://images02.nicepage.com/c461c07a441a5d220e8feb1a/5c6c1bc38f6a55a894674842/photo-1540490190210-9e2825f75418.jpg");
+            background-size: cover;
+        }
+        .oceanPic{
+            position: absolute;
+            height: 750px;
+            width: 400px;
+            gap: 15px;
+            display: flex;
+            flex-direction: column;
+            left: 390px;
+            bottom: 0;
+        }
+        .oceanPic button{
+            height: 48px;
+            width: 170px;
+            font-size: 16px;
+            background-color: rgb(62, 129, 62);
+            border: none;
+            color: white;
+        }
+        .beachPic{
+            position: absolute;
+            height: 360px;
+            display: flex;
+            bottom: 0;
+            background-image: url("https://images02.nicepage.com/c461c07a441a5d220e8feb1a/75ba2dc24b595fca88d82076/photo-1582146789073-ab04c210e9de.jpg");
+            background-size: cover;
+            left: 0;
+            width: 360px;
+        }
+        .oceanPic p{
+            font-size: 16px;
+        }
+        .AmazingCon{
+            padding: 30px;
+            position: absolute;
+            height: 280px;
+            right: 0;
+            background-color: white;
+            top: 150px;
+            width: 460px;
+        }
+        .AmazingCon h1{
+            font-size: 35px;
+            font-family: serif;
+            color: black;
+        }
+        .AmazingCon p{
+            color: black;
+            font-size: 22px;
+            font-family: serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="searchBar">
+            <input type="text" placeholder="Search">
+            <img src="./search-solid.svg" alt="Search Icon">
+        </div>
+        <div class="menu">
+            <img src="./bars-solid.svg" alt="Menu Icon">
+        </div>
+    </div>
+
+    <div class="frame">
+        <div class="framData">
+            <h1>Look <span style="font-weight: 800;">Deep</span> Into The Nature</h1>
+            <p>Nature will bear the closest inspection. She invites us to lay our eye level with her smallest leaf, and take an insect view of its plain.</p>
+            <a href="#">LEARN MORE</a>
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://images02.nicepage.com/c461c07a441a5d220e8feb1a/4c7d8810ccb457c6a71d8f7b/rf.jpg" alt="Pic1">
+            <h1>FOREST THERAPY</h1>
+        </div>
+        <div class="card">
+            <img src="https://images02.nicepage.com/c461c07a441a5d220e8feb1a/a2c4d8642899536c99b439b3/fds.jpg" alt="Pic2">
+            <h1>30 BEST BEACHES</h1>
+        </div>
+        <div class="card">
+            <img src="https://images02.nicepage.com/c461c07a441a5d220e8feb1a/48f7c7f6a53c5b019012f6fa/s.jpg" alt="Pic3">
+            <h1>WILD NATURE</h1>
+        </div>
+    </div>
+
+    <div class="informationBack">
+        <div class="information">
+            <div class="informationData">
+                <h1>Getting back to <span style="font-weight: 800;">nature</span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet tellus cras adipiscing enim. Ut porttitor leo a diam sollicitudin. Turpis in eu mi bibendum neque egestas congue quisque egestas.</p>
+                <a href="">LEARN MORE</a>
+            </div>
+            <div class="design">
+                <div class="manPic">
+                    
+                </div>
+                <div class="oceanPic">
+                    <div class="oceanPic1"></div>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                    <button>LEARN MORE</button>
+                </div>
+                <div class="beachPic">
+    
+                </div>
+                <div class="AmazingCon">
+                    <h1>Amazing Places</h1>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

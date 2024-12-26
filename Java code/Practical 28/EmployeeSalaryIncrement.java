@@ -17,15 +17,15 @@ public class EmployeeSalaryIncrement
 		Employee employee = new Employee();
 		
 		System.out.print("What is Employee name: ");
-		String Name = sc.next().nextLine();
-		employee.setID(Name);
+		String Name = sc.next();
+		employee.setName(Name);
 		
 		System.out.print("What is Employee Salary: ");
 		int Salary = sc.nextInt();
 		employee.setSalary(Salary);		
 
 		System.out.print("What is Employee deratment: ");
-		String Department = sc.next().nextLine();
+		String Department = sc.next();
 		employee.setDepartment(Department);
 
 		company.setEmployee(employee);
@@ -43,13 +43,13 @@ class Company{
 	}
 	void getEmployee(Employee employee)
 	{
-		System.out.println("Employee ID is : "+employee.getID());
-		System.out.println("Employee Name is : "+employee.getName());
+		System.out.println("Employee ID is : "+employee.getName());
+		System.out.println("Employee Name is : "+employee.getSalary());
 		System.out.println("Employee Age is : "+employee.getDepartment());
 	}
 }
 
-class Person
+class Employee
 {
 	private String Name;
 	private int Salary;
@@ -66,7 +66,7 @@ class Person
 
 	void setSalary(int Salary)
 	{
-		Salary = Salary;
+		this.Salary = Salary;
 	}
 	public int getSalary()
 	{
@@ -76,7 +76,7 @@ class Person
 
 	void setDepartment(String Department)
 	{
-		Department = Department;
+		this.Department = Department;
 	}
 	public String getDepartment()
 	{

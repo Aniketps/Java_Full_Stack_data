@@ -1,3 +1,5 @@
+By Aniket Pardeshi
+
 1. Natural Numbers
 Definition: Positive integers starting from 1 (or sometimes 0, depending on the context).
 Examples: 1,2,3,4,…

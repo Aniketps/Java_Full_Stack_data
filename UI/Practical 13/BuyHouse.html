@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+        }
+        .poster{
+            height: 900px;
+            background-image: url("https://cdn.sanity.io/images/fud515dx/production/73e583062ae32a0e6ce03cf293693f53881c1d4d-1502x1026.png?q=80");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: end;
+            justify-content: center;
+            padding-right: 250px;
+        }
+        .poster h1{
+            text-align: end;
+            font-size: 40px;
+            font-family: Georgia;
+            line-height: 1;
+            font-family: serif;
+            width: 25%;
+        }
+        .poster p{
+            text-align: end;
+            font-size: 20px;
+            width: 25%;
+            margin-top: 50px;
+            font-weight: 600;
+            letter-spacing: 10px;
+            text-transform: capitalize;
+        }
+        .poster a{
+            text-align: end;
+            font-size: 16px;
+            width: 25%;
+            text-decoration: none;
+            color: black;
+            font-family: sans-serif;
+            text-transform: capitalize;
+        }
+        .poster button{
+            height: 40px;
+            width: 120px;
+            font-size: 16px;
+            background-color: black;
+            color: white;
+            border: none;
+        }
+
+        .readUsFirst{
+            min-height: 450px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            background-color: white;
+            align-items: center;
+        }
+        .readUsFirst .read{
+            height: 50%;
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .readUsFirst .forthouse{
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: start;
+            align-items: start;
+        } 
+        .readUsFirst .readData{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+        }
+        .readUsFirst .forthouse h1{
+            font-family: sans-serif;
+            font-size: 35px;
+        }
+        .readUsFirst .forthouse h2{
+            font-family: sans-serif;
+            font-size: 25px;
+        }
+        .readUsFirst p{
+            font-family: sans-serif;
+            font-size: 16.8px;
+            font-family: sans-serif;
+            line-height: 1.5;
+            color: rgba(0, 0, 0, 0.89);
+        }
+        .readUsFirst button{
+            height: 40px;
+            width: 140px;
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            border: none;
+        }
+
+        .banner{
+            height: 400px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+        .bannerImg1{
+            height: 100%;
+            width: 25%;
+            background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/4a365e06aa865bc190c4cf2f/pexelsphoto462235.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .bannerImg2{
+            height: 100%;
+            width: 25%;
+            background-position: center;
+            background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/279fde5e5cb359b2a674111e/pexelsphoto982614.jpg");
+            background-size: cover;
+        }
+        .bannerImg3{
+            height: 100%;
+            width: 25%;
+            background-position: center;
+            background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/d23d94daed965df783db8123/pexelsphoto698170.jpg");
+            background-size: cover;
+        }
+        .bannerImg4{
+            height: 100%;
+            width: 25%;
+            background-position: center;
+            background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/614302b601e850cb8721be61/pexelsphoto1166406.jpg");
+            background-size: cover;
+        }
+
+        .readUsSecond{
+            min-height: 400px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            background-color: white;
+            align-items: center;
+        }
+        .readUsSecond .read{
+            height: 50%;
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: start;
+            align-items: start;
+        }
+        .readUsSecond .forthouse{
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: start;
+            align-items: start;
+        } 
+        .readUsSecond .readData{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+        }
+        .readUsSecond .forthouse h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 45px;
+        }
+        .readUsSecond .forthouse h2{
+            font-family: sans-serif;
+            font-size: 25px;
+        }
+        .readUsSecond p{
+            font-family: sans-serif;
+            font-size: 16.8px;
+            font-family: sans-serif;
+            line-height: 1.5;
+            color: rgba(0, 0, 0, 0.89);
+        }
+        .readUsSecond button{
+            height: 40px;
+            width: 140px;
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            border: none;
+        }
+
+        .banner1{
+            height: 700px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+        .banner1 .bannerImg1{
+            height: 100%;
+            width: 60%;
+            background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/2bbf65653b02501382e8d2a4/pexelsphoto709767.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .banner1 .bannerImg2{
+            height: 100%;
+            width: 40%;
+            background-position: center;
+            background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/e45d2553fa56571885c20c99/pexelsphoto2101345.jpg");
+            background-size: cover;
+        }
+
+        .products{
+            min-height: 700px;
+            width: 100%;
+            display: flex;
+            background-color: black;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .allProducts{
+            height: 80%;
+            color: white;
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .product{
+            height: 100%;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .product h1{
+            padding-left: 30px;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        .product p{
+            padding-left: 30px;
+            font-size: 16px;
+            font-family: sans-serif;
+        }
+        .image1{
+            height: 350px;
+            width: 250px;
+            background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/cb3b31e425b45f0789a75b0c/pexelsphoto1451471.jpg");
+            background-size: cover;
+        }
+        .image2{
+            height: 350px;
+            width: 250px;
+            background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/180ac6e3b0f6580cbb9b75f6/pexelsphoto2157039.jpg");
+            background-size: cover;
+        }
+        .image3{
+            height: 350px;
+            width: 250px;
+            background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/dc747fd4363258d2bfc1eab5/pexelsphoto2101345.jpg");
+            background-size: cover;
+        }
+        .image4{
+            height: 350px;
+            width: 250px;
+            background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/22007fe54a5b513eae3b64fa/pexelsphoto1863622.jpg");
+            background-size: cover;
+        }
+        .productGroup{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .Contact{
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: start;
+            align-items: start;
+        }
+        .Contact h1{
+            font-size: 40px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .Contact h3{
+            font-size: 20px;
+            font-family: sans-serif;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+        }
+        .Book{
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: start;
+            align-items: start;
+        }
+        .Book h2{
+            font-family: sans-serif;
+        }
+        .Book li{
+            font-family: sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: rgba(0, 0, 0, 0.808);
+        }
+        .Book ul{
+            padding-left: 20px;
+        }
+
+        .footer{
+            height: 50px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(27, 21, 61);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="poster">
+        <h1>Located In The Grounds Of St Mawes Castle</h1>
+        <p>SLEEPS 4 + COT</p>
+        <a href="#">Prices from £370</a>
+        <button>book now</button>
+    </div>
+
+    <div class="readUsFirst">
+        <div class="read">
+            <div class="forthouse">
+                <h1>Fort House, Cornwall</h1>
+                <h2>EXPLORE THE COTTAGE</h2>
+                <p>This spacious and airy single storey holiday cottage sits in a private garden whose terrace provides uninterrupted views of the spectacular Cornish coastline.</p>
+            </div>
+            <div class="readData">
+                <p>A short walk leads you in to the centre of the picturesque fishing village of St Mawes with its whitewashed cottages, galleries character pubs and restaurants. Due to its commanding position, in the Second World War the Fort House was used by the military as an observation post and even had the roof reinforced to protect it from an aerial attack, with two feet of concrete, making it bomb proof from enemy aircraft.</p>
+                <button>read more</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="bannerImg1"></div>
+        <div class="bannerImg2"></div>
+        <div class="bannerImg3"></div>
+        <div class="bannerImg4"></div>
+    </div>
+
+    <div class="readUsSecond">
+        <div class="read">
+            <div class="forthouse">
+                <h1>This Place Is Special...</h1>
+                <h2>About Us</h2>
+            </div>
+            <div class="readData">
+                <p>Due to its commanding position, in the Second World War the Fort House was used by the military as an observation post and even had the roof reinforced to protect it from an aerial attack, with two feet of concrete, making it bomb proof from enemy aircraft. With its historic harbour, rockpools and sandy beaches St Mawes provides the idyllic Cornish escape and The Fort House the perfect property in which to stay</p>
+            </div>            
+            <div class="readData">
+                <p>This spacious and airy single storey holiday cottage sits in a private garden whose terrace provides uninterrupted views of the spectacular Cornish coastline. A short walk leads you in to the centre of the picturesque fishing village of St Mawes with its whitewashed cottages, galleries character pubs and restaurants. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner1">
+        <div class="bannerImg1"></div>
+        <div class="bannerImg2"></div>
+    </div>
+
+    <div class="products">
+        <div class="allProducts">
+            <div class="product">
+                <div class="image1"></div>
+                <div class="productGroup">
+                    <h1>Book Now</h1>
+                    <p>Discover England's rich history and book your holiday now.</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="image2"></div>
+                <div class="productGroup">
+                    <h1>GENERAL ENQUIRES</h1>
+                    <p>Have a question about your booking? Contact us</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="image3"></div>
+                <div class="productgroup">
+                    <h1>Newsletter</h1>
+                    <h1>Sign Up</h1>
+                    <p>Sign up to our monthly e-newsletter to get the latest news and offers.</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="image4"></div>
+                <div class="productGroup">
+                    <h1>Request a Brochure</h1>
+                    <p>Get inspired for your next holiday in history with out annual brochure.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="readUsFirst">
+        <div class="read">
+            <div class="Contact">
+                <h1>Contact Us</h1>
+                <h3>Step Into England Story</h3>
+                <p>Book a stay in the Fort House at St Mawes Castle by choosing your dates above. Alternatively contact our Reservations Team on <span style="font-weight: bold;">0370 333 1187</span> or email <span style="font-weight: bold;">holidaycottages@english-heritage.org.uk</span></p>
+            </div>
+            <div class="Book">
+                <h2>BOOKING RANGES</h2>
+                <ul>
+                    <li>7 night stay: from 3pm Friday or Monday to 10am the following Friday or Monday</li>
+                    <li>4 night stay: from 3pm Monday to 10am Friday</li>
+                    <li>3 night stay: from 3pm Friday to 10am Monday</li>
+                </ul>
+                <button>book now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Website Templates created by Aniket Pardeshi.</p>
+    </div>
+</body>
+</html>

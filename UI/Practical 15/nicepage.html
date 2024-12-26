@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+        }
+
+        .header{
+            position: fixed;
+            height: 70px;
+            z-index: 10;
+            border-bottom: 1px solid rgb(235, 232, 232);
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 10%;
+            padding-right: 10%;
+            align-items: center;
+            background-color: white;
+        }
+        .header img{
+            height: 30px;
+            width: 30px;
+        }
+        .header h1{
+            font-family: Roboto, sans-serif;
+            font-weight: 200;
+        }
+
+        .Concepts{
+            height: 800px;
+            width: 100%;
+            background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/2c40e87651f0595ab996efd9/jh.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .glass{
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.151);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            padding-left: 15%;
+        }
+        .Concepts h1{
+            margin-top: 70px;
+            font-size: 80px;
+            width: 40%;
+        }
+        .Concepts p{
+            font-size: 21px;
+            width: 42%;
+            font-family: Roboto, sans-serif;
+            font-style: italic;
+            font-weight: 100;
+        }
+        .Buttons{
+            flex-wrap: wrap;
+            gap: 15px;
+            display: flex;
+            flex-direction: row;
+            width: 38%;
+            justify-content: space-between;
+        }
+        .Concepts #button1{
+            height: 40px;
+            width: 150px;
+            font-size: 16px;
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px;
+        }
+        .Concepts #button2{
+            height: 40px;
+            width: 150px;
+            font-size: 16px;
+            color: black;
+            padding: 10px;
+        }
+
+        .cards{
+            padding: 0 15% 0 15%;
+            height: 750px;
+            width: 100%;
+            position: relative;
+            background-color: white;
+
+        }
+        .greenBack{
+            background-color: rgb(110, 156, 110);
+            height: 70%;
+            width: 500px;
+            z-index: 1;
+            position: absolute;
+            top: -30px;
+        }
+        .hangerPic{
+            background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/2e5670b4a9d45301bf305dfc/7.jpg");
+            background-size: cover;
+            height: 78%;
+            width: 500px;
+            z-index: 2;
+            position: absolute;
+            top: 30px;
+            left: 300px;
+        }
+        .SimpleButVeryEasy{
+            height: 40%;
+            width: 500px;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px;
+            position: absolute;
+            bottom: 50px;
+            gap: 20px;
+            background-color: white;
+            left: 650px;   
+        }
+        .SimpleButVeryEasy h1{
+            align-self: center;
+            font-weight: 200;
+            font-family: Roboto, sans-serif;
+        }
+        .SimpleButVeryEasy p{
+            font-weight: 50;
+            font-size: 18px;
+            width: 80%;
+            font-family: Roboto, sans-serif;
+        }
+        .CreativeStudio{
+            height: 40%;
+            width: 350px;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px;
+            position: absolute;
+            gap: 20px;
+            right: 150px;
+            top: 30px;
+            color: white;
+            background-color: rgb(97, 122, 97);
+        }
+
+        .newCollection{
+            height: 450px;
+            width: 100%;
+            display: flex;
+            background-color: rgb(237, 237, 243);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .collection{
+            height: 70%;
+            width: 70%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .collection .card2{
+            height: 85%;
+            width: 23%;
+            background-image: url("image.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .collection .card3{
+            height: 85%;
+            width: 23%;
+            background-image: url("./image\ copy.png");
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        .collection .card4{
+            height: 85%;
+            width: 23%;
+            background-image: url("./image\ copy\ 2.png");
+            background-position: center;
+            background-size: cover;
+        }
+        .collection .card1{
+            height: 85%;
+            width: 23%;
+            gap: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .collection p{
+            font-size: 20px;
+            width: 95%;
+            font-style: italic;
+        }
+        .collection h1{
+            font-family: Roboto, sans-serif;
+            font-weight: 20;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>FutureNews</h1>
+        <img src="./bars-solid (1).svg" alt="Menu">
+    </div>
+
+    <div class="Concepts">
+        <div class="glass">
+            <h1>Create a new concepts</h1>
+        <p>Our aim is to make people who work in open-plan offices to be happier and more effective accordingly.</p>
+        <div class="Buttons">
+            <button id="button1">view collection</button>
+            <button id="button2">shop now</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="greenBack">
+
+        </div>
+        <div class="hangerPic">
+
+        </div>
+        <div class="SimpleButVeryEasy">
+            <h1>Simple but very cozy</h1>
+            <p>Sed rhoncus egestas felis, sit amet condimentum sem ultricies at malesuada, tortor sit amet.</p>
+        </div>
+        <div class="CreativeStudio">
+            <h1>Creative Studio</h1>
+            <p>Nulla imperdiet odio sit amet est vehicula condimentum congue dui nec ipsum ullamcorper tristique.</p>
+        </div>
+    </div>
+
+    <div class="newCollection">
+        <div class="collection">
+            <div class="card1">
+                <h1>New Collection</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+            </div>
+            <div class="card2">
+                
+            </div>
+            <div class="card3">
+                
+            </div>
+            <div class="card4">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
