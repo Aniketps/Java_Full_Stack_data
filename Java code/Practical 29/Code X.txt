@@ -1,0 +1,11 @@
+Q1. WAP to create billing application 
+Classes 
+Customer : id,name and mobile mark as POJO class
+Product class: id,name,price,qty,rate 
+Bill class contain method 
+void calBill(Customer c,Product …p): this function can accept single customer detail and multiple product details and your output should like as
+
+Q2. WAP Voting application using method with variable argos concept
+Voter: id name and age mark as POJO class 
+VotingMachine: void acceptWord(Voter …v): accept the infinite voter if voter age is greater than 18 then display its data otherwise not
+VotingMachineApp: this method cantais voter details and pass to VotingMachine class 
