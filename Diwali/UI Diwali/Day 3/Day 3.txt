@@ -1,0 +1,19 @@
+Day 3
+
+1. What is the difference between block, inline, and inline-block elements in HTML?
+
+Block elements take up the full width and start on a new line. Inline elements take only as much width as needed and do not start on a new line. Inline-block elements can sit next to each other and allow width and height to be set.
+How does the display: inline-block property work?
+
+The display: inline-block; property allows an element to sit inline with other elements while still letting you set its width and height.
+Explain a scenario where you would use inline-block.
+
+You would use inline-block in a navigation menu to have menu items sit next to each other while allowing control over their size.
+
+2. What happens when you change the display property of an inline element to block or a block element to inline?
+
+Changing an inline element to display: block; makes it start on a new line and take full width. Changing a block element to display: inline; makes it take only the width it needs.
+
+3. Describe a real-world example where changing the display type would be useful.
+
+A real-world example is a grid of images on a website. If images are in <div> elements as block elements, they will stack vertically. Changing them to display: inline-block; allows them to sit next to each other, making better use of space.

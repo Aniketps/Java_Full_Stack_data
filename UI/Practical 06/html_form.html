@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HTML Form</title>
+	<style>
+		.form_data{
+			border: 1px solid black;
+			margin: 20px;
+			padding: 20px;
+		}
+		.form_data td{
+			padding: 10px;
+		}
+		.form_data input, label {
+			padding: 8px;
+			font-size:18px;
+		}
+		.form_data input{
+			background-color: #E2DFD2;
+			border:none;
+			border-radius: 10px; 
+		}
+		button{
+			height:40px;
+			width: 100px;
+			border-radius: 10px; 
+			border:none;
+			background-color: #E2DFD2;
+		}
+	</style>
+</head>
+
+<body>
+
+	<form class="form_data" method="get" action="">
+
+		<h2>HTML Form</h2>
+
+
+		<table>
+			
+			<tr>
+				<td>
+					<label for="first_name">First Name : </label>
+				<td>
+				<td>
+					<input type="text" name="first_name" id="first_name">
+				<td>
+			</tr>
+			<tr>
+				<td>
+					<label for="last_name">Last Name : </label>
+				<td>
+				<td>
+					<input type="text"  name="last_name" id="last_name">
+				<td>
+			</tr>
+			<tr>
+				<td>
+					<label for="dob">Date of Birth : </label>
+				<td>
+				<td>
+					<input type="date" name="dob" id="dob">
+				<td>
+			</tr>
+			<tr>
+				<td>
+					<label for="email">Email id : </label>
+				<td>
+				<td>
+					<input type="email"  name="email" id="email">
+				<td>
+			</tr>
+			<tr>
+				<td>
+					<label for="phoneno">Mobile Number : </label>
+				<td>
+				<td>
+					<input type="number"  name="phoneno" id="phoneno">
+				<td>
+			</tr>
+			<tr>
+				<td>
+					<button type="submit" >SUBMIT</button>
+					<button type="" >RESET</button>
+				<td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+
+</html>

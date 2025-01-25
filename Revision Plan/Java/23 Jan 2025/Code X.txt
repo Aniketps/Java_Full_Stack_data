@@ -1,0 +1,28 @@
+1. Library Book Management
+Task:
+ Create a Book class with fields: title, author, and price.
+ In the main method:
+Create two individual Book objects.
+Compare the prices of the two books and print the title of the more expensive book.
+Explanation:
+ This task teaches object instantiation and accessing instance variables directly to perform comparisons.
+
+2. Employee Salary Increment
+Task:
+ Create an Employee class with fields: name, salary, and department.
+ In the main method:
+Create an Employee object.
+Increase the employee's salary by 10% and print the updated salary.
+Explanation:
+ This introduces instance variable manipulation and basic arithmetic operations.
+
+3. Food Item Details:
+Create a FoodItem class with fields itemName, price, and calories.
+In a FoodOrder class, implement a method to calculate the total price of multiple items, considering their prices.
+
+4. Hotel Staff Management
+Create a Staff POJO class with fields: staffID, name, role, and salary.
+Create a HotelManagement class that:
+Adds staff members.
+Calculates the total salary of all staff.
+Lists all staff members in a specific role (e.g., manager, housekeeper).

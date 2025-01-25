@@ -1,0 +1,12 @@
+1. Matrix Multiplication using Constructors
+Problem: Create a class Matrix with a constructor that takes two matrices as input (both matrices will have the same dimensions). Implement a matrix multiplication operation using a constructor, and return the result as a new matrix.
+2. Student Marks Management
+Create a Student class with the following requirements:
+Define a constructor that takes the studentName, rollNumber, and 5 subject marks.
+Calculate the total marks and average marks for the student.
+Display the student’s name, roll number, total marks, and average marks.
+3. Find the Largest and Smallest Elements in an Array Using Constructors:
+Problem:
+Create a class ArrayOperations that accepts an array of integers in the constructor. Then:
+Find the smallest and largest element in the array.
+Print these values.

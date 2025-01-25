@@ -1,0 +1,176 @@
+Date: 19/12/2024
+_______________________________________________________________________________
+Q1. WAP to create class name as Table with two functions 
+void setTable(int no): this function is used for accept the number as
+parameter  void showTable(): this function can print the table of number
+------------------------------------------------------------------------------
+public class Tableee {
+    public static void main(String[] args) {
+       Tables p=new Tables();
+       p.setTable(5);
+      p.showTables();
+    }
+}
+class Tables{
+    int num;
+    void setTable(int no)
+    {
+        num=no;   
+        System.out.print("");  
+    }
+    void showTables()
+    {
+          for(int i=1;i<=10;i++)
+          {
+            System.out.println(i+"*"+num+" = "+(i*num));
+          }
+    }
+
+}
+----------------------------------------------------------------------------------
+ 
+Q2. WAP to create class name as Duck with two methods 
+void setNumber(int no): this function can accept number as parameter 
+ void checkDuck(): this number can check if the number is duck or not if 
+duck print number is duck if no then print number is not duck.
+---------------------------------------------------------------------------------
+public class DuckkNum {
+    public static void main(String[] args) {
+        Duck d=new Duck();
+        d.setnum(111);
+        d.checkDuck();    
+    }
+}
+class Duck{
+    int num;
+    void setnum(int no)
+    {
+        num=no;
+    }   
+    void checkDuck()
+    {
+       boolean flag=false;
+        int n=num; //copy original num
+        while (n!=0) {
+        int rem=n%10;
+        if(rem==0)
+        {
+            flag=true;
+            break;
+        }
+        n=n/10;
+       }
+       if(flag)
+       {
+        System.out.println("number is duck:");
+       }
+       else
+       {
+        System.out.println("number is not  duck:");
+       }
+    } 
+}
+----------------------------------------------------------------------------
+Q3. WAP to create class name as CheckArmstrong with two functions 
+void setValue(int value): this function can accept number as parameter 
+ void checkArmstrong(): this function can check number is armstrong or not
+ if number is armstrong then print message number is armstrong otherwise
+ print message number is not armstrong  
+-----------------------------------------------------------------------------
+public class ArmStrongCheckFun_class {
+  public static void main(String[] args) {
+    CheckArmstrong c=new CheckArmstrong();
+    c.setVal(1634);
+    c.count();
+    c.checkArmstrong();
+  }
+}
+class CheckArmstrong {
+    int num;
+    int cnt;
+    void setVal(int n)
+    {
+        num=n;
+    }
+    int count()///this function for counting digit of number
+    {
+        int temp=num;
+        int count=0;
+        while (temp!=0) 
+        {
+            temp=temp/10;
+            count++;
+        }
+        cnt=count;   //stroring count value in public variable which gives access to second function
+        return count;
+    }
+    void checkArmstrong()
+    {
+        int sum=0;
+        int Arm=1;
+        int temp=num;  //storing original num into temp
+        while(num!=0)
+        {
+            int dig=num%10;    //seprating last digit
+            System.out.println("dig "+dig);
+            for(int i=0;i<cnt;i++)
+            {
+            Arm=Arm*dig;  //multiplying upto to the arm^digitcount
+            }
+            sum=sum+Arm;    
+            Arm=1;  //reseting arm value to 1 
+            num=num/10;   //deleting last number
+        }
+        if(sum==temp)
+        {
+            System.out.println("this is an armstrong number");
+        }
+        else
+        {
+            System.out.println("not");
+        }   
+    }
+}
+--------------------------------------------------------------------------------------------
+   
+Q4. WAP to create class name CheckPerfect with two functions 
+void setNum(int no): this function can accept number as parameter
+void checkPerfect(): this function can check if a number is perfect or not if the perfect 
+show message number is perfect otherwise not.
+--------------------------------------------------------------------------------------------
+public class Perfect_class_fun {
+    public static void main(String[] args) {
+        Perfecttt p=new Perfecttt();
+        p.setN(12);
+        p.checkPerfect();
+    }
+}
+class Perfecttt{
+    int n;
+    void setN(int num)
+    {
+        n = num;
+
+    }
+    void checkPerfect()
+    {
+        int sum=0;
+        for(int i=1;i<n;i++)
+        {
+            if(n%i==0)
+            {
+                  sum=sum+i;
+            }
+        }
+        System.out.println("sum of divisors"+sum);
+        if(sum==n)
+        {
+            System.out.println("Perfect Number");
+        }
+        else
+        {
+            System.err.println("Not Perfect number.");
+        }
+    }
+
+}

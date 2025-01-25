@@ -1,0 +1,17 @@
+1. Create a Rectangle class
+Create a Rectangle class with length and breadth as instance variables.
+Write a default constructor that assigns both values to 5.
+Add a method area() to calculate and display the area of the rectangle.
+Explanation: This practice teaches how to initialize instance variables using the default constructor and perform a calculation.
+
+2. Create a Circle class
+Create a Circle class with a radius field.
+Use a default constructor to set the radius to 10.
+Add a method calculateCircumference() to calculate and display the circumference using the formula 2 * π * radius.
+Explanation: This question reinforces object-oriented principles and demonstrates mathematical operations with classes.
+
+3. Create a Student class with attributes name, rollNumber, and marks. Use a constructor to initialize the values and write a method to display whether the student has passed (marks > 40).
+Explanation: This problem will help you implement logic within a constructor and a method based on conditions.
+
+4. Create a Employee class with fields empId, empName, and salary. Write a parameterized constructor to initialize these fields and a method to display the details along with a salary increase if applicable.
+Explanation: Focuses on using constructors to set employee attributes and implementing logic to apply conditions on salary.

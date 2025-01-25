@@ -1,0 +1,47 @@
+Q1.	Create a class called Library to hold accession number, title of the book, author name, price of the book
+		and write a menu driven program in java that implements the working of a library :
+		The menu options should be: 
+		1. Add Book Details.
+		2. Display All Book Details.
+		3. Display List of all book of given author.
+		4. Display list the title of specified book.
+		5. Display list count of the book in the library.
+		6. Display list the books in the ascending order of accession number.
+		7. Update book details by title of book.
+		8. Delete book details by price.
+		9. Exit.
+		
+Q2.	WAP to create the class name as Employee with a setter and getter method with a Employee details 
+		using id, name, email, contact, address, salary.
+		
+		Create the one more class name as Company and pass Employee objects in Company class using a var-args 
+		concept and perform the Employee details in Company class.
+		
+		Then we need to create the class with a main method and write the code with a following logics.
+		
+		1.Add Employee Details.
+		2.Show Employee Details.
+		3.Search Employee Using:
+			- id.
+			-name.
+			-email.
+			-salary.
+			-address.
+		4.Delete Employee Details Using:
+			- id.
+			-name.
+			-email.
+			-salary.
+			-address.
+		5.Update Employee Details Using:
+			- id.
+			-name.
+			-email.
+			-salary.
+			-address.
+		7.Sorting Employee Details Using:
+			-id by Ascending Order.
+			-sal by Descending Order.
+		8. Display the employee details in highest salary.
+		9. Display the employee details in minimum salary is 10000 to maximum salary is 50000.
+		10. Exit.

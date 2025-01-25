@@ -1,0 +1,20 @@
+narrated = saying in a paragraph
+
+
+Step 1 Select a word
+	:- Courage
+
+Step 2 Write down different words for every letter from selected word
+	C - Calm 
+	O - Overthinking
+	U - Union
+	R - Ready
+	A - Arrange
+	G - Guilty
+	E - Energy
+
+Step 3 Try to write down a story with those words
+	
+	Once upon a time there were two friends Ravi and Suresh. Both decide to move from their current village to another village which was next to closest forest, Ravi and Suresh arranged all the stuff and ready to departure. While crossing the forest Suresh was too much energetic to live in another village in other side Ravi was Calm and alter. When they both reached middle of forest suddenly an big obstacle came in front of them, a lion were crossing their path. When Suresh saw the lion, he was frustrated and started overthinking how to cross the forest in other side Ravi were preparing for next move by taking pant and shirt sleeves up, Suresh asked to Ravi, "Are you planning to run faster than Lion?", Ravi replied to Suresh, "I am not planning to run faster than Lion, All i have to do is run faster than you". In next couple of minutes Lion got Ravi and Suresh Smell and run towards them, Ravi ran faster than Suresh and went out side of forest in no time, Suresh fall back and caught by Lion. Ravi were thinking and felt guilty for leaving Suresh behind and the Union of both were broken.
+
+Moral: All are not born to grab the first place all we can do is run faster than others so we dont loose the track and fall behind.

@@ -1,0 +1,6 @@
+1. Initialization
+2. Arithmetic
+3. Comparison
+4. Increment/decrement
+5. Return Statement
+6. 

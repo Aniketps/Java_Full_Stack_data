@@ -1,0 +1,20 @@
+1. Create a BankAccount class
+Create a BankAccount class with fields accountNumber and balance.
+The default constructor should assign a fixed account number and balance.
+Add a method deposit() that increases the balance by a fixed amount, e.g., 100.
+Explanation: This teaches object initialization and the concept of modifying instance variables through methods.
+
+2. Create a Student class
+Create a Student class with fields rollNo and marks.
+Use the default constructor to assign a default roll number (1) and marks (75).
+Add a method displayDetails() to print the student details.
+Explanation: This ensures a strong grasp of constructors and how instance variables can hold unique values per object.
+
+3. Prime Number Checker
+Create a Number class with a field num. Use a parameterized constructor to initialize it. Add a method to check if the number is prime.
+Explanation: Use efficient prime-checking logic with a clear object-based implementation.
+
+
+4. Library Management
+Create a Library class to store the name and numberOfBooks of a library. Add a method to issue a book (reduce the count by 1) and another to return a book (increase the count by 1).
+Explanation: Focus on managing the count correctly through method calls and validate against negative counts.

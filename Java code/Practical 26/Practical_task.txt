@@ -1,0 +1,249 @@
+Sep-24/Oct-24 Today's Practical Task...
+
+Q.1 WAP to Create a class name as MergeArray with function.
+void mergeArray(int [ ] , int [ ])
+{
+// this function can accept the array.
+}
+void performMeger( ) 
+{
+//this function can use merge two array.
+}
+void sortDesc()
+{
+//Sort merge array in descending order.
+}
+---------------------------------------------------------------------------------
+import java.util.Scanner;
+public class MergeTwoArray {
+    public static void main(String[] args) {
+        int a[]=new int[4];
+        int b[]=new int[4];
+        mergeArray(a,b);
+        performMerge(a,b);
+    }
+       
+     static void mergeArray(int a[ ] , int b[ ])
+    {
+        Scanner sc=new Scanner(System.in);
+         // this function can accept the array.
+          System.out.println("Enter element in first array:");
+          for(int i=0;i<4;i++)
+          {
+            a[i]=sc.nextInt();
+            
+          }
+          System.out.println("Enter element in second array:");
+          for(int i=0;i<4;i++)
+          {
+            b[i]=sc.nextInt();
+          }
+    }
+    static void performMerge(int a[],int b[])
+    {
+        int c[]=new int[a.length + b.length];
+        for(int i=0;i<a.length;i++)
+        {
+            c[i]=a[i];
+        }
+        for(int i=0;i<b.length;i++)
+        {
+            c[i+a.length]=b[i];
+        }
+        System.out.println("this is our merged array");
+        for(int i=0;i<c.length;i++)
+        {
+            System.out.print(c[i]+" ");
+        }
+        System.out.println();
+        System.out.println("OUR DESCENDING ORDER ARRAY");
+        for(int j=0;j<c.length;j++)
+        {
+        for(int i=0;i<c.length-1;i++)
+        {
+          if(c[i]<c[i+1])
+         {
+            int temp=c[i];
+            c[i]=c[i+1];
+            c[i+1]=temp;
+          }
+        }
+      }
+      for(int i=0;i<c.length;i++)
+      {
+          System.out.print(c[i]+" ");
+      }  
+    }
+}
+
+----------------------------------------------------------------------------------------------------
+Q.2 WAP to Create a class name as PalindromeApp with create function name as :
+
+void integerPalindrome(int [ ])
+{
+// this function can accept the integer array.
+}
+void charPalindrome(char [ ])
+{
+// this function can accept the charcter array.
+}
+void checkIntArray( ) 
+{
+//this function can use the array is palindrome or not.
+}
+void checkCharArray()
+{
+//this function can use the string is palindrome or not.
+}
+-----------------------------------------------------------------------------------
+import java.util.*;
+public class PalindromArrayyy
+{
+    static Scanner sc=new Scanner(System.in);
+    public static void main(String[] args) 
+    {
+        
+        int a[]=new int [5];
+        char b[]=new char[5];
+        intgerPalindrome(a);
+        checkIntArray(a);
+        charPalindrome( b);
+        checkCharArray(b);
+            
+    }
+     public static void intgerPalindrome(int a[])
+    {   
+        System.out.println("Enter Integer Element in array:");
+        for(int i=0;i<a.length;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+    }
+    static void checkIntArray(int a[])
+    {
+        int i,j;
+        boolean flag=false;
+        for(i=0,j=4;i<a.length/2;i++,j--)
+        {
+            if(a[i] !=a[j])
+            {
+               flag=true;
+                break;
+            }
+        }
+    if (flag) {
+        System.out.println("Array is not a palindrome");
+        }
+    else 
+        {
+           System.out.println("Array is a palindrome.");
+        }
+    }
+    //////////////////for character array
+    static  void charPalindrome(char b[])
+    { 
+        System.out.println("Enter character in array:");
+        for(int i=0;i<b.length;i++)
+        {
+            b[i]=sc.next().charAt(0);
+        }
+    }
+    static void checkCharArray(char b[])
+    {
+        int i,j;
+        boolean flag=false;
+        for(i=0 ,j=4;i<b.length;i++,j--)
+        {
+            if(b[i]==b[j])
+            {
+                flag=true;
+                break;
+            }
+        }
+        if(flag)
+        {
+            System.out.println("characters are palindrome");
+        }
+        else
+        {
+            System.out.println("characters are NOT palindrome");
+        }
+    }
+}
+------------------------------------------------------------------------------------------
+Q.3 WAP to Create a class name as StudentPer with function.
+
+void setStudentPer(int [ ])
+{
+// this function can accept the array.
+}
+void CalPer( ) 
+{
+//this function can use calculate the percentage in array.
+}
+void checkGrades()
+{
+//this function can use check the grade.
+		percentage >= 90% : Grade A
+ 		percentage >= 80% : Grade B
+		percentage >= 70% : Grade C
+		percentage >= 60% : Grade D
+		percentage >= 50% : Grade E
+		percentage >= 40% : Grade F
+		percentage < 40% : Student is Fail.
+}
+-------------------------------------------------------------------------------------------
+import java.util.*;
+public class StudentPercentage {
+    public static void main(String[] args) {
+        int a[]=new int[5];
+        setStudentPer(a); 
+        CalPer(a) ;
+        int per=CalPer(a);
+        checkGrades(per);
+    }
+    static void setStudentPer(int a[])
+      {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter your subject marks less than 50.");
+        for(int i=0;i<5;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+      }
+     static int CalPer(int a[] ) 
+     {
+        float percentage=1;
+        float sum=0;
+        for(int i=0;i<5;i++)
+        {
+            sum=sum+a[i]; 
+        }
+        percentage = sum/250*100;
+        System.out.println("percentage:"+percentage);
+        return (int) percentage;    
+    }
+   static void checkGrades(int percentage){
+    if(percentage>=90 && percentage<=100)
+    {
+        System.out.println("A grade");
+    }
+    else if (percentage>=80 && percentage<90) {
+        System.out.println("b grade"); 
+    }
+    else if (percentage>=70 && percentage<80) {
+        System.out.println("c grade"); 
+    }
+    else if (percentage>=50 && percentage<60) {
+        System.out.println("d grade"); 
+    }
+    else if (percentage>=40 && percentage<50) {
+        System.out.println("e grade"); 
+    }
+    else
+    {
+ System.out.println("Fail");
+    }
+              
+    } 
+}

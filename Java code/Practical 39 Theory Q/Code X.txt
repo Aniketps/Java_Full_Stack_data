@@ -1,0 +1,7 @@
+Practice Test Theory Questions :
+	
+	Q1. Explain the concept of Arrays in Java & why array index is started with Zero with example.
+	Q2. Difference between local variable , instance variable & static variable with example.
+	Q3. What is the role of access modifiers in Java classes, and what are the different types 
+		of access modifiers with example.
+	Q4. Explain Class & Object with example.

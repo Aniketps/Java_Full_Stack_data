@@ -1,0 +1,104 @@
+Types of Operators 
+1. Relational 
+2. Logical
+3. Arithmetic
+4. Bitwise
+5. Turnery
+6. Increase/decrement
+7. Assignment
+
+Relational
+<
+>
+<=
+>=
+==
+
+Logical
+&&
+||
+
+Arithmetic
++
+-
+*
+/
+%
+
+Turnery
+? 
+
+Increment/decrement
+++
+--
+
+Assignment
+=
+
+Data Types
+Integers
+4 byte
+%d
+data = Integer.parseInt();
+
+Short
+2 byte
+%d
+
+Long
+8 byte
+%d
+
+Float
+4 byte
+%f
+
+Double
+8 byte
+%f
+
+Character
+2 byte
+%c
+
+String
+%s
+
+byte
+1 byte
+%
+
+Boolean
+1 byte
+%b
+
+
+Loops
+Entry Level loop
+1. For
+for(int i = 0; i<= 10; i++){ statement }
+2. While
+while(true){ statement }
+
+Exit Level loop
+3. Do while
+do{ statement } while (true)
+
+Control Statement
+if(true){ statement }
+if(){}else{}
+if(){}else if(){}else{}
+switch(){
+	case:
+		statement;
+		break;
+	case:
+		statement;
+		break;
+	default:
+		statement;	
+}
+
+Function
+AccessSpecifiers Datatype Name(){ return}
+

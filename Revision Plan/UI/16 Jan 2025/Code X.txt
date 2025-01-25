@@ -1,0 +1,11 @@
+1. Understanding <div> and <span>:
+Create a simple webpage where you use:
+A <div> to create a container with a background color and padding for a section of text.
+A <span> to style specific words within the text, such as making them bold or changing their color.
+
+2. Implementing Semantic HTML:
+Design a basic webpage for a blog post using the following semantic HTML elements:
+<header>: Add a title and navigation links.
+<article>: Include a blog post with a heading and paragraph.
+<section>: Add a subsection for related articles or comments.
+<footer>: Add a copyright notice and contact information.

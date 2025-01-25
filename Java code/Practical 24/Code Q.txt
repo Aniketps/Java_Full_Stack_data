@@ -1,0 +1,61 @@
+Q.1 WAP to Create a class name as MergeArray with function.
+
+void mergeArray(int [ ] , int [ ])
+{
+// this function can accept the array.
+}
+
+void performMeger( ) 
+{
+//this function can use merge two array.
+}
+
+void sortDesc()
+{
+//Sort merge array in descending order.
+}
+
+Q.2 WAP to Create a class name as PalindromeApp with create function name as :
+
+void integerPalindrome(int [ ])
+{
+// this function can accept the integer array.
+}
+void charPalindrome(char [ ])
+{
+// this function can accept the charcter array.
+}
+
+void checkIntArray( ) 
+{
+//this function can use the array is palindrome or not.
+}
+
+void checkCharArray()
+{
+//this function can use the string is palindrome or not.
+}
+
+Q.3 WAP to Create a class name as StudentPer with function.
+
+void setStudentPer(int [ ])
+{
+// this function can accept the array.
+}
+
+void CalPer( ) 
+{
+//this function can use calculate the percentage in array.
+}
+
+void checkGrades()
+{
+//this function can use check the grade.
+		percentage >= 90% : Grade A
+ 		percentage >= 80% : Grade B
+		percentage >= 70% : Grade C
+		percentage >= 60% : Grade D
+		percentage >= 50% : Grade E
+		percentage >= 40% : Grade F
+		percentage < 40% : Student is Fail.
+}

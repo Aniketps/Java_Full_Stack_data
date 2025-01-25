@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewpoint" content="width:device-width, initial-scale:1.0">
+    <title>Project Work</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            overflow: hidden-auto;
+        }
+        .header{
+            min-height: 100px;
+            width: 95%;
+            display: flex;
+            position: relative;
+            margin: auto;
+            flex-direction: column;
+            background-color:rgba(0, 0, 0, 0.785);
+        }
+        .header h1{
+            padding: 20px;
+            color: white;
+            font-size: 50px;
+        }
+        .headOptions{
+            width: 100%;
+            height: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: black;
+            padding: 20px;
+            align-items: center;
+        }
+        .links{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .links a{
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            padding: 6px;
+        }
+        .search{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+        .search input{
+            padding: 5px;
+            width: 250px;
+            outline: none;
+        }
+        .search button{
+            padding: 5px 20px;
+            background-color: gray;
+            color: white;
+            border: none;
+        }
+        .mainbody{
+            width: 95%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+
+        }
+        .mainContent{
+            width: 70%;
+            padding: 20px;
+        }
+        .sidebar{
+            width: 30%;
+            padding: 20px;
+        }
+        .mainHead{
+            padding: 20px;
+            background-color: rgba(128, 128, 128, 0.176);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .goButton{
+            display: flex;
+            flex-direction: row;
+            border: 1px solid rgba(0, 0, 0, 0.434);
+            height: 30px;
+            width: 140px;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            padding-right: 5px;
+        }
+        .goButton button{
+            border: none;
+            height: 100%;
+            width: 60%;
+        }
+        .arrow{
+            height: 100%;
+            width: 40%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-weight: bold;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.311);
+        }
+        .cards{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            gap: 20px;
+        }
+        .card{
+            width: 48.5%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            box-shadow: 0px 1px 2px blue;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .sidebar{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .AddCards{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .AddCard{
+            height: 150px;
+            width: 150px;
+            background-color: rgba(128, 128, 128, 0.61);
+        }
+        .sidebar ul{
+            margin-left: 20px;
+        }
+        .footer{
+            height: 50px;
+            width: 95%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-left: 10px;
+            color: rgba(0, 0, 0, 0.539);
+            margin: auto;
+            background-color: rgba(128, 128, 128, 0.219);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Project Name</h1>
+        <div class="headOptions">
+            <div class="links">
+                <a href="" style="background-color: rgba(255, 255, 255, 0.356);">Active</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button type="button">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="mainbody">
+        <div class="mainContent">
+            <div class="mainHead">
+                <h1>Main Content</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, nobis est tempora beatae facere, similique quis porro vitae, omnis explicabo labore eos fuga quidem sapiente voluptate quibusdam veritatis nemo voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae nisi distinctio dignissimos omnis exercitationem assumenda mollitia itaque cum nam quo aspernatur corporis modi dolorem sed suscipit, iste, vel ullam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi adipisci explicabo inventore corrupti perferendis minima, aperiam alias doloremque deleniti reiciendis reprehenderit esse pariatur libero. Facilis autem eveniet nulla quia tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dicta illum, eos ullam numquam labore totam consectetur, unde sequi iusto earum corrupti itaque ipsam ducimus consequatur? Ullam omnis quos similique? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta nihil magni, porro dolor optio impedit sunt amet exercitationem delectus distinctio, vitae, deleniti ex vero officia neque dicta quae. Doloribus, eaque?</p>
+                <div class="goButton">
+                    <div class="arrow">
+                        <p>→</p>
+                    </div>
+                    <button type="button">Read More</button>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h1>Heading 01</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, autem. Repudiandae iusto eaque animi veritatis inventore reprehenderit culpa ipsa in neque obcaecati sint, voluptatibus veniam saepe modi deserunt accusamus magnam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi iste maiores amet quis? Quisquam praesentium culpa veniam! Suscipit, a incidunt quo iure enim dolores dicta obcaecati fuga? Neque, odit ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusamus minima eligendi earum, nobis in saepe tempore necessitatibus adipisci aspernatur modi aliquam minus dolorem non voluptas, dolores ratione? Quam, qui.</p>
+                </div>
+                <div class="card">
+                    <h1>Heading 01</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi iste maiores  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut quo nostrum molestias libero, animi distinctio maxime et officiis quisquam tempora pariatur? Consequatur a reprehenderit voluptate. Sequi est voluptatibus exercitationem temporibus.amet quis? Quisquam praesentium culpa veniam! Suscipit, a incidunt quo iure enim dolores dicta obcaecati fuga? Neque, odit ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusamus minima eligendi earum, nobis in saepe tempore necessitatibus adipisci aspernatur modi aliquam minus dolorem non voluptas, dolores ratione? Quam, qui.</p>
+                </div>
+                <div class="card">
+                    <h1>Heading 01</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi iste maiores amet quis? Quisquam praesentium culpa veniam! Suscipit, a incidunt quo iure enim dolores dicta obcaecati fuga? Neque, odit ipsam! Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, exercitationem? Autem voluptate vitae fugit architecto optio quo soluta ipsam tempore aliquid voluptas, rerum velit provident iusto officia, voluptatibus minus? Assumenda?consectetur adipisicing elit. Molestias accusamus minima eligendi earum, nobis in saepe tempore necessitatibus adipisci aspernatur modi aliquam minus dolorem non voluptas, dolores ratione? Quam, qui.</p>
+                </div>
+                <div class="card">
+                    <h1>Heading 01</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi iste maiores amet quis? Quisquam praesentium culpa veniam! Suscipit, a incidunt quo iure enim dolores dicta obcaecati fuga? Neque, odit ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusamus minima eligendi earum, nobis in saepe tempore necessitatibus adipisci aspernatur modi aliquam minus  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur perferendis eum nisi, ipsa, ea laboriosam dicta amet repudiandae ad tempore sequi molestiae saepe illum ut, omnis animi dolore necessitatibus nihil!dolorem non voluptas, dolores ratione? Quam, qui.</p>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h1>Side Bar</h1>
+            <h2>Advertisement</h2>
+            <div class="AddCards">
+                <div class="AddCard">
+
+                </div>
+                <div class="AddCard">
+                    
+                </div>
+                <div class="AddCard">
+                    
+                </div>
+                <div class="AddCard">
+                    
+                </div>
+            </div>
+            <h2>Widget</h2>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <p>@ Company 2012 - Layout based on <span style="color: rgba(0, 0, 255, 0.557);">YAML</span></p>
+    </div>
+</body>
+</html>

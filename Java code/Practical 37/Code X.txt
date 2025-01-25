@@ -1,0 +1,55 @@
+Q1. WAP to create class name as Student with field id,name,email,contact and attendancePer and acadamicPer student as POJO class 
+And you have to create class name as Batch with following constructor 
+
+Class Batch{
+Student s[];
+   Batch(){
+     this(5);
+   }
+ Batch(int size)
+   {  this(size,0);
+   }
+  Batch(int size,int extendCap)
+   {  // create array of student class using size
+
+  }
+}
+You have to create one utility class name as BatchRouting like as 
+Class BatchRoutine
+{
+   Private BatchRoutine(){
+   }
+   Student getTopper(Batch batch){
+  //you have to find the topper student from batch and return detail
+  }
+  Student [] getBebar(Batch b){
+   //return student list as debar if their attendance percentage is below 65%
+   }
+  Student [] getConsistentStudent(Batch b){
+   //return student list whose attendance percentage is more than 65
+ }
+  Student [] getSameMarksStudent(Batch b){
+    Return student list who having same marks 
+  }
+}
+
+Q2. WAP for Petrol Pump Management System with following classes and constructors 
+Consider we have class name as Machine with field id,name,fuelType,machineNo,machineCapacity and Mark Machine as POJO class and you have to create PetrolPump As class with following constructor 
+Class PetrolPump
+{   Machine m[];
+    PertrolPump(){
+      this(5);
+    }
+   PertromPump(int capacity)
+   {  // create object of machine class
+   }
+ Int getMachineCount(){
+    return machine count
+  }  
+  int getCapacity(){
+     return capacity of every machin and display machine with its capacity 
+  }
+ Machine [] getMachineByFuelType(String fuelType){
+ //this method can return machines according to fuel type
+ }
+}

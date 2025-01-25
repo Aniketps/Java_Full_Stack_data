@@ -1,0 +1,7 @@
+1. Write program to create array of size and arrange all values in ascending & descending order? 
+
+2. Write program to create array of size 5 and input search key value and search value in array?
+
+ 3. Write program to create array of size 10 and find occurrence of every element in array? 
+
+4. Write program to create array of size 5 and reverse it?

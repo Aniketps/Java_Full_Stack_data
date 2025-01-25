@@ -1,0 +1,22 @@
+1. What does the src attribute of the <source> tag do in the <audio> and <video> elements? What happens if you don't use it?
+The src attribute tells the browser the location (URL) of the audio or video file to play. It points to where the media file is stored, whether it's online or on the user's local server.
+
+If you don't use it:
+The browser won't know which audio or video to play, so nothing will load or play.
+
+2. What is the purpose of the controls attribute in media elements? What would be the effect if this attribute is omitted?
+The controls attribute shows the play, pause, volume, and other buttons on the media player, allowing the user to control the playback.
+
+If you omit the controls attribute:
+The user will not see any buttons or controls to interact with the media. The audio or video will play, but users won't be able to pause, play, or adjust the volume unless you provide custom controls.
+
+3. How do the autoplay, loop, and muted attributes affect the playback of audio and video files? What could be the user experience if these attributes are not set appropriately?
+autoplay: Automatically starts playing the media as soon as the page loads.
+
+Without it: The user has to manually press play.
+loop: Makes the media replay automatically after it finishes.
+
+Without it: The media will stop once it reaches the end, and the user will need to restart it.
+muted: Mutes the sound by default when the media starts playing.
+
+Without it: The media will play with sound, which could be unexpected for users, especially when using autoplay.

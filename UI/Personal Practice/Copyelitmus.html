@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewpoint" content="width:device-width, initial-scale:1.0">
+    <title>Clone Elitmus</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            overflow: auto;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+            height: 70px;
+            background-color: black;
+        }
+
+        .header img {
+            height: 60px;
+        }
+
+        .header a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .features {
+            min-height: 450px;
+            display: flex;
+            width: 100%;
+            margin: auto;
+            align-items: center;
+            padding: 10px 30px 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .jobs {
+            min-height: 450px;
+            width: 350px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            box-shadow: 0 1px 2px blue;
+            border-radius: 10px;
+        }
+
+        .jobs a, tr {
+            font-size: 15px;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+
+        .test {
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hiring h1, .test h1 {
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: lighter;
+            padding-bottom: 20px;
+        }
+
+        .hiring p, .test p {
+            text-align: end;
+            font-size: 18px;
+        }
+
+        .test td, .hiring td {
+            width: 50%;
+            padding: 5px 0 0;
+        }
+
+        .about {
+            height: 450px;
+            width: 700px;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .about h1{
+            font-size: 25px;
+            font-family: sans-serif;
+            font-weight: lighter;
+        }
+        .about li{
+            padding: 5px;
+            font-size: 15px;
+            font-family: sans-serif;
+        }
+        .about button{
+            height: 40px;
+            width: 140px;
+            margin: auto;
+            background-color: blue;
+            color: wheat;
+            border-radius: 10px;
+            border: none;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .login {
+            height: 450px;
+            width: 350px;
+            box-shadow: 0 1px 2px blue;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .login button, .login input{
+            height: 40px;
+            width: 100%;
+            font-size: 15px;
+            background-color: transparent;
+            border: 0.5px solid rgba(0, 0, 255, 0.644);
+        }
+        .login input{
+            padding-left: 20px;
+            outline: none;
+        }
+        .login a{
+            text-decoration: none;
+        }
+        #forgot{
+            align-self: end;
+        }
+        #Send{
+            background-color: green;
+            color: white;
+        }
+        .label{
+            width: 100%;
+            height: 70px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 128, 0, 0.304);
+        }
+        .label h1{
+            font-size: 20px;
+            font-weight: lighter;
+            font-family: sans-serif;
+            color: rgba(0, 0, 0, 0.63);
+        }
+        .label button{
+            height: 40px;
+            width: 200px;
+            color: white;
+            background-color: green;
+            border: none;
+            border-radius: 10px;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        .quests{
+            min-height: 300px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 20px;
+            justify-content: center;
+            gap: 20px;
+        }
+        .quest{
+            width: 450px;
+            height: 250px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: rgba(255, 0, 0, 0.08);
+        }
+        .quest h1{
+            font-size: 25px;
+            color: rgba(0, 0, 0, 0.779);
+        }
+        .quest h2{
+            font-size: 22px;
+            color: rgba(0, 0, 0, 0.726);
+        }
+        .quest p{
+            text-align: center;
+        }
+        .footer{
+            width: 100%;
+            height: 250px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 100px;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.881);
+        }
+        .data{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .data h1{
+            padding-bottom: 5px;
+            color: white;
+            font-size: 25px;
+        }
+        .data a{
+            text-decoration: none;
+            font-size: 16px;
+            color: white;
+        }
+        .last-line{
+            height: 40px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.397);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="./image.png" alt="elitmus logo">
+        <div class="links">
+            <a href="">About</a>
+            <a href="">Gift Card</a>
+            <a href="">SCALE</a>
+            <a href="">Adda</a>
+            <a href="">Blog</a>
+            <a href="">Help</a>
+            <a href="">Login</a>
+            <a href="">Register</a>
+            <a href="">Contact</a>
+        </div>
+    </div>
+    <div class="features">
+        <div class="jobs">
+            <div class="test">
+                <h1>Upcoming Tests</h1>
+                <table>
+                    <tr>
+                        <td><a href="">Online - Take From Home</a></td>
+                        <td>8th Dec</td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Online - Take From Home</a></td>
+                        <td>22nd Dec</td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Online - Take From Home</a></td>
+                        <td>5th Jan</td>
+                    </tr>
+                </table>
+                <p>See full list »</p>
+            </div>
+            <div class="hiring">
+                <h1>Companies Hiring</h1>
+                <table>
+                    <tr>
+                        <td><a href="">eLitmus</a></td>
+                        <td>20th Oct</td>
+                    </tr>
+                    <tr>
+                        <td><a href="">eLitmus</a></td>
+                        <td>1st Aug</td>
+                    </tr>
+                    <tr>
+                        <td><a href="">eLitmus</a></td>
+                        <td>17th Jun/td>
+                    </tr>
+                    <tr>
+                        <td><a href="">MountBlue</a></td>
+                        <td>7th Dec</td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Company</a></td>
+                        <td>3rd Dec</td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Company</a></td>
+                        <td>30th Nov</td>
+                    </tr>
+                </table>
+                <p>All Jobs »</p>
+            </div>
+        </div>
+        <div class="about">
+            <h1>We are Indias largest assessment and recruitment company.</h1>
+            <ul>
+                <li>Enables companies to hire talent which performs on the job.</li>
+                <li>65% of candidates who found jobs through us had an existing offer.</li>
+                <li>All companies serviced since Dec 2009 have reported high satisfaction level.</li>
+                <li>Customers include - start-ups to Fortune 100 R&D to services companies.</li>
+            </ul>
+            <p>Our superior service offering is enabled by a combination of deep business insights, superior assessment (pH Test) and unparalleled reach amongst quality candidates.</p>
+            <button>For Employers »</button>
+        </div>
+        <div class="login">
+            <h1>Login</h1>
+            <button>Login Using Github</button>
+            <button>Login Using Google</button>
+            <p>OR</p>
+            <input type="text" placeholder="Email or Mobile Number">
+            <a href="" id="forgot">Forgot your email</a>
+            <button id="Send">Continue</button>
+            <a href="">Don't have an accout? <span style="color: blue;">Register Now</span></a>
+        </div>
+    </div>
+    <div class="label">
+        <h1>Never miss a job on eLitmus </h1>
+        <button>Sunscribe To our Mailing List</button>
+    </div>
+    <div class="quests">
+        <div class="quest">
+            <p>I got into Mcafee through eLitmus and am happy working here. Its a great company to work with. Had eLimus not been there, it won</p>
+            <h1>Kanika</h1>
+            <h2>McAfee</h2>
+        </div>
+        <div class="quest">
+            <p>"Elitmus overwhelmed us by giving so many great opportunities. Being a fresher it showed us so many gates to success and an opti</p>
+            <h1>Kashish</h1>
+            <h2>Accenture</h2>
+        </div>
+        <div class="quest">
+            <p>Just when I was starting to loose hope of getting placed in a top-notch company offering a good package, eLitmus came as a bless</p>
+            <h1>IMTEYAZ</h1>
+            <h2>Tally</h2>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="data">
+            <h1>Company</h1>
+            <a href="">About us</a>
+            <a href="">Key Team Members</a>
+            <a href="">Contact us</a>
+            <a href="">Careers</a>
+            <a href="">Site map</a>
+            <a href="">Blog</a>
+        </div>
+        <div class="data">
+            <h1>Employers</h1>
+            <a href="">PAC Labs</a>
+            <a href="">Why eLitmus</a>
+            <a href="">Our clients</a>
+        </div>
+        <div class="data">
+            <h1>Candidates</h1>
+            <a href="">pH test</a>
+            <a href="">Take a tour</a>
+            <a href="">Job seekers home</a>
+            <a href="">Great fresher jobs!</a>
+        </div>
+        <div class="data">
+            <h1>Community</h1>
+            <a href="">Adda home</a>
+            <a href="">Help</a>
+        </div>
+    </div>
+    <div class="last-line">
+        <p>© 2005-2024, eLitmus Evaluation Pvt Ltd. |<span style="color: rgba(0, 0, 0, 0.824);"> Terms of Use · Privacy Policy · Contact Us</span></p>
+    </div>
+</body>
+</html>

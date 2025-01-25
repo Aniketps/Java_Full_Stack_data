@@ -1,0 +1,2 @@
+1. Design a form with a dropdown, radio buttons, and checkboxes for user preferences.
+2. Style the form using margins and padding to create a clean layout.

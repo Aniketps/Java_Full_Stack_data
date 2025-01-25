@@ -1,0 +1,288 @@
+  Noun - Noun is a name given to a person, place or things or ideas or 
+         anything that is present in the world has
+         a name and that name is called as noun.
+
+  A person              
+  Name  - Own name, Anjan, Anamika
+  Title - Student, Teacher, Developer, Engineer, Legend
+  Gender- Male, Female, Transgender
+   Age  - Youth, Child, Adult, Teenager 
+
+          0-2 months   : Newborns
+     2 months - a year : Baby or Infants
+        1-3 years      : Toddlers 
+      3-11 years       : Kid/Child
+      11-19 years      : Teenagers
+      19-25 years      : Youth or Young adults or Youngsters
+      25-65 years      : Adults
+      65 & above       : Senior citizens          
+
+
+  A place 
+  Name    - Pune, Maharashtra, India
+ Location - North, West, East                    
+ Abstract - Hell, Heaven, Dreams, Galaxy 
+ Titles   - State, Country, Nation
+  Types   - City, Forest, Desert, Village, Rural, Urban
+
+  A thing
+  Living    - Plants
+ Non living - Laptop
+ Animate    - Animals, Living organisms
+ Inanimate  - Plants, House, Land
+   Abstract - Air, Ideas, Thoughts, Concepts, feelings, qualities, confidence 
+  
+ Types of nouns 
+ 1) Proper Noun
+ 2) Common Noun
+ 3) Collective Noun
+ 4) Material Noun
+ 5) Abstract Noun
+
+ 1) Proper Noun  - Particular or specific name given to any person or place.
+    eg. Own name - I am........... or My name is..........
+         Pune    - I live in Pune. or I am living or staying or residing in Pune.
+      Maharashtra- Maharashtra is my state. or Maharashtra has the maximum share when it
+                   comes down to GDP.
+        India    - India is the largest democracy in the world.
+   Giri's Tech Hub- I study at Giri's Tech Hub.
+
+ 2) Common Noun - Name given in common to every person or thing in the 
+                  same class or kind.
+                  General terms 
+    eg. Student - I am the student of Giri's Techhub.
+        Teacher - I am the teacher of English.
+        Parent  - Every parent love their children.
+         Car    - I have a car.
+         City   - Pune is a city in Maharashtra.
+        Country - India is my country.
+        Boy     - Hari is a boy.
+        Girl    - Sita is a girl.
+     Developer  - I want to become a developer or I am a developer.
+      Capital   - Pune is called as the cultural capital of Maharashtra.
+
+ 3) Collective Noun - Name given of a number of persons or things taken
+                      together or spoken together as one.
+                      
+    eg. Crowd - There is a crowd at Warje Bridge.
+        Mob   - People doing violence in the public.
+                Police arrested the mob yesterday.
+    Spectators- People watching a match together in a stadium.
+                Spectators were singing 'Vande Mataram' in yesterday's match.
+       Bunch  - A bunch of keys or A bunch of grapes.
+                I have found a bunch of grapes on the road.
+       Flock  - A flock of birds.
+                Now a days it is very rare to see flock of birds.
+       Army   - Collection of soldiers.
+                Our army is our pride.
+     Family   - Group of people living or staying together.
+      Fleet   - A collection of ships.
+                Indian navy did a war trial in Indian ocean with naval fleet.
+     
+     The whole family was eating lunch together.
+     April & May batch students are very humble and sincere.
+     The jury found the prisoner guilty.
+          
+     Prison - jail   
+     prisoner - criminal or culprit 
+     Victim - the person who had faced the crime 
+
+ 4) Material Noun - Name given to materials from which we can make or create 
+                    something new.(Raw material)
+
+    eg. Wood - The furniture is made up of wood.
+        Soil - Rocks are the raw materials of soil.
+       Milk - 
+       Sand -
+     Fiber  -
+     Plastic-            
+      Copper-
+    Cement  -
+   Silver   -
+   
+    
+
+ 5) Abstract Noun - Name of a quality, feeling, action or state
+  
+    eg. Truth  - Birth and death are the universal truths.
+       Danger  - Don't go there as it is dangerous.
+     Happiness - Happiness is a state of mind.
+       Time    - Time is the most important thing so don't waste it.
+       Humor   - You have a good sense of humor.
+    Confidence - Confidence is a character.
+  Communication- Communication is an art which we need to master with practice.
+    Honesty    - Honesty is the best policy.
+    Patent     - I got the patent for the software which I designed.
+   Patience    - Patience is a key to success.
+   Anger       - It was just a moment of anger.
+    Hunger     - You are suffering from hunger.       partial - discriminate or bias 
+   Success     - Success is a state of mind.           utmost - highest or topmost
+  Ability      - Trust your ability.                 procrastination - avoiding something regularly
+ Motivation    - Motivation is an overrated thing.
+  Thoughts     - I am lost in my own thoughts.
+  Dream        - I have a dream of buying a car.
+  Partial      - When you are on public platform don't be partial.
+   Idea        - I have an idea.
+   Equality    - Equality is the fundamental theory of humanity.
+   Hopes       - Hopes are better than motivation.
+   Pride       - I take utmost pride in saying that you guys are the 
+                 best students in the world.
+    Solution   - Every question has a solution.
+     Ego       - Keep your ego with you.
+     Trend     - I follow the latest trend.
+     Strength  - Speaking is my strength.
+    Weakness   - Procrastination is my weakness.
+     Layer     - Sir we want three layered cake.
+     Ghost     - Don't look at me I am not a ghost.
+   Sentiment   - Whenever you are at public platform, don't hurt the public sentiment.
+      Air      - We all need air for survival.
+      Love     - Love is enough to get everything done.
+       Hate    - Don't hate anyone.
+      Feelings - We have mixed feelings.
+     Smile     - Whenever you meet anyone have that gentle smile on your face.
+    
+   Form Abstract nouns from the following.
+   1) Long   -
+   2) Strong -
+   3) Wide   -
+   4) Broad  -
+   5) High   -
+   6) Young  -
+   7) True   -
+   8) Wise   -
+   9) Free   -
+  10) Poor   -
+  11) Proud  -
+  12) Dark   -
+  13) Laugh  -
+  14) Defend -
+  15) Depart -
+  16) Judge  -
+  17) Think  -
+  18) Die    -
+  19) King   -
+  20) Mother -
+  21) Occupy -
+  22) Expect -
+  23) Advise -
+  24) Absent -
+  25)Accurate-
+  26) Act    -
+  27) Active -
+  28) Attend -
+  29) Admit  -
+  30) Brave  -
+  31) Believe-
+  32) Excel  -
+  33) Decide -
+  34) Cruel  -
+  35) Live   -
+  36) Lose   -
+  37) Know   -
+  38) Object -
+  39) Private-
+  40) Protect-
+  41) Rich   -
+  42) Speak  - 
+  43) Anxious-
+  44) Add    -
+ 45)Beautiful-
+  46) Choose -
+  47) Grace  -
+  48) Divide -
+  49) Narrate-
+  50) Owner  -
+  51) Pilgrim-
+  52)Converse-
+  53)Bankrupt-
+  54) Captain-
+  55) Bond   -
+  56) Obey   -
+  57) Vacant -
+  58) Sane   -
+  59) Pirate -
+  60) Patriot-
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+   
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  

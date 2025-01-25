@@ -1,0 +1,17 @@
+Q1. Write a java program to display following pattern : 
+1     2    3    4    5 
+10   9    8    7    6 
+11  12  13  14  15 
+20  19  18  17  16 
+21  22  23  24  25
+
+Q2. Write a java program to calculate the sum of 1 to nth strong number.
+
+Q3. Write a java program to display following pattern : 
+A                             A 
+A B                      B A 
+A B C               C B A
+A B C D        D C B A 
+A B C D E E D C B A
+
+Q4. Write a java program to display following series using looping : Series:2  729  4  512  6  343  8  216  10  125  12  64  14  27  16  8  18  1 

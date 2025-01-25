@@ -1,0 +1,12 @@
+Example: WAP to develop the Tournament Application
+
+ case1: Add New Teams
+ case2: Add Players in team
+ Case 3: Create Match
+ Case 4: allocate team to match
+ Case 5: View all teams
+  Case 6: Show team wise player list
+  Case 7: show player wise run
+  Case 8: team wise player run aggregate
+  Case 9: decide the winner
+  case10: show the over count played by team

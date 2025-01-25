@@ -1,0 +1,57 @@
+Q1. Write a java program to create class name ReverseApp using contsructor name as :
+
+	ReverseApp(int [ ])
+	{
+		//  perform integer reverse array logic.
+	}
+	
+	ReverseApp(String )
+	{
+		//  perform string reverse logic.
+	}
+	
+Q2. Write a java program to create class name as OccurenceApp using contsructor name as :
+
+	OccurenceApp(int [ ])
+	{
+		//  count even and odd number in array.
+	}
+	
+	OccurenceApp(char [ ])
+	{
+		//  count vowel and consonent charcter in string.
+	}
+
+Q3. Write a java program to create class name as ArrayOperation using contsructor overloading name as :
+
+	ArrayOperation(int [ ])
+	{
+		//  Sort Array Ascending and Descending Order.
+	}
+	
+	ArrayOperation(int a[ ] , int b[ ])
+	{
+		//  Merge Two Array and display it.
+	}
+	
+Q4. Write a java program to create class name as UnionApp using contsructor overloading name as :
+
+	UnionApp(int [ ])
+	{
+		//  Check array is Majority or Not.
+	}
+	
+	UnionApp(int a[ ] , int b[ ])
+	{
+		//  Check Array Is Union or Not.
+	}
+
+Q5.  Write a java Program to calculate overtime pay of 5 employees. The overtime pay rate is 
+	Rs.50/- (per Hour). Daily shift hour time is only 8 hours. 
+			
+Note- for a week only 40 hours of working are allowed. 
+1. Create class Employee with data member ID, Name, total working, salary, overtime
+Set Information by using a constructor and create a display Information() method to
+display all information with salary.
+2. Create Driver class name as OverTime with method setEmployee(Employee emp[]) and 
+void calculateOvertime() to calculate overtime.

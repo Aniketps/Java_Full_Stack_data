@@ -1,0 +1,2 @@
+1. Embed a YouTube video using an iframe and style the surrounding area with a background color.
+2. Add a full-page background image to the webpage and experiment with background-size and background-position.

@@ -1,0 +1,14 @@
+1. Product Price Calculation
+Task: Create a Product class with productId, productName, and price. Implement a constructor to initialize these values. In another class ProductCatalog, create an array of Product objects and write a method to calculate the total price of all products.
+Explanation: The Product class holds product details, and the ProductCatalog performs logic for price calculation.
+
+2. Player Score Tracking
+Task: Create a Player class with fields playerName, matchesPlayed, and score. Implement a constructor for initialization. In another class Game, create an array of Player objects and write a method to find the player with the highest score.
+Explanation: The Player class holds the player’s data, and Game performs the logic to find the top scorer.
+
+3. Food Menu System
+Task: Create a FoodItem class with itemId, name, and price. In another class Menu, create an array of FoodItem objects and write a method to display the menu and calculate the total price of all items.
+Explanation: The FoodItem class holds food item data, and Menu processes the logic for display and price calculation.
+
+Note : All Questions solving are pojo class ( Setter & Getter Function ).
+Not using constructor.

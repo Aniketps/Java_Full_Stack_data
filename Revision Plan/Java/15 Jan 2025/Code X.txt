@@ -1,0 +1,7 @@
+Q1. Write a java program to check whether number is strong or not.
+
+Q2. Write a java program to check whether number is Armstrong or not.
+
+Q3. Write a java program to swap to first two digit & last two digit of a number.
+	Input : 12345
+	Output : 45312

@@ -1,0 +1,2 @@
+1. Create a webpage with an image gallery where each image links to a bookmark within the same page.
+2. Add inline styles to the images to change their border colors and sizes.

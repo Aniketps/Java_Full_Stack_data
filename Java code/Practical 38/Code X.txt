@@ -1,0 +1,17 @@
+Q1. WAP to create class name as Power with Parameterized constructor 
+
+  Power(int,int): create constructor and accept two parameters in it.
+  Int getPower(): this function can calculate power of a number and return it.
+
+Q2. WAP to create class Palim with parameterized constructor 
+   Palim(int): this constructor can accept number as parameter 
+   Boolean isPalim(): this method can check number is palimdrome or not if palimdrome return true otherwise return false
+
+Q3. WAP to create class name as ConvertDecimalToRoman 
+ConvertDecimalToRoman(int decimal): this constructor can accept decimal number 
+Void showRoman(): this function can convert a decimal number to roman and display it.
+
+Q4. WAP to create class name as ConvertDecimalToBinary 
+ConvertDecimalToBinary(int): this constructor is used for accept integer as parameter 
+Vodi showBinary(): this function can convert decimal number to binary and display it.
+

@@ -1,0 +1,9 @@
+1. Company Information:
+Create a Company class with fields companyName, ceoName, and employeesCount.
+Create a CompanyOperations class with methods to check if the company is large (more than 500 employees) or small (less than 50 employees).
+2. Food Item Details:
+Create a FoodItem class with fields itemName, price, and calories.
+In a FoodOrder class, implement a method to calculate the total price of multiple items, considering their prices.
+3. Bookstore Inventory:
+Create a Book class with fields isbn, title, and price.
+In the InventoryManager class, create methods to apply a discount to the price of a book and display the book details with the new price after the discount.

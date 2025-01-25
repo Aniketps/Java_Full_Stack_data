@@ -1,0 +1,2 @@
+1. Create a webpage demonstrating the use of HTML formatting tags for emphasis and styling.
+2. Use Flexbox to create a navigation bar with evenly spaced links.

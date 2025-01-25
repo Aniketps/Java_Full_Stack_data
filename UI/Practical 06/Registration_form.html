@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Registration Form</title>
+	<style>
+		.form_data{
+			border: 1px solid black;
+			margin: 20px;
+			padding: 20px;
+		}
+		.form_data td{
+			padding: 10px;
+		}
+		.form_data h1{
+			align-self:center;
+		}
+	</style>
+</head>
+
+<body>
+
+	<form class="form_data" method="get" action="">
+
+		<h2>Registration Form</h2>
+
+
+		<table>
+			
+			<tr>
+				<td>
+					<label for="first_name">First Name : </label>
+				<td>
+				<td>
+					<input type="text" placeholder="Enter First Name" name="first_name" id="first_name">
+				<td>
+			</tr>
+			<tr>
+				<td>
+					<label for="last_name">Last Name : </label>
+				<td>
+				<td>
+					<input type="text" placeholder="Enter Last Name" name="last_name" id="last_name">
+				<td>
+			</tr>
+			<tr>
+				<td>
+					<label for="email">Email : </label>
+				<td>
+				<td>
+					<input type="email" placeholder="Enter Email Address" name="email" id="email">
+				<td>
+			</tr>
+			<tr>
+				<td>
+					<label for="password">Password : </label>
+				<td>
+				<td>
+					<input type="password"  name="password" id="password">
+				<td>
+			</tr>
+			<tr>
+				<td>
+					<label>Gender : </label>
+				<td>
+				<td>
+					<label for="male">Male </label>
+					<input type="radio" name="gender" value="Male" id="male">
+
+					<label for="female">Female</label>
+					<input type="radio" name="gender" value="Female" id="female">
+
+					<label for="other">Other</label>
+					<input type="radio" name="gender" value="Other" id="other">
+				<td>
+			</tr>
+			<tr>
+				<td>
+					<label for="age">Age : </label>
+				<td>
+				<td>
+					<input type="number"  name="age" id="age">
+				<td>
+			</tr>
+			<tr>
+				<td>
+					<label>Preferences : </label>
+				<td>
+				<td>
+					<label for="acrylic_painting">Acrylic Painting </label>
+					<input type="checkbox"  name="acrylic_painting" id="acrylic_painting" value="Acrylic Painting">
+
+					<label for="oil_painting">Oil Painting </label>
+					<input type="checkbox"  name="oil_painting" id="oil_painting" value="Oil Painting">
+	
+
+					<label for="water_color_painting">Water Color Painting </label>
+					<input type="checkbox"  name="water_color_painting" id="water_color_painting" value="Water Color Painting">
+				<td>
+			</tr>
+			<tr>
+				<td>
+					<label for="occupation">Occupation : </label>
+				<td>
+				<td>
+					<select name="occupation" id="occupation">
+		
+						<option value="Student">Student</option>
+						<option value="Employee">Employee</option>
+						<option value="Govt Worker">Govt Worker</option>
+
+					</select>
+				<td>
+			</tr>
+			<tr>
+				<td>
+					<label for="bio">Bio : </label>
+				<td>
+				<td>
+					<textarea id="bio" name="bio" col="10" row="10">
+						Share few lines about yourself...
+					</textarea>
+				<td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button type="">RESET</button>
+					<button type="submit">SUBMIT</button>
+				<td>
+			</tr>
+
+		</table>
+	</form>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+Task 11-dec-2024
+Interview Question:
+Q.1 What is function overloading and why use it?
+
+Function overloading means if we define multiple functions using same name
+with different parameter, with different parameter list with a different
+parameter sequence called as function overloading.
+----------------------------------------------------------------------------------------------
+Q.2 Explain the function overloading rules?
+
+- Function name must be same 
+- Function return type is not consider means you can give different return type to every function 
+  Definition if required.
+- Function parameter type or parameter list or sequence of parameter in every definition must be different 
+- Function calling is dependent on number of parameter pass in it
+--------------------------------------------------------------------------------------------
+Q. What is polymorphism and explain with example?
+
+Q. Explain types of polymorphism?
+Q. How to implement the compile time polymorphism?
+----------------------------------------------------------------------------------------------
+Program for lab
+Q1. WAP to create function name as 
+void sort(int a[]): this function can accept integer type of array and sort it 
+void sort(char[]): this function can accept character type of array and sort it
+
+import java.util.Scanner;
+public class SortCharIntFun {
+    public static void main(String[] args) {
+        int a[]=new int[5];
+        char b[]=new char[5];
+        sort(a);
+     }
+     static void sort(int a[])
+    {
+        Scanner sc=new Scanner(System.in);
+        for(int i=0;i<a.length;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+        for(int j= 0;j<a.length;j++)
+        {
+    
+           for(int i=0;i<a.length-1;i++)
+          {
+            if(a[i]>a[i+1])
+            {
+                int temp=a[i];
+                a[i]=a[i+1];
+                a[i+1]=temp;
+            }
+        }
+    }
+    System.out.println("array in ascending order:");
+    for(int i=0;i<a.length;i++)
+    {
+        System.out.print(a[i]+" ");
+    }
+   }
+   static void sort(char b[])
+   {
+    Scanner sc=new Scanner(System.in);
+    for(int i=0;i<b.length;i++)
+    {
+        b[i]=sc.next().charAt(0);
+    }
+   }
+
+}
+-------------------------------------------------------------------------------------
+
+Q2. WAP to create function name as 
+void sort(int a[],int value): this function can search the value in array if value found show the message value found otherwise show the message value ot found
+void sort(char [],char ch): this function can search the character in array if found show the message found otherwise not found
+ 

@@ -1,0 +1,14 @@
+Soft Skills
+1. Good Team leadership
+2. Time management
+3. Communication
+4. Teamwork
+5. Attention to details
+6. Critical thinking
+
+Hard skills
+1. Programming languages like Java, Python and Dart
+2. Frameworks like Django and Flutter
+3. Version control for example Git
+4. Frontend and UI design 
+5. Problem solving

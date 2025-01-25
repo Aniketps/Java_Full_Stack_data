@@ -1,0 +1,51 @@
+1. Write the code to implement the concept of inheritance for Vehicles. You are required to
+implement inheritance between classes. You have to write four classes in java i.e. one superclass,
+two sub classes and one driver class.
+Vehicle is the super class whereas Bus and Truck are sub classes of Vehicle class. Transport is a driver
+class which contains main method.
+Detailed description:
+Detailed description of Vehicle (Super class):
+The class Vehicle must have following attributes:
+	1. Vehicle model
+	2. Registration number
+	3. Vehicle speed (km/hour)
+	4. Fuel capacity (liters)
+	5. Fuel consumption (kilo meters/liter)
+
+The Vehicle class must have following methods:
+	1. Parameterized constructor that will initialize all the data members with the given values.
+	2. Getters and Setters for each data member that will get and set the values of data members
+of class.
+	3. A method fuelNeeded() that will take distance (in kilo meter) as an argument. It will calculate
+the amount of fuel needed for the given distance and will return the value of fuel needed for
+given distance. You can use the attributes ‘Fuel consumption’ defined within above Vehicle
+class to determine the fuel needed for the given distance. You are required to implement
+this functionality by yourself.
+	4. A method distanceCovered() that will take time (in hours) as an argument. It will calculate the
+distance for the given time and speed and returns the value of distance. The formula to
+calculate speed is given as speed = distance/time. You can use this formula to calculate the
+distance.
+	5. A display() method that will display all the information of a vehicle.
+
+Detailed description of Truck (Sub class):
+The class Truck must have following attribute:
+Cargo weight limit (Kilo grams)
+
+The above class must have following methods:
+	1. Parameterized constructor that will initialize all data members with the given values.
+	2. It must also override the display()method of Vehicle class and must call display() method of superclass within overridden method.
+
+Detailed description of Bus (Sub class):
+The class Bus must have following attribute:
+No of passengers
+The above class must have following methods:
+	1. Parameterized constructor that will initialize all the data members with given values.
+	2. Getters and setters that will get and set the value of each data member of class.
+	3. It must also override the display()method of Vehicle class and must call display method of
+super class within overridden method.
+
+Create a class Transport which contains the main method. Perform the following within
+main method:
+• Create an instance of class Truck and initialize all the data members with proper values.
+• Create an instance of class Bus and initialize all the data members with proper values.
+• Now, call fuelNeeded(),distanceCovered() anddisplay() methods using objects of theseclasses.

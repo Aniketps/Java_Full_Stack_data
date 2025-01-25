@@ -1,0 +1,15 @@
+1. Find Duplicates in an Array
+-  Write a class to create a method to identify and display duplicate elements in an integer array.
+ Explanation: Practice nested loops to compare elements.
+
+2. Find the Second Largest Element in an Array
+-  Write a class to write a method to find the second largest element in an integer array.
+ Explanation: Practice logic building and conditional checks.
+
+3. Count Words in a Character Array
+- Write a class to implement a method to count the number of words represented in a character array (assume words are separated by spaces).
+ Explanation: Work with delimiters and loops.
+
+4. Convert Character Array to Uppercase
+- Write a class to implement a method to convert all characters in a character array to uppercase.
+ Explanation: Use ASCII values or built-in functions to modify array elements.

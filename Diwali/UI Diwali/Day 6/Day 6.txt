@@ -1,0 +1,13 @@
+Day 6
+
+1. What is the purpose of the <colgroup> element in an HTML table?
+
+The <colgroup> element is used to group one or more columns in a table for styling purposes. It allows you to apply styles (like width or background color) to an entire column instead of individual cells, making it easier to manage the appearance of the table.
+
+2. How can you style individual columns using CSS with <colgroup>? Explain the <col> tag and span attribute.
+
+You can style individual columns by defining a <col> tag within a <colgroup>, where each <col> can have its own class for specific styles. The span attribute allows you to specify how many columns the <col> applies to. For example, <col span="2"> would style two consecutive columns.
+
+3. What do border-collapse property and caption tag do?
+
+The border-collapse property specifies whether table borders should be collapsed into a single border or separated. When set to collapse, it creates a cleaner look by merging borders.

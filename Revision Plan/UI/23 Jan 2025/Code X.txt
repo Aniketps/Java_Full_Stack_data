@@ -1,0 +1,2 @@
+1. Create a pricing table with <colgroup> to style specific columns.
+2. Apply the box model to style the table cells with padding, borders, and fixed widths.

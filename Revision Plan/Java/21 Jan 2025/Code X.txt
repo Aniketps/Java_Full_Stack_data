@@ -1,0 +1,15 @@
+1. Implement a Calculator
+Create a class Calculator with methods add, subtract, multiply, and divide for two numbers. Call them from the main method and print results.
+Explanation: Teaches basic arithmetic operations using methods.
+
+2. Compare Two Numbers
+Create a class NumberComparison with a method compare that checks if two numbers are equal, greater, or less.
+Explanation: Introduces conditional statements in a method.
+
+3. Check Even or Odd
+Create a class NumberChecker with a method isEven that checks if a number is even or odd.
+Explanation: Focuses on using modulus operator in logic.
+
+4. Calculate Simple Interest
+Create a class SimpleInterest with a method calculate that computes simple interest given principal, rate, and time.
+Explanation: Demonstrates mathematical formula implementation.

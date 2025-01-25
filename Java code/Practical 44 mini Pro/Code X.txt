@@ -1,0 +1,129 @@
+Design application for Library Management System
+We want to develop the application for library Management system
+Objective of project
+The main objective of this project is to develop the application using library management and, in this project, we have two users one is librarian and one is student
+Task of library
+a.     Add new student list in database using array of objects & provide login here we consider email is username and contact is password
+b.    Add a new list of books in the database using an array of objects.
+c.     View All Students
+d.    Search student by name or email
+e.    View All Books
+f.      Search books by name or email
+g.     View issued book by student
+h.    View student who issues minimum single book
+i.       Show the total number of books in library
+j.       Show the available book count in library
+k.     Show the issued book count in library
+Task of students
+a.     Login in system using email and contact
+b.    View all books
+c.     Issue book but if book already issue then show the message book is already issued
+d.    Show the own profile and student can edit it
+e.    Show self-issued book list
+f.      Show the total book count in library
+g.     Show the available books student can issue
+h.    Return book to library
+i.       Logout
+Refer following diagram
+
+ 
+Classes and methods description given below
+class User
+{
+  private int id;
+  private String name;
+  private String  email;
+  private String contact;
+  private String userType;
+ //write here setter and getter methods 
+  public User(){
+  }
+  public User(int id,String name,String email,String contact,String userType)
+  {
+  }
+}
+class Student extends User
+{  String deptName;
+   String year;
+//write here setter and getter for deptName and year
+
+   public Student()
+   {
+   }
+   public Student(String deptName,String year)
+   {
+   }
+   Book book[];
+    
+   void setBooks(Book ...book) 
+   Book [] getBooks():     
+    
+}
+class Librarian extends User
+{
+     private String designation:
+  //write here setter and getter method for designation
+
+}
+
+class ValidateUser
+{
+   public int validateUser(User user)
+   {
+      // check the user login 
+   }
+}
+
+Note: we consider email of student as username and contact of user as password so you can check
+user login using email and contact 
+Book.java
+___________________________________________________
+class Book
+{ 
+   private int id;
+   private String name;
+   private String author;
+   private String subject;
+   private String isbn;
+   private Boolean status;
+   public Book(){
+    }
+   public Book(int id,String name,String author,String subject,String isbn,booean status)
+   {
+   }
+ //write setter and getters for book
+}
+
+LibrarianRepository.java : this class help us to write logic for librarian activity means after librarian login
+developers can write all librarian logics in this class.
+
+void addBooks(Book []b): this method can accept array of object as parameter and store data for next process
+and book should not be added in array of objects repeatedly and set status of every book as false when added by librarian
+void addStudents(Student s[]): this method can accept student objects and store them in an array of objects for next uses or process.
+Book [] getBooks(): this method can return all books in detail.
+Student [] getStudents(): this method can return all student list to librarian
+Student[] getStudentName(String name): this method can return student list by name
+Book getBook(String bookName): this method can return book detail by name
+Book[] getIssuedBooks(): this method can return only issued books
+Student [] getStudentWithIssedBook(): this method can return a student list with issued books.
+int getTotalBookCount(): this method can return total book count which is present in library
+int getIssuedBookCount(): this method can return total issued books count
+int getAvailableBookCount():this method can return total available book which we can issue
+ 
+
+StudentRepository.java: this class  help us to write logic for student activity means after student login
+developers can write all student logics in this class.
+
+class StudentRepository
+{  Book book[];
+  
+ void viewBooks(): this method show the books to students which is not issued 
+ Book issueBook(String name,int id): this method can accept book name and id and issued book means change status as true when book issued
+ Student getProfile(String email,String contact): this method accept email and contact and return student profile.
+ void editProfile(): student can change own profile 
+ void viewSelfIsseBooks(): this method can show the self issued book list to student 
+  int getTotalBookCount(): this method can return total book count which is present in library
+  int getIssuedBookCount(): this method can return total issued books count
+  int getAvailableBookCount():this method can return total available book which we can issue
+  void returnBookToLibrary(Book b): this method can return book to library means change the     status of book as true.
+}

@@ -1,0 +1,4 @@
+1. Write a java program to check whether number is prime or not, if it is prime then return true otherwise return false.
+2. Write a java program to count the digit of number using function recursion and return its count of number.
+3. Write a java program to pass the array function name as findEvenOdd( ), then display the even and odd number in array.
+4. Write a java program to pass the array function name as findMajority( ), if it's yes then return 1 otherwise return 0.
