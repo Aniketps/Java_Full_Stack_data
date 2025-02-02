@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>\</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        tr,th,td{
+            height: 40px;
+            width: 80px;
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .col1{
+            width: 80px;
+            background-color: rgba(0, 128, 0, 0.5);
+
+            padding: 10px;
+        }
+        .col2{
+            background-color: rgba(0, 0, 255, 0.5); 
+            width: 100px
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Pricing Table</caption>
+        <colgroup>
+            <col class="col1">
+            <col class="col2">
+            <col class="col1">
+            <col class="col2">
+        </colgroup>
+        <tr>
+            <th>Sr no.</th>
+            <th>Salary</th>
+            <th>Expences</th>
+            <th>Saving</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>52000</td>
+            <td>10000</td>
+            <td>42000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>40000</td>
+            <td>20000</td>
+            <td>20000</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>30000</td>
+            <td>15000</td>
+            <td>15000</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>60000</td>
+            <td>40000</td>
+            <td>20000</td>
+        </tr>
+    </table>
+</body>
+</html>

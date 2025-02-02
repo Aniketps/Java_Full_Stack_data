@@ -1,0 +1,2 @@
+1. Design a survey form with advanced validation attributes like pattern and required.
+2. Create a responsive webpage layout using CSS Grid to define rows, columns, and areas.

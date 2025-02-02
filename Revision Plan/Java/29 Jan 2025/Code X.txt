@@ -1,0 +1,31 @@
+1. Write Program to perform method overriding you have to create class name as ArrParent with method void setValue(int arr[]): this method can accept array as parameter void arrangeSeq(): this method can display array as per user input sequence You have to create two child class name as ArrangeAscendingOrder and you have to inherit ArrParent class in it and override arrangeSeq() method in ArrangeAscendingOrder and sort array and display in ascending order and you have to create one more class name ReverseArray and override arrangeSeq() method from ArrParent and reverse array and display it.
+
+2. Write Program to create abstract class name as Value with one abstract and one non abstract method
+void setValue(int ,int): this is non abstract method with two parameter abstract int getResult(): this is abstract method and you have two child class name as Power and you have to override getResult() method in Power class and calculate power of two values and return it as well as SearchDigit and you have to override getResult() consider first parameter of setValue() is number and second parameter is digit and you have to search digit in number and return it and if digit not found return -1.
+
+3. Bank Abstract Class
+Problem: Create an abstract class Bank with the following methods:
+deposit(double amount) — allows depositing an amount.
+withdraw(double amount) — allows withdrawing an amount.
+getBalance() — returns the current balance.
+Then, create two subclasses:
+SavingsBank — charges a fixed fee of $2 per transaction.
+CurrentBank — charges a fixed fee of $5 per transaction.
+Write a program that deposits and withdraws money from both types of banks and displays the balance after each transaction.
+Explanation:
+The abstract class Bank defines the common structure for the deposit, withdraw, and balance methods.
+Each subclass applies a different transaction fee.
+Logical operation: Use method overriding to show different transaction fees for each type of bank.
+
+4. Customer Abstract Class
+Problem: Create an abstract class Customer with the following methods:
+·        addTransaction(double amount) — adds a transaction amount.
+·        getBalance() — returns the current balance.
+Then, create two subclasses:
+·        PremiumCustomer — offers a 10% discount on all transactions.
+·        RegularCustomer — no discount on transactions.
+Write a program that adds transactions for both types of customers and shows their final balance after applying the discount.
+Explanation:
+·        The abstract class Customer provides methods for adding transactions and checking balances.
+·        Each subclass implements the transaction logic differently by applying a discount.
+·        Logical operation: Method overriding to apply discounts and track customer balances.

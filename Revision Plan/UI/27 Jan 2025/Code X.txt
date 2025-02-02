@@ -1,0 +1,2 @@
+1. Create a button that changes color on hover using CSS transitions.
+2. Add an animation to an element that moves it across the screen using @keyframes.

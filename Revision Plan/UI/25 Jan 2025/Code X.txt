@@ -1,0 +1,2 @@
+1. Design a form that validates user input using attributes like pattern and min/max.
+2. Use CSS positioning to create a sticky header that remains at the top while scrolling.

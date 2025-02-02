@@ -1,0 +1,16 @@
+1. Create a Car class
+Create a Car class with fields speed and fuel.
+The default constructor should initialize speed to 60 and fuel to 50.
+Add a method drive() to simulate fuel reduction by 10 units per drive, and display the updated fuel level.
+Explanation: Simulates state changes in objects through method logic.
+2. Create a LightBulb class
+Create a LightBulb class with a field state (boolean).
+Use the default constructor to set the bulb to off (false).
+Add methods turnOn() and turnOff() to toggle the state and display the current state.
+   Explanation: Covers state management in an object and logic toggling.
+3. Electricity Bill Calculation
+Create a Customer class with fields customerName, customerID, and unitsConsumed. Add a method to calculate the bill amount based on units consumed (slab rates).
+Explanation: Implement a tiered billing system with logic for each slab.
+4. Car Mileage Calculator
+Create a Car class with fields make, model, milesDriven, and fuelUsed. Add a method to calculate mileage (milesDriven / fuelUsed).
+Explanation: Ensure proper handling of edge cases like zero fuel.

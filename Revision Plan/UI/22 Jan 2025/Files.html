@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            overflow: hidden;
+            width: 100vw;
+            height: 100vw;
+        }
+        button{
+            height: 60px;
+            width: 60px;
+            border-radius: 50px;
+            border: 1px solid rgba(0, 0, 255, 0.215);
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 255, 0.162);
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            background-image: url("play-solid.svg");
+            background-size: 40%;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 5;
+        }
+        video{
+            width: 100%;
+            position: relative;
+        }
+        .menu{
+            padding: 50px;
+            display: flex;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.368);
+            width: 100%;
+            flex-direction: column;
+            border: 1px solid black;
+            background-image: url("https://videos.pexels.com/video-files/5223106/5223106-sd_640_360_25fps.mp4");
+        }
+        .menu video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .menu .contents{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            color: rgb(245, 244, 244);
+        }
+        .food{
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+            font-size: 20px;
+        }
+        h1{
+            font-size: 50px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        li{
+            font-size: 25px;
+        }
+        .special, .somethingNew{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            width: 80%;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <video muted autoplay>
+            <source src="https://videos.pexels.com/video-files/5223106/5223106-sd_640_360_25fps.mp4" type="video/mp4">
+        </video>
+        <audio id="audio" autoplay>
+            <source src="./audio.mp3" type="audio/mp3">
+        </audio>
+        <div class="contents">
+            <h1>Welcome to Hotel LS</h1>
+            <div class="special">  
+                <h2>Todays Special</h2>
+                <div class="food">
+                    <ul>
+                        <li>Kung Pao Chicken</li>
+                        <li>Hakka Noodles</li>
+                        <li>Grilled Salmon with Lemon Butter Sauce</li>
+                        <li>Caesar Salad</li>
+                        <li>Molten Chocolate Lava Cake</li>
+                    </ul>
+                    <ul>
+                        <li>Butter Chicken</li>
+                        <li>Paneer Tikka</li>
+                        <li>Hyderabadi Biryani</li>
+                        <li>Margherita Pizza</li>
+                        <li>Pasta Alfredo</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="somethingNew">  
+                <h2>New Menu</h2>
+                    <div class="food">
+                        <ol>
+                            <li>Sweet and Sour Chicken</li>
+                            <li>Schezwan Fried Rice</li>
+                            <li>Herb-Crusted Lamb Chops</li>
+                            <li>Greek Salad</li>
+                            <li>Tiramisu</li>
+                        </ol>
+                        <ol>
+                            <li>Chicken Tikka Masala</li>
+                            <li>Malai Kofta</li>
+                            <li>Lucknowi Biryani</li>
+                            <li>Four Cheese Pizza</li>
+                            <li>Spaghetti Carbonara</li>
+                        </ol>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <button onclick="document.getElementById('audio').play()"></button>
+</body>
+</html>

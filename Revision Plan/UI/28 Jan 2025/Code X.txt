@@ -1,0 +1,2 @@
+1. Create a product pricing table using <colgroup> for styling columns and <col> for column-specific styling.
+2. Design a webpage layout using floats for positioning two sections side-by-side. Use clear to fix layout issues.

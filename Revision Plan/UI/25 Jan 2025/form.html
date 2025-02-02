@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body,html{
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .nav{
+            height: 70px;
+            width: 100%;
+            z-index: 5;
+            top: 0;
+            display: flex;
+            position: fixed;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 255, 0.119);
+        }
+        .nav a{
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+        }
+        form{
+            margin-top: 80px;
+            width: 80%;
+            padding-top: 80px;
+            height: 400px;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 255, 0.119);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 0, 255, 0.153);
+        }
+        input{
+            height: 50px;
+            width: 50%;
+            border: 1px solid rgba(0, 0, 255, 0.269);
+            outline: 1px solid rgba(0, 0, 255, 0.269);
+            padding: 10px;
+            border-radius: 15px;
+
+        }
+        button{
+            height: 45px;
+            width: 120px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 255, 0.269);
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 255, 0.269);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="">Home</a>
+        <a href="">Careers</a>
+        <a href="">About us</a>
+        <a href="">Login</a>
+    </div>
+    <form action="">
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+        <input type="number" placeholder="Age" min="18" max="70" required>
+        <input type="email" placeholder="Email" pattern="[A-Z0-1._-%+a-z]+@[A-Z0-1._-%+a-z]+\.[a-z]{2,}" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

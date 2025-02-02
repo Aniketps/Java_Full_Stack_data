@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gallary Bookmarks</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vw;
+            overflow: auto;
+        }
+        .image_container{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .image_container h1{
+            font-size: 250px;
+            letter-spacing: 10px;
+            width: 12px;
+            overflow-wrap: anywhere;
+            text-transform: uppercase;
+        }
+        .images{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin: auto;
+            width: 80%;
+            align-items: center;
+            justify-content: center;
+        }
+        p{
+            font-size: 20px;
+            letter-spacing: 10px;
+            font-weight: bold;
+        }
+        .bookmarks{
+            height: 100px;
+            padding: 0 20px 20px 20px;
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .bookmarks a{
+            text-decoration: none;
+            color: gray;
+            font-size: 20px;
+            letter-spacing: 1.5px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .bookmarks_container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bookmarks_container">
+        <h1>Click on book mark to redirect</h1>
+        <div class="bookmarks">
+            <a href="#SunRise">Sun Rise</a>
+            <a href="#SunShine">Sun Shine</a>
+            <a href="#NightMoon">Night Moon</a>
+            <a href="#DayMoon">Day Moon</a>
+            <a href="#NoMoon">No Moon</a>
+            <a href="#StarWithMoon">Star with moon</a>
+            <a href="#StarWithoutMoon">Star without moon</a>
+        </div>
+    </div>
+    <div class="image_container">
+        <h1>Gallary</h1>
+        <div class="images">
+            <div>
+                <img style="height: 450px; width:800px; border: 1px solid blue; border-radius:15px" id="SunRise" src="https://static.toiimg.com/photo/66084423.cms" alt="SunRise">
+                <p>Sun Rise</p>
+            </div>
+            <div>
+                <img style="height: 450px; width:800px; border: 1px solid blue; border-radius:15px" id="SunShine" src="https://www.fhcsl.com/wp-content/uploads/2021/06/FHCSL_SUNSHINE_FB.jpg" alt="SunShine">
+            <p>Sun Shine</p>
+        </div>
+        <div>
+            <img style="height: 450px; width:800px; border: 1px solid blue; border-radius:15px" id="NightMoon" src="https://images.pexels.com/photos/239107/pexels-photo-239107.jpeg?cs=srgb&dl=pexels-joonas-kaariainen-67364-239107.jpg&fm=jpg" alt="NightMoon">
+            <p>Night Moon</p>
+        </div>
+        <div>
+            <img style="height: 450px; width:800px; border: 1px solid blue; border-radius:15px" id="DayMoon" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6aab5313-e7f5-49f3-a3e5-dd58a6a4370e/dg00mso-c6ea87df-0832-4583-996d-5931f574f57c.jpg/v1/fill/w_1280,h_854,q_75,strp/daymoon_by_worldnate_dg00mso-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvNmFhYjUzMTMtZTdmNS00OWYzLWEzZTUtZGQ1OGE2YTQzNzBlXC9kZzAwbXNvLWM2ZWE4N2RmLTA4MzItNDU4My05OTZkLTU5MzFmNTc0ZjU3Yy5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.LIV1fjZiRwhVPcV8lezcEMmGl5Fs5p1XCeqqqqDcytM" alt="DayMoon">
+            <p>Day Moon</p>
+        </div>
+        <div>
+            <img style="height: 450px; width:800px; border: 1px solid blue; border-radius:15px" id="NoMoon" src="https://c.tadst.com/gfx/600x337/starry-night-sky-forest.jpg?1" alt="NoMoon">
+            <p>No Moon</p>
+        </div>
+        <div>
+            <img style="height: 450px; width:800px; border: 1px solid blue; border-radius:15px" id="StarWithMoon" src="https://img.freepik.com/premium-photo/moon-against-bright-night-starry-sky-reflected-sea_180633-732.jpg?semt=ais_hybrid" alt="StarWithMoon">
+            <p>Star with Moon</p>
+        </div>
+        <div>
+            <img style="height: 450px; width:800px; border: 1px solid blue; border-radius:15px" id="StarWithoutMoon" src="https://static1.squarespace.com/static/57ec4def725e2504023bef98/t/5ae5f1c78a922de4679bafe7/1525019081220/?format=1500w" alt="StarWuthoutMoon">
+            <p>Star without moon</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
