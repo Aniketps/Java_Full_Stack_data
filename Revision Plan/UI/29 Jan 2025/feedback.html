@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        form .data{
+            min-height: 400px;
+            width: 80%;
+            border: 1px solid rgba(0, 0, 255, 0.1);
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 255, 0.2);
+            border-radius: 15px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding: 20px;
+            margin: auto;
+
+        }
+        input{
+            height: 45px;
+            width: 500px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 255, 0.2);
+            outline: 1px solid rgba(0, 0, 255, 0.2);;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 255, 0.1);
+        }
+        h1{
+            padding-top: 50px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        .button{
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: end;
+        }
+        button{
+            height: 45px;
+            width: 150px;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 255, 0.1);
+            background: linear-gradient(to left, blue 50%, orange 50%);
+            background-size: 200% 100%;
+            background-position: right;
+            transition: color 1.5s ease-in-out, background-position 1s ease-in-out;
+        }
+        button:hover{
+            color: black;
+            background-position: left;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Survary</h1>
+        <div class="data">
+            <input type="text" placeholder="First Name" pattern="[A-Za-z]{1,}" required>
+            <input type="text" placeholder="Last Name" pattern="[A-Za-z]{1,}" required>
+            <input type="text" placeholder="Email"  pattern="[A-Za-z0-9_.]+@[a-z]+\.[a-z]{2,}" required>
+            <input type="number" placeholder="Phone" pattern="[0-9]{10}" required>
+            <input type="text" placeholder="City" pattern="[A-Za-z]{2,}" required>
+            <input type="number" placeholder="Age" min="18" max="80" required>
+            <input type="number" placeholder="Male count in area" required>
+            <input type="number" placeholder="Female count in area" required>
+            <input type="number" placeholder="Count of shops in area" required>
+        </div>
+        <div class="button">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
