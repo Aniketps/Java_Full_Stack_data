@@ -1,0 +1,34 @@
+1. Find the majority element
+Find the element that appears more than n/2 times in the array.
+Example: [3, 3, 4, 2, 4, 4, 2, 4, 4]
+The majority element is 4 because it appears 5 times, which is more than n/2 = 9/2 = 4.5.
+Output: 4
+
+2. Find the longest increasing subsequence
+Given an array, find the length of the longest increasing subsequence.
+To find the Longest Increasing Subsequence (LIS) in an array, we need to identify the longest subsequence in which each element is strictly greater than the previous one.
+Your Task: you have to create class name as FindLongSequence with two methods 
+void setValue(int a[]): this function is used for accept array as parameter
+Void findLongSubSequence(): this function can help us to find longest subsequence 
+Int [] getArray(): this function can return longest subsequence of array
+ 
+3. Find the subarray with the maximum sum (Kadane’s Algorithm)
+                        Implement Kadane’s algorithm to find the sum of the maximum subarray.
+	Example: [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+	Output:
+              The subarray with the maximum sum is [4, -1, 2, 1], which has a sum of 6
+	
+Note: your task is to create class FindMaxSum with two methods 
+     void setValue(int a[]): this function is used for accept array as parameter 
+     Void findMaxSum(): this function is used for find the maximum subsequence of array
+      Int [] getResult(): this function is used for return resultant array 	
+
+4. Find the smallest subarray with a given sum
+Given a sum, find the smallest subarray whose sum is greater than or equal to the given sum.
+Example:
+For an array arr = [2, 1, 5, 2, 3, 2] and a target sum of 7:
+The smallest subarray with a sum >= 7 is [5, 2], with length 2.
+Your Task : You have to create class name as FindMinSum 
+Void setArray(int a[]): this function accept array as parameter 
+Void findMinSum(): this function can find the minimum sum of array
+Int [] getResult(): this function returns the resultant array.

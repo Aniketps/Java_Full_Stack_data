@@ -1,0 +1,17 @@
+Q1. Create Table name as Player with column id,name ,run and age and perform following operation on table
+Add new column address using alter command
+Change run column name to  total run
+Q2. Insert 10 records in the Player table.
+Q3. Select all records of player 
+Q4. Delete player whose id is 1
+Q5. Update the player run  40000 whose id is 1
+Q6. fetch player whose run is 10000 , 20000,30000,5000
+Q7. Fetch max run from player table
+Q8. fetch min run from player table 
+Q9. find the average run of the player table.
+Q10. find the sum of all player run
+Q11. count total number of player from table
+Q12. WA SQL query fetch player whose run is not 5000
+Q13. WA SQL Query to fetch player whose run is 5000 and name is not abc
+Q14 drop column address from player 
+Q15. drop table player from database

@@ -1,0 +1,334 @@
+mysql> create database 03March2025;
+Query OK, 1 row affected (0.04 sec)
+
+mysql> use 03March2025;
+Database changed
+mysql> show tables;
+Empty set (0.01 sec)
+
+mysql> create table employees(id int(5) primary key auto_increment, name varchar(200) not null, email varchar(200) unique, contact varchar(11) unique not null check(length(contact) = 11));
+Query OK, 0 rows affected, 1 warning (0.05 sec)
+
+mysql> show tables;
++-----------------------+
+| Tables_in_03march2025 |
++-----------------------+
+| employees             |
++-----------------------+
+1 row in set (0.00 sec)
+
+mysql> desc employees;
++---------+--------------+------+-----+---------+----------------+
+| Field   | Type         | Null | Key | Default | Extra          |
++---------+--------------+------+-----+---------+----------------+
+| id      | int          | NO   | PRI | NULL    | auto_increment |
+| name    | varchar(200) | NO   |     | NULL    |                |
+| email   | varchar(200) | YES  | UNI | NULL    |                |
+| contact | varchar(11)  | NO   | UNI | NULL    |                |
++---------+--------------+------+-----+---------+----------------+
+4 rows in set (0.01 sec)
+
+mysql> alter table employees add salary int(5) not null check(salary>0);
+Query OK, 0 rows affected, 1 warning (0.08 sec)
+Records: 0  Duplicates: 0  Warnings: 1
+
+mysql> alter table employees add address varchar(200);
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc employees;
++---------+--------------+------+-----+---------+----------------+
+| Field   | Type         | Null | Key | Default | Extra          |
++---------+--------------+------+-----+---------+----------------+
+| id      | int          | NO   | PRI | NULL    | auto_increment |
+| name    | varchar(200) | NO   |     | NULL    |                |
+| email   | varchar(200) | YES  | UNI | NULL    |                |
+| contact | varchar(11)  | NO   | UNI | NULL    |                |
+| salary  | int          | NO   |     | NULL    |                |
+| address | varchar(200) | YES  |     | NULL    |                |
++---------+--------------+------+-----+---------+----------------+
+6 rows in set (0.00 sec)
+
+mysql> alter table employees rename column salary to sal;
+ERROR 3959 (HY000): Check constraint 'employees_chk_2' uses column 'salary', hence column cannot be dropped or renamed.
+mysql> drop constraint employees_chk_2;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'constraint employees_chk_2' at line 1
+mysql> drop constraint employees_chk_2;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'constraint employees_chk_2' at line 1
+mysql> drop constraints employees_chk_2;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'constraints employees_chk_2' at line 1
+mysql> drop employees_chk_2;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'employees_chk_2' at line 1
+mysql> update employees salary int(5);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'int(5)' at line 1
+mysql> update employees column salary int(5);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'column salary int(5)' at line 1
+mysql> alter table employees modify column salary int(5);
+Query OK, 0 rows affected, 1 warning (0.08 sec)
+Records: 0  Duplicates: 0  Warnings: 1
+
+mysql> desc employees;
++---------+--------------+------+-----+---------+----------------+
+| Field   | Type         | Null | Key | Default | Extra          |
++---------+--------------+------+-----+---------+----------------+
+| id      | int          | NO   | PRI | NULL    | auto_increment |
+| name    | varchar(200) | NO   |     | NULL    |                |
+| email   | varchar(200) | YES  | UNI | NULL    |                |
+| contact | varchar(11)  | NO   | UNI | NULL    |                |
+| salary  | int          | YES  |     | NULL    |                |
+| address | varchar(200) | YES  |     | NULL    |                |
++---------+--------------+------+-----+---------+----------------+
+6 rows in set (0.00 sec)
+
+mysql> alter table employees rename column salary to sal;
+ERROR 3959 (HY000): Check constraint 'employees_chk_2' uses column 'salary', hence column cannot be dropped or renamed.
+mysql> alter table employees drop constraint employees_chk_2;
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table employees rename salary to sal;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'to sal' at line 1
+mysql> alter table employees rename column salary to sal;
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc employees;
++---------+--------------+------+-----+---------+----------------+
+| Field   | Type         | Null | Key | Default | Extra          |
++---------+--------------+------+-----+---------+----------------+
+| id      | int          | NO   | PRI | NULL    | auto_increment |
+| name    | varchar(200) | NO   |     | NULL    |                |
+| email   | varchar(200) | YES  | UNI | NULL    |                |
+| contact | varchar(11)  | NO   | UNI | NULL    |                |
+| sal     | int          | YES  |     | NULL    |                |
+| address | varchar(200) | YES  |     | NULL    |                |
++---------+--------------+------+-----+---------+----------------+
+6 rows in set (0.00 sec)
+
+mysql> alter table employees drop column address;
+Query OK, 0 rows affected (0.06 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc employees;
++---------+--------------+------+-----+---------+----------------+
+| Field   | Type         | Null | Key | Default | Extra          |
++---------+--------------+------+-----+---------+----------------+
+| id      | int          | NO   | PRI | NULL    | auto_increment |
+| name    | varchar(200) | NO   |     | NULL    |                |
+| email   | varchar(200) | YES  | UNI | NULL    |                |
+| contact | varchar(11)  | NO   | UNI | NULL    |                |
+| sal     | int          | YES  |     | NULL    |                |
++---------+--------------+------+-----+---------+----------------+
+5 rows in set (0.00 sec)
+
+mysql> insert into employees(name, email, contact, sal) values ("Aniket", "a@gmail.com", "96525412252", 70000), ("Rahul", "r@gmail.com", "65215245215"), ("Rahul"
+    -> , "rr@gmail.com", "75215245215")
+    -> 
+    -> ^C
+mysql> insert into employees(name, email, contact, sal) values ("Aniket", "a@gmail.com", "96525412252", 70000), ("Rahul", "r@gmail.com", "65215245215", 15200), ("Ashish", "aa@gmail.com", "96525412251", 50000), ("Karim", "k@gmail.com", "96555412252", 70010), ("Harsh", "h@gmail.com", "96525412282", 70001), ("Kashi", "k@gmail.com", "96525452252", 700), ("Anmika", "aaa@gmail.com", "96525442252", 45000), ("Kumar", "kk@gmail.com", "96523412252", 80000);
+ERROR 1062 (23000): Duplicate entry 'k@gmail.com' for key 'employees.email'
+mysql> insert into employees(name, email, contact, sal) values ("Aniket", "a@gmail.com", "96525412252", 70000), ("Rahul", "r@gmail.com", "65215245215", 15200), ("Ashish", "aa@gmail.com", "96525412251", 50000), ("Karim", "k@gmail.com", "96555412252", 70010), ("Harsh", "h@gmail.com", "96525412282", 70001), ("Kashi", "kkk@gmail.com", "96525452252", 700), ("Anmika", "aaa@gmail.com", "96525442252", 45000), ("Kumar", "kk@gmail.com", "96523412252", 80000);
+Query OK, 8 rows affected (0.01 sec)
+Records: 8  Duplicates: 0  Warnings: 0
+
+mysql> select * from employees;
++----+--------+---------------+-------------+-------+
+| id | name   | email         | contact     | sal   |
++----+--------+---------------+-------------+-------+
+|  9 | Aniket | a@gmail.com   | 96525412252 | 70000 |
+| 10 | Rahul  | r@gmail.com   | 65215245215 | 15200 |
+| 11 | Ashish | aa@gmail.com  | 96525412251 | 50000 |
+| 12 | Karim  | k@gmail.com   | 96555412252 | 70010 |
+| 13 | Harsh  | h@gmail.com   | 96525412282 | 70001 |
+| 14 | Kashi  | kkk@gmail.com | 96525452252 |   700 |
+| 15 | Anmika | aaa@gmail.com | 96525442252 | 45000 |
+| 16 | Kumar  | kk@gmail.com  | 96523412252 | 80000 |
++----+--------+---------------+-------------+-------+
+8 rows in set (0.00 sec)
+
+mysql> delete from employee where id=14;
+ERROR 1146 (42S02): Table '03march2025.employee' doesn't exist
+mysql> delete from employees where id=14;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from employees;
++----+--------+---------------+-------------+-------+
+| id | name   | email         | contact     | sal   |
++----+--------+---------------+-------------+-------+
+|  9 | Aniket | a@gmail.com   | 96525412252 | 70000 |
+| 10 | Rahul  | r@gmail.com   | 65215245215 | 15200 |
+| 11 | Ashish | aa@gmail.com  | 96525412251 | 50000 |
+| 12 | Karim  | k@gmail.com   | 96555412252 | 70010 |
+| 13 | Harsh  | h@gmail.com   | 96525412282 | 70001 |
+| 15 | Anmika | aaa@gmail.com | 96525442252 | 45000 |
+| 16 | Kumar  | kk@gmail.com  | 96523412252 | 80000 |
++----+--------+---------------+-------------+-------+
+7 rows in set (0.00 sec)
+
+mysql> select * from employees oder by id;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'by id' at line 1
+mysql> select * from employees order by id;
++----+--------+---------------+-------------+-------+
+| id | name   | email         | contact     | sal   |
++----+--------+---------------+-------------+-------+
+|  9 | Aniket | a@gmail.com   | 96525412252 | 70000 |
+| 10 | Rahul  | r@gmail.com   | 65215245215 | 15200 |
+| 11 | Ashish | aa@gmail.com  | 96525412251 | 50000 |
+| 12 | Karim  | k@gmail.com   | 96555412252 | 70010 |
+| 13 | Harsh  | h@gmail.com   | 96525412282 | 70001 |
+| 15 | Anmika | aaa@gmail.com | 96525442252 | 45000 |
+| 16 | Kumar  | kk@gmail.com  | 96523412252 | 80000 |
++----+--------+---------------+-------------+-------+
+7 rows in set (0.00 sec)
+
+mysql> update employees set sal=90000 and name="Ani" where id=9;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from employees order by id;
++----+--------+---------------+-------------+-------+
+| id | name   | email         | contact     | sal   |
++----+--------+---------------+-------------+-------+
+|  9 | Aniket | a@gmail.com   | 96525412252 |     0 |
+| 10 | Rahul  | r@gmail.com   | 65215245215 | 15200 |
+| 11 | Ashish | aa@gmail.com  | 96525412251 | 50000 |
+| 12 | Karim  | k@gmail.com   | 96555412252 | 70010 |
+| 13 | Harsh  | h@gmail.com   | 96525412282 | 70001 |
+| 15 | Anmika | aaa@gmail.com | 96525442252 | 45000 |
+| 16 | Kumar  | kk@gmail.com  | 96523412252 | 80000 |
++----+--------+---------------+-------------+-------+
+7 rows in set (0.00 sec)
+
+mysql> update employees set (sal=90000 and name="Ani") where id=9;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(sal=90000 and name="Ani") where id=9' at line 1
+mysql> update employees set sal=90000 and name="Ani" where id=9;
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 1  Changed: 0  Warnings: 0
+
+mysql> select * from employees order by id;
++----+--------+---------------+-------------+-------+
+| id | name   | email         | contact     | sal   |
++----+--------+---------------+-------------+-------+
+|  9 | Aniket | a@gmail.com   | 96525412252 |     0 |
+| 10 | Rahul  | r@gmail.com   | 65215245215 | 15200 |
+| 11 | Ashish | aa@gmail.com  | 96525412251 | 50000 |
+| 12 | Karim  | k@gmail.com   | 96555412252 | 70010 |
+| 13 | Harsh  | h@gmail.com   | 96525412282 | 70001 |
+| 15 | Anmika | aaa@gmail.com | 96525442252 | 45000 |
+| 16 | Kumar  | kk@gmail.com  | 96523412252 | 80000 |
++----+--------+---------------+-------------+-------+
+7 rows in set (0.00 sec)
+
+mysql> update employees set sal=90000 where id=9;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from employees order by id;
++----+--------+---------------+-------------+-------+
+| id | name   | email         | contact     | sal   |
++----+--------+---------------+-------------+-------+
+|  9 | Aniket | a@gmail.com   | 96525412252 | 90000 |
+| 10 | Rahul  | r@gmail.com   | 65215245215 | 15200 |
+| 11 | Ashish | aa@gmail.com  | 96525412251 | 50000 |
+| 12 | Karim  | k@gmail.com   | 96555412252 | 70010 |
+| 13 | Harsh  | h@gmail.com   | 96525412282 | 70001 |
+| 15 | Anmika | aaa@gmail.com | 96525442252 | 45000 |
+| 16 | Kumar  | kk@gmail.com  | 96523412252 | 80000 |
++----+--------+---------------+-------------+-------+
+7 rows in set (0.00 sec)
+
+mysql> update employees set name="Ani" where id=9;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from employees order by id;
++----+--------+---------------+-------------+-------+
+| id | name   | email         | contact     | sal   |
++----+--------+---------------+-------------+-------+
+|  9 | Ani    | a@gmail.com   | 96525412252 | 90000 |
+| 10 | Rahul  | r@gmail.com   | 65215245215 | 15200 |
+| 11 | Ashish | aa@gmail.com  | 96525412251 | 50000 |
+| 12 | Karim  | k@gmail.com   | 96555412252 | 70010 |
+| 13 | Harsh  | h@gmail.com   | 96525412282 | 70001 |
+| 15 | Anmika | aaa@gmail.com | 96525442252 | 45000 |
+| 16 | Kumar  | kk@gmail.com  | 96523412252 | 80000 |
++----+--------+---------------+-------------+-------+
+7 rows in set (0.00 sec)
+
+mysql> update employees set sal=90001 && name="Aniket" where id=9;
+Query OK, 1 row affected, 1 warning (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 1
+
+mysql> select * from employees order by id;
++----+--------+---------------+-------------+-------+
+| id | name   | email         | contact     | sal   |
++----+--------+---------------+-------------+-------+
+|  9 | Ani    | a@gmail.com   | 96525412252 |     0 |
+| 10 | Rahul  | r@gmail.com   | 65215245215 | 15200 |
+| 11 | Ashish | aa@gmail.com  | 96525412251 | 50000 |
+| 12 | Karim  | k@gmail.com   | 96555412252 | 70010 |
+| 13 | Harsh  | h@gmail.com   | 96525412282 | 70001 |
+| 15 | Anmika | aaa@gmail.com | 96525442252 | 45000 |
+| 16 | Kumar  | kk@gmail.com  | 96523412252 | 80000 |
++----+--------+---------------+-------------+-------+
+7 rows in set (0.00 sec)
+
+mysql> update employees set sal=90001 where id=9 && name="Aniket" where id=9;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id=9' at line 1
+mysql> update employees set sal=90001 where id=9 && set name="Aniket" where id=9;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'set name="Aniket" where id=9' at line 1
+mysql> update employees set sal=90000 where id=9;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update employees set name="Ani" where id=9;
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 1  Changed: 0  Warnings: 0
+
+mysql> select * from employees order by id;
++----+--------+---------------+-------------+-------+
+| id | name   | email         | contact     | sal   |
++----+--------+---------------+-------------+-------+
+|  9 | Ani    | a@gmail.com   | 96525412252 | 90000 |
+| 10 | Rahul  | r@gmail.com   | 65215245215 | 15200 |
+| 11 | Ashish | aa@gmail.com  | 96525412251 | 50000 |
+| 12 | Karim  | k@gmail.com   | 96555412252 | 70010 |
+| 13 | Harsh  | h@gmail.com   | 96525412282 | 70001 |
+| 15 | Anmika | aaa@gmail.com | 96525442252 | 45000 |
+| 16 | Kumar  | kk@gmail.com  | 96523412252 | 80000 |
++----+--------+---------------+-------------+-------+
+7 rows in set (0.00 sec)
+
+mysql> select * from employees where id in(11, 12, 13);
++----+--------+--------------+-------------+-------+
+| id | name   | email        | contact     | sal   |
++----+--------+--------------+-------------+-------+
+| 11 | Ashish | aa@gmail.com | 96525412251 | 50000 |
+| 12 | Karim  | k@gmail.com  | 96555412252 | 70010 |
+| 13 | Harsh  | h@gmail.com  | 96525412282 | 70001 |
++----+--------+--------------+-------------+-------+
+3 rows in set (0.00 sec)
+
+mysql> select * from employees where sal between 10000 and 40000;
++----+-------+-------------+-------------+-------+
+| id | name  | email       | contact     | sal   |
++----+-------+-------------+-------------+-------+
+| 10 | Rahul | r@gmail.com | 65215245215 | 15200 |
++----+-------+-------------+-------------+-------+
+1 row in set (0.00 sec)
+
+mysql> select * from employees where sal > 10000;
++----+--------+---------------+-------------+-------+
+| id | name   | email         | contact     | sal   |
++----+--------+---------------+-------------+-------+
+|  9 | Ani    | a@gmail.com   | 96525412252 | 90000 |
+| 10 | Rahul  | r@gmail.com   | 65215245215 | 15200 |
+| 11 | Ashish | aa@gmail.com  | 96525412251 | 50000 |
+| 12 | Karim  | k@gmail.com   | 96555412252 | 70010 |
+| 13 | Harsh  | h@gmail.com   | 96525412282 | 70001 |
+| 15 | Anmika | aaa@gmail.com | 96525442252 | 45000 |
+| 16 | Kumar  | kk@gmail.com  | 96523412252 | 80000 |
++----+--------+---------------+-------------+-------+
+7 rows in set (0.00 sec)
+
+mysql> Terminal close -- exit!

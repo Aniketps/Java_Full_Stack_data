@@ -1,0 +1,42 @@
+1.Merge two sorted arrays
+Merge two sorted arrays into a single sorted array.
+
+Your Task : You  have to create class name as MergeSortedArray with following function 
+Void setArray(int a[],int b[]): this function can two array as input 
+void merge(): this function is responsible for merge two array 
+ int [ ] getMergedArray(): this function can return merge array as resultant array
+
+2.Rotate an array by k positions
+Rotate the elements of the array k times to the left or right.
+Example: Rotate an array to the right by k positions. For example, if the input array is [1, 2, 3, 4, 5] and k = 2, 
+The output should be [4, 5, 1, 2, 3].
+
+Your Task:  You have to create class name RotateArray with following function 
+void setArray(int a[]): this function can accept array as parameter
+ void rotate(int k): this function help us to rotate array from left to right
+ Int [] getResult(): this function can return resultant array
+
+3. Move all zeros to the end of the array
+Rearrange the array such that all zeros are moved to the end without changing the order of non-zero elements.
+ Example:
+Input: [0, 1, 9, 0, 5, 3, 0, 7] Output: [1, 9, 5, 3, 7, 0, 0, 0]
+
+4. Find the intersection of two arrays
+Given two arrays, find their intersection (common elements).
+
+Example:
+Input:
+Array 1: [1, 2, 2, 1]
+Array 2: [2, 2]
+Output: [2] (Note that even though 2 appears twice in both arrays, it should appear only once in the intersection).
+Your Task: we want to create class name as  FindIntersection with following methods
+  void setArrays(int a[ ] , int b [ ]): this function accept two array as input 
+  void intersection(): this function can find the intersection of two array
+int [] getIntersection(): this function can return resultant array at function calling point.
+5. Find the union of two arrays
+Given two arrays, find their union (all unique elements).
+  Example: 
+Input:
+Array 1: [1, 2, 2, 1]
+Array 2: [2, 3, 4]
+Output: [1, 2, 3, 4]

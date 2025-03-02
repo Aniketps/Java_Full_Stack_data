@@ -1,0 +1,129 @@
+Consider we have the Database
+Course Table
+Courseid   Course name  Fees
+1                JAVA            26000
+2               PHP                26000
+3               .NET              26000
+
+Student Table
+Sid            Name           Email               Contact          Address
+1                Ram              ram@gmail     123456           PUNE
+2               Shyam          shyam@         343434           Nashik
+3               Dinesh          dinesh@        43265             Mumbai
+
+ 
+Placement Table
+Pid          Comp name           Package           Pdate
+1             TCS                      360000            01/01/2020
+2             Infosys                360000            01/02/2020
+
+ 
+Csjoin table 
+Courseid         Sid            Pid
+1                      1                1
+2                     1                2
+1                     2                1
+2                     2               2
+
+ 
+Above Table Description given below
+Course Table
+Column name     	data type              	        	constraints
+Courseid              	int                                       	primary key auto increment
+name                     	varchar(200)                 	        not null unique
+fees                        	int(5)                                	not null
+
+Student Table
+Column Name                	data type                          	constraints
+sid                                      	int(5)                                primary key auto increment
+name                                 	varchar(200)                 	not null
+email                                 	varchar(200)                 	not null unique
+contact                              	varchar(200)                 	not null unique
+address                            	varchar(200)                 	not null
+ 
+Placement Table
+Column name                 	data type                          	constraints
+pid                                      	int(5)                                	primary key auto increment
+comp name                     	varchar(200)                            	not null
+package                            	int(5)                                	not null
+pdate                                 	date                                   	not null
+
+Csjoin table
+column name                  	datatype               	constraints
+sid                                      	int(5)                    	foreign key
+cid                                      	int(5)                    	foreign key
+pid                                      	int(5)                    	foreign key
+ 
+Write the Following SQL Queries on Above Database
+ 
+Q. Write SQL Query to display the all courses?
+Q. Write SQL Query to display all courses whose fees is greater than 10000?
+Q. Write SQL Query to display the all courses whose fees is 10000, 20000, 30000, and 40000?
+Q. Write SQL Query to display the courses whose name start with J and ends with a?
+Q. Write SQL query to display the course in which at least 3 character?
+Q. Write SQL Query to display the course wise student list?
+
+Above query output like as
+Student Name         Course Name
+Ram                         JAVA
+Ram				PHP
+Shyam			JAVA
+Shyam			PHP
+
+ 
+Q. Write a SQL Query to show the Student count Course Wise?
+Output Like as
+ 
+Course Name			Student Count
+JAVA				2
+PHP					2
+.NET				0
+
+ 
+Q. Write SQL Query to show the course list who having more than 3 students?
+Output like as
+Course Name			Student Count
+JAVA				4
+PHP					5
+
+ 
+Q. Write SQL Query to show the courses who having no admission?
+Output Like as
+Course Name			Student Count
+JAVA				0
+PHP					0
+
+Q. Write SQL Query to show the student name with highest package?
+Q. Write SQL Query to show the student name with third highest package?
+Q. Write SQL Query to show the student name who having minimum package?
+Q. Write SQL Query to show the all student list who having more than 3 lakh packages?
+Q.Write SQL Query to show the student list package wise in descending order?
+Q. Write SQL Query to show the company name with student count?
+Output like as
+Company Name		Student Count
+TCS					2
+Infosys				2
+
+ 
+Q.Write SQL Query to show the Placement Count Course Wise?
+Output Like as
+Course Name			Placed Student Count
+JAVA				3
+PHP					5
+
+ 
+Q. Write SQL Query to show the student list course wise that got minimum single offer?
+Q. Write SQL Query to show the course name that having highest placement?
+Q. Write SQL Query to show placed student list of year 2020?
+Q. Write SQL Query show the placement count year wise?
+Output like as
+Year			Placement Count
+2020		100
+2021		120
+2022		450
+
+Q.Write SQL Query to show the year in which maximum student placed?
+Q. Write SQL queries to show the AVG placement ratio of last five year?
+Q. Write SQL Procedure to pass the course id and return the course name
+Q. Write SQL Procedure to return the student count course wise
+ 

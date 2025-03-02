@@ -1,0 +1,1048 @@
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| aniket             |
+| exam24feb2025      |
+| information_schema |
+| institute          |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+7 rows in set (0.01 sec)
+
+mysql> use aniket;
+Database changed
+mysql> show tables;
++--------------------+
+| Tables_in_aniket   |
++--------------------+
+| admission          |
+| alumnia            |
+| courses            |
+| customers          |
+| da                 |
+| department         |
+| employeepastrecord |
+| employees          |
+| ledger             |
+| player             |
+| product            |
+| students           |
+| suppliers          |
+| teamalloccation    |
++--------------------+
+14 rows in set (0.01 sec)
+
+mysql> select * from da;
++--------------------+------------+
+| dname              | Avg_Salary |
++--------------------+------------+
+| Apparel            | 30000.0000 |
+| Automotive         | 64500.0000 |
+| BooksAndStationery | 30500.0000 |
+| Electronics        | 62500.0000 |
+| Grocery            | 42700.0000 |
+| HomeAndKitchen     | 47000.0000 |
++--------------------+------------+
+6 rows in set (0.01 sec)
+
+mysql> desc da;
++------------+---------------+------+-----+---------+-------+
+| Field      | Type          | Null | Key | Default | Extra |
++------------+---------------+------+-----+---------+-------+
+| dname      | varchar(200)  | NO   |     | NULL    |       |
+| Avg_Salary | decimal(14,4) | YES  |     | NULL    |       |
++------------+---------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> drop view da;
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> show tables;
++--------------------+
+| Tables_in_aniket   |
++--------------------+
+| admission          |
+| alumnia            |
+| courses            |
+| customers          |
+| department         |
+| employeepastrecord |
+| employees          |
+| ledger             |
+| player             |
+| product            |
+| students           |
+| suppliers          |
+| teamalloccation    |
++--------------------+
+13 rows in set (0.00 sec)
+
+mysql> select * from customers;
++-----+--------+
+| cid | name   |
++-----+--------+
+|   1 | Aniket |
+|   2 | Rahul  |
+|   3 | Ganesh |
+|   4 | Kishor |
+|   5 | Pawan  |
+|   6 | Hari   |
+|   7 | Mukund |
+|   8 | Pravin |
+|   9 | Kashi  |
++-----+--------+
+9 rows in set (0.00 sec)
+
+mysql> select * from department;
++-----+--------------------+
+| did | name               |
++-----+--------------------+
+|   3 | Apparel            |
+|   5 | Automotive         |
+|   6 | BooksAndStationery |
+|   2 | Electronics        |
+|   1 | Grocery            |
+|   4 | HomeAndKitchen     |
++-----+--------------------+
+6 rows in set (0.00 sec)
+
+mysql> select * from employeepastrecord;
++-------+------+-----------+-----------+------------+
+| eprid | eid  | oldSalary | newSalary | date       |
++-------+------+-----------+-----------+------------+
+|     1 |    1 |     35000 |     40000 | 2025-02-27 |
++-------+------+-----------+-----------+------------+
+1 row in set (0.00 sec)
+
+mysql> 
+mysql> select * from employees;
++-----+-----------+--------+------+
+| eid | name      | salary | did  |
++-----+-----------+--------+------+
+|   1 | Alice     |  40000 |    1 |
+|   2 | Bob       |  32000 |    1 |
+|   3 | Charlie   |  36000 |    1 |
+|   4 | David     |  34000 |    1 |
+|   5 | Emma      |  37000 |    1 |
+|   6 | Frank     |  38000 |    1 |
+|   7 | Grace     |  39000 |    1 |
+|   8 | Henry     |  40000 |    1 |
+|   9 | Ivy       |  41000 |    1 |
+|  10 | Jack      |  42000 |    1 |
+|  11 | Kelly     |  43000 |    1 |
+|  12 | Liam      |  44000 |    1 |
+|  13 | Mia       |  45000 |    1 |
+|  14 | Noah      |  46000 |    1 |
+|  15 | Olivia    |  47000 |    1 |
+|  16 | Paul      |  48000 |    1 |
+|  17 | Quinn     |  49000 |    1 |
+|  18 | Rachel    |  50000 |    1 |
+|  19 | Steve     |  51000 |    1 |
+|  20 | Tina      |  52000 |    1 |
+|  21 | Uma       |  53000 |    2 |
+|  22 | Victor    |  54000 |    2 |
+|  23 | Wendy     |  55000 |    2 |
+|  24 | Xander    |  56000 |    2 |
+|  25 | Yara      |  57000 |    2 |
+|  26 | Zane      |  58000 |    2 |
+|  27 | Aaron     |  59000 |    2 |
+|  28 | Bella     |  60000 |    2 |
+|  29 | Chris     |  61000 |    2 |
+|  30 | Diana     |  62000 |    2 |
+|  31 | Ethan     |  63000 |    2 |
+|  32 | Fiona     |  64000 |    2 |
+|  33 | George    |  65000 |    2 |
+|  34 | Hannah    |  66000 |    2 |
+|  35 | Ian       |  67000 |    2 |
+|  36 | Julia     |  68000 |    2 |
+|  37 | Kevin     |  69000 |    2 |
+|  38 | Laura     |  70000 |    2 |
+|  39 | Michael   |  71000 |    2 |
+|  40 | Nina      |  72000 |    2 |
+|  41 | Oscar     |  28000 |    3 |
+|  42 | Peter     |  29000 |    3 |
+|  43 | Queen     |  30000 |    3 |
+|  44 | Ron       |  31000 |    3 |
+|  45 | Sophia    |  32000 |    3 |
+|  46 | Tom       |  40000 |    4 |
+|  47 | Usha      |  41000 |    4 |
+|  48 | Varun     |  42000 |    4 |
+|  49 | Walter    |  43000 |    4 |
+|  50 | Xena      |  44000 |    4 |
+|  51 | Yusuf     |  45000 |    4 |
+|  52 | Zoya      |  46000 |    4 |
+|  53 | Amir      |  47000 |    4 |
+|  54 | Benny     |  48000 |    4 |
+|  55 | Catherine |  49000 |    4 |
+|  56 | Deepak    |  50000 |    4 |
+|  57 | Elaine    |  51000 |    4 |
+|  58 | Farhan    |  52000 |    4 |
+|  59 | Gina      |  53000 |    4 |
+|  60 | Harold    |  54000 |    4 |
+|  61 | Ishaan    |  55000 |    5 |
+|  62 | Jessica   |  56000 |    5 |
+|  63 | Karan     |  57000 |    5 |
+|  64 | Leah      |  58000 |    5 |
+|  65 | Mohit     |  59000 |    5 |
+|  66 | Natasha   |  60000 |    5 |
+|  67 | Omar      |  61000 |    5 |
+|  68 | Pooja     |  62000 |    5 |
+|  69 | Qasim     |  63000 |    5 |
+|  70 | Ravi      |  64000 |    5 |
+|  71 | Simran    |  65000 |    5 |
+|  72 | Tariq     |  66000 |    5 |
+|  73 | Uday      |  67000 |    5 |
+|  74 | Vishal    |  68000 |    5 |
+|  75 | William   |  69000 |    5 |
+|  76 | Xavier    |  70000 |    5 |
+|  77 | Yash      |  71000 |    5 |
+|  78 | Zeenat    |  72000 |    5 |
+|  79 | Arjun     |  73000 |    5 |
+|  80 | Bina      |  74000 |    5 |
+|  81 | Chetan    |  26000 |    6 |
+|  82 | Divya     |  27000 |    6 |
+|  83 | Evan      |  28000 |    6 |
+|  84 | Fatima    |  29000 |    6 |
+|  85 | Gaurav    |  30000 |    6 |
+|  86 | Hitesh    |  31000 |    6 |
+|  87 | Indira    |  32000 |    6 |
+|  88 | Jatin     |  33000 |    6 |
+|  89 | Komal     |  34000 |    6 |
+|  90 | Lalit     |  35000 |    6 |
++-----+-----------+--------+------+
+90 rows in set (0.00 sec)
+
+mysql> select * from ledger;
+Empty set (0.01 sec)
+
+mysql> select * from product;
++-----+-----------------------------+---------+------+
+| pid | name                        | price   | sid  |
++-----+-----------------------------+---------+------+
+|   1 | Amul Milk                   |      30 |    1 |
+|   2 | Parle-G Biscuits            |      10 |    2 |
+|   3 | Britannia Bread             |      40 |    3 |
+|   4 | MDH Garam Masala            |      80 |    4 |
+|   5 | Haldiram?s Bhujia           |      60 |    5 |
+|   6 | Boat Rockerz 450 Headphones |    1999 |    6 |
+|   7 | Micromax IN Note 1          |   12000 |    7 |
+|   8 | Noise Smartwatch            |    3500 |    8 |
+|   9 | Voltas 1.5 Ton AC           |   35000 |    9 |
+|  10 | Reliance Jio Phone          |    2500 |   10 |
+|  11 | FabIndia Cotton Kurta       |    1500 |   11 |
+|  12 | Manyavar Sherwani           |    8000 |   12 |
+|  13 | Raymond Formal Suit         |   12000 |   13 |
+|  14 | Pantaloons Jeans            |    2000 |   14 |
+|  15 | Biba Salwar Kameez          |    3500 |   15 |
+|  16 | Prestige Pressure Cooker    |    2500 |   16 |
+|  17 | Hawkins Frying Pan          |    1200 |   17 |
+|  18 | Bajaj LED Bulb              |     200 |   18 |
+|  19 | Nilkamal Plastic Chair      |     900 |   19 |
+|  20 | Urban Ladder Coffee Table   |    5000 |   20 |
+|  21 | Tata Nexon Car              |  900000 |   21 |
+|  22 | Mahindra Scorpio SUV        | 1500000 |   22 |
+|  23 | Hero Splendor Bike          |   80000 |   23 |
+|  24 | Bajaj Pulsar 150            |  110000 |   24 |
+|  25 | TVS Jupiter Scooter         |   75000 |   25 |
+|  26 | Navneet Notebook            |      50 |   26 |
+|  27 | Classmate Pen Set           |     100 |   27 |
+|  28 | Camlin Watercolors          |     250 |   28 |
+|  29 | Luxor Permanent Marker      |      80 |   29 |
+|  30 | Hindustan Pencils (Apsara)  |      30 |   30 |
++-----+-----------------------------+---------+------+
+30 rows in set (0.00 sec)
+
+mysql> select * from suppliers;
++-----+----------------------+
+| sid | name                 |
++-----+----------------------+
+|   1 | Amul                 |
+|  24 | Bajaj Auto           |
+|  18 | Bajaj Electricals    |
+|  15 | Biba                 |
+|   8 | Boat                 |
+|   3 | Britannia            |
+|  28 | Camlin Kokuyo        |
+|  27 | Classmate            |
+|  11 | FabIndia             |
+|   5 | Haldiram?s           |
+|  17 | Hawkins              |
+|  23 | Hero MotoCorp        |
+|  30 | Hindustan Pencils    |
+|  29 | Luxor                |
+|  22 | Mahindra & Mahindra  |
+|  12 | Manyavar             |
+|   4 | MDH                  |
+|   7 | Micromax             |
+|  26 | Navneet Publications |
+|  19 | Nilkamal             |
+|   9 | Noise                |
+|  14 | Pantaloons           |
+|   2 | Parle                |
+|  16 | Prestige             |
+|  13 | Raymond              |
+|   6 | Reliance Digital     |
+|  21 | Tata Motors          |
+|  25 | TVS Motors           |
+|  20 | Urban Ladder         |
+|  10 | Voltas               |
++-----+----------------------+
+30 rows in set (0.00 sec)
+
+mysql> desc ledger;
++-------+------+------+-----+---------+----------------+
+| Field | Type | Null | Key | Default | Extra          |
++-------+------+------+-----+---------+----------------+
+| lid   | int  | NO   | PRI | NULL    | auto_increment |
+| cid   | int  | YES  | MUL | NULL    |                |
+| pid   | int  | YES  | MUL | NULL    |                |
+| date  | date | YES  |     | NULL    |                |
++-------+------+------+-----+---------+----------------+
+4 rows in set (0.00 sec)
+
+mysql> select * from costumers;
+ERROR 1146 (42S02): Table 'aniket.costumers' doesn't exist
+mysql> select * from costumer;
+ERROR 1146 (42S02): Table 'aniket.costumer' doesn't exist
+mysql> select * from product;
++-----+-----------------------------+---------+------+
+| pid | name                        | price   | sid  |
++-----+-----------------------------+---------+------+
+|   1 | Amul Milk                   |      30 |    1 |
+|   2 | Parle-G Biscuits            |      10 |    2 |
+|   3 | Britannia Bread             |      40 |    3 |
+|   4 | MDH Garam Masala            |      80 |    4 |
+|   5 | Haldiram?s Bhujia           |      60 |    5 |
+|   6 | Boat Rockerz 450 Headphones |    1999 |    6 |
+|   7 | Micromax IN Note 1          |   12000 |    7 |
+|   8 | Noise Smartwatch            |    3500 |    8 |
+|   9 | Voltas 1.5 Ton AC           |   35000 |    9 |
+|  10 | Reliance Jio Phone          |    2500 |   10 |
+|  11 | FabIndia Cotton Kurta       |    1500 |   11 |
+|  12 | Manyavar Sherwani           |    8000 |   12 |
+|  13 | Raymond Formal Suit         |   12000 |   13 |
+|  14 | Pantaloons Jeans            |    2000 |   14 |
+|  15 | Biba Salwar Kameez          |    3500 |   15 |
+|  16 | Prestige Pressure Cooker    |    2500 |   16 |
+|  17 | Hawkins Frying Pan          |    1200 |   17 |
+|  18 | Bajaj LED Bulb              |     200 |   18 |
+|  19 | Nilkamal Plastic Chair      |     900 |   19 |
+|  20 | Urban Ladder Coffee Table   |    5000 |   20 |
+|  21 | Tata Nexon Car              |  900000 |   21 |
+|  22 | Mahindra Scorpio SUV        | 1500000 |   22 |
+|  23 | Hero Splendor Bike          |   80000 |   23 |
+|  24 | Bajaj Pulsar 150            |  110000 |   24 |
+|  25 | TVS Jupiter Scooter         |   75000 |   25 |
+|  26 | Navneet Notebook            |      50 |   26 |
+|  27 | Classmate Pen Set           |     100 |   27 |
+|  28 | Camlin Watercolors          |     250 |   28 |
+|  29 | Luxor Permanent Marker      |      80 |   29 |
+|  30 | Hindustan Pencils (Apsara)  |      30 |   30 |
++-----+-----------------------------+---------+------+
+30 rows in set (0.00 sec)
+
+mysql> select * from costumers;
+ERROR 1146 (42S02): Table 'aniket.costumers' doesn't exist
+mysql> select * from customers;
++-----+--------+
+| cid | name   |
++-----+--------+
+|   1 | Aniket |
+|   2 | Rahul  |
+|   3 | Ganesh |
+|   4 | Kishor |
+|   5 | Pawan  |
+|   6 | Hari   |
+|   7 | Mukund |
+|   8 | Pravin |
+|   9 | Kashi  |
++-----+--------+
+9 rows in set (0.00 sec)
+
+mysql> insert into ledger(cid, pid, date) values (1, 8, "2025-02-25");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from ladger;
+ERROR 1146 (42S02): Table 'aniket.ladger' doesn't exist
+mysql> select * from ledger;
++-----+------+------+------------+
+| lid | cid  | pid  | date       |
++-----+------+------+------------+
+|   1 |    1 |    8 | 2025-02-25 |
++-----+------+------+------------+
+1 row in set (0.00 sec)
+
+mysql> insert into ledger(cid, pid, date) values (1, 6, "2025-02-25"), (1, 25, "2025-02-25"), (2, 21, "2025-02-25"), (3, 21, "2025-02-26"), (3, 7, "2025-02-26"), (1, 6, "2025-02-27");
+Query OK, 6 rows affected (0.01 sec)
+Records: 6  Duplicates: 0  Warnings: 0
+
+mysql> select * from ledger;
++-----+------+------+------------+
+| lid | cid  | pid  | date       |
++-----+------+------+------------+
+|   1 |    1 |    8 | 2025-02-25 |
+|   2 |    1 |    6 | 2025-02-25 |
+|   3 |    1 |   25 | 2025-02-25 |
+|   4 |    2 |   21 | 2025-02-25 |
+|   5 |    3 |   21 | 2025-02-26 |
+|   6 |    3 |    7 | 2025-02-26 |
+|   7 |    1 |    6 | 2025-02-27 |
++-----+------+------+------------+
+7 rows in set (0.00 sec)
+
+mysql> select * from customers where cid in (select cid from ledger)
+    -> ;
++-----+--------+
+| cid | name   |
++-----+--------+
+|   1 | Aniket |
+|   2 | Rahul  |
+|   3 | Ganesh |
++-----+--------+
+3 rows in set (0.00 sec)
+
+mysql> select * from customers where cid not in (select cid from ledger)
+    -> ;
++-----+--------+
+| cid | name   |
++-----+--------+
+|   4 | Kishor |
+|   5 | Pawan  |
+|   6 | Hari   |
+|   7 | Mukund |
+|   8 | Pravin |
+|   9 | Kashi  |
++-----+--------+
+6 rows in set (0.00 sec)
+
+mysql> select * from product where pid in (select pid from ledger)
+    -> ;
++-----+-----------------------------+--------+------+
+| pid | name                        | price  | sid  |
++-----+-----------------------------+--------+------+
+|   6 | Boat Rockerz 450 Headphones |   1999 |    6 |
+|   7 | Micromax IN Note 1          |  12000 |    7 |
+|   8 | Noise Smartwatch            |   3500 |    8 |
+|  21 | Tata Nexon Car              | 900000 |   21 |
+|  25 | TVS Jupiter Scooter         |  75000 |   25 |
++-----+-----------------------------+--------+------+
+5 rows in set (0.00 sec)
+
+mysql> select * from (product where pid in (select pid from ledger)) as p inner join suppliers s on p.sid=s.sid;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where pid in (select pid from ledger)) as p inner join suppliers s on p.sid=s.si' at line 1
+mysql> select * from (select * from product where pid in (select pid from ledger)) as p inner join suppliers s on p.sid=s.sid;
++-----+-----------------------------+--------+------+-----+------------------+
+| pid | name                        | price  | sid  | sid | name             |
++-----+-----------------------------+--------+------+-----+------------------+
+|   6 | Boat Rockerz 450 Headphones |   1999 |    6 |   6 | Reliance Digital |
+|   7 | Micromax IN Note 1          |  12000 |    7 |   7 | Micromax         |
+|   8 | Noise Smartwatch            |   3500 |    8 |   8 | Boat             |
+|  21 | Tata Nexon Car              | 900000 |   21 |  21 | Tata Motors      |
+|  25 | TVS Jupiter Scooter         |  75000 |   25 |  25 | TVS Motors       |
++-----+-----------------------------+--------+------+-----+------------------+
+5 rows in set (0.00 sec)
+
+mysql> select p.name as "Product name", s.name as "Supplier Name" from (select * from product where pid in (select pid from ledger)) as p inner join suppliers s on p.sid=s.sid;
++-----------------------------+------------------+
+| Product name                | Supplier Name    |
++-----------------------------+------------------+
+| Boat Rockerz 450 Headphones | Reliance Digital |
+| Micromax IN Note 1          | Micromax         |
+| Noise Smartwatch            | Boat             |
+| Tata Nexon Car              | Tata Motors      |
+| TVS Jupiter Scooter         | TVS Motors       |
++-----------------------------+------------------+
+5 rows in set (0.00 sec)
+
+mysql> select * from employees group by did having count(did)>=20;
+ERROR 1055 (42000): Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'aniket.employees.eid' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+mysql> select did from employees group by did having count(did)>=20;
++------+
+| did  |
++------+
+|    1 |
+|    2 |
+|    5 |
++------+
+3 rows in set (0.00 sec)
+
+mysql> select * from employees where did=(select did from employees group by did having count(did)>=20);
+ERROR 1242 (21000): Subquery returns more than 1 row
+mysql> select * from employees where did in (select did from employees group by did having count(did)>=20);
++-----+---------+--------+------+
+| eid | name    | salary | did  |
++-----+---------+--------+------+
+|   1 | Alice   |  40000 |    1 |
+|   2 | Bob     |  32000 |    1 |
+|   3 | Charlie |  36000 |    1 |
+|   4 | David   |  34000 |    1 |
+|   5 | Emma    |  37000 |    1 |
+|   6 | Frank   |  38000 |    1 |
+|   7 | Grace   |  39000 |    1 |
+|   8 | Henry   |  40000 |    1 |
+|   9 | Ivy     |  41000 |    1 |
+|  10 | Jack    |  42000 |    1 |
+|  11 | Kelly   |  43000 |    1 |
+|  12 | Liam    |  44000 |    1 |
+|  13 | Mia     |  45000 |    1 |
+|  14 | Noah    |  46000 |    1 |
+|  15 | Olivia  |  47000 |    1 |
+|  16 | Paul    |  48000 |    1 |
+|  17 | Quinn   |  49000 |    1 |
+|  18 | Rachel  |  50000 |    1 |
+|  19 | Steve   |  51000 |    1 |
+|  20 | Tina    |  52000 |    1 |
+|  21 | Uma     |  53000 |    2 |
+|  22 | Victor  |  54000 |    2 |
+|  23 | Wendy   |  55000 |    2 |
+|  24 | Xander  |  56000 |    2 |
+|  25 | Yara    |  57000 |    2 |
+|  26 | Zane    |  58000 |    2 |
+|  27 | Aaron   |  59000 |    2 |
+|  28 | Bella   |  60000 |    2 |
+|  29 | Chris   |  61000 |    2 |
+|  30 | Diana   |  62000 |    2 |
+|  31 | Ethan   |  63000 |    2 |
+|  32 | Fiona   |  64000 |    2 |
+|  33 | George  |  65000 |    2 |
+|  34 | Hannah  |  66000 |    2 |
+|  35 | Ian     |  67000 |    2 |
+|  36 | Julia   |  68000 |    2 |
+|  37 | Kevin   |  69000 |    2 |
+|  38 | Laura   |  70000 |    2 |
+|  39 | Michael |  71000 |    2 |
+|  40 | Nina    |  72000 |    2 |
+|  61 | Ishaan  |  55000 |    5 |
+|  62 | Jessica |  56000 |    5 |
+|  63 | Karan   |  57000 |    5 |
+|  64 | Leah    |  58000 |    5 |
+|  65 | Mohit   |  59000 |    5 |
+|  66 | Natasha |  60000 |    5 |
+|  67 | Omar    |  61000 |    5 |
+|  68 | Pooja   |  62000 |    5 |
+|  69 | Qasim   |  63000 |    5 |
+|  70 | Ravi    |  64000 |    5 |
+|  71 | Simran  |  65000 |    5 |
+|  72 | Tariq   |  66000 |    5 |
+|  73 | Uday    |  67000 |    5 |
+|  74 | Vishal  |  68000 |    5 |
+|  75 | William |  69000 |    5 |
+|  76 | Xavier  |  70000 |    5 |
+|  77 | Yash    |  71000 |    5 |
+|  78 | Zeenat  |  72000 |    5 |
+|  79 | Arjun   |  73000 |    5 |
+|  80 | Bina    |  74000 |    5 |
++-----+---------+--------+------+
+60 rows in set (0.00 sec)
+
+mysql> select * from product;
++-----+-----------------------------+---------+------+
+| pid | name                        | price   | sid  |
++-----+-----------------------------+---------+------+
+|   1 | Amul Milk                   |      30 |    1 |
+|   2 | Parle-G Biscuits            |      10 |    2 |
+|   3 | Britannia Bread             |      40 |    3 |
+|   4 | MDH Garam Masala            |      80 |    4 |
+|   5 | Haldiram?s Bhujia           |      60 |    5 |
+|   6 | Boat Rockerz 450 Headphones |    1999 |    6 |
+|   7 | Micromax IN Note 1          |   12000 |    7 |
+|   8 | Noise Smartwatch            |    3500 |    8 |
+|   9 | Voltas 1.5 Ton AC           |   35000 |    9 |
+|  10 | Reliance Jio Phone          |    2500 |   10 |
+|  11 | FabIndia Cotton Kurta       |    1500 |   11 |
+|  12 | Manyavar Sherwani           |    8000 |   12 |
+|  13 | Raymond Formal Suit         |   12000 |   13 |
+|  14 | Pantaloons Jeans            |    2000 |   14 |
+|  15 | Biba Salwar Kameez          |    3500 |   15 |
+|  16 | Prestige Pressure Cooker    |    2500 |   16 |
+|  17 | Hawkins Frying Pan          |    1200 |   17 |
+|  18 | Bajaj LED Bulb              |     200 |   18 |
+|  19 | Nilkamal Plastic Chair      |     900 |   19 |
+|  20 | Urban Ladder Coffee Table   |    5000 |   20 |
+|  21 | Tata Nexon Car              |  900000 |   21 |
+|  22 | Mahindra Scorpio SUV        | 1500000 |   22 |
+|  23 | Hero Splendor Bike          |   80000 |   23 |
+|  24 | Bajaj Pulsar 150            |  110000 |   24 |
+|  25 | TVS Jupiter Scooter         |   75000 |   25 |
+|  26 | Navneet Notebook            |      50 |   26 |
+|  27 | Classmate Pen Set           |     100 |   27 |
+|  28 | Camlin Watercolors          |     250 |   28 |
+|  29 | Luxor Permanent Marker      |      80 |   29 |
+|  30 | Hindustan Pencils (Apsara)  |      30 |   30 |
++-----+-----------------------------+---------+------+
+30 rows in set (0.00 sec)
+
+mysql> select * from product oder by price limit 1;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'by price limit 1' at line 1
+mysql> select * from product oder by price;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'by price' at line 1
+mysql> select * from product order by price limit 1;
++-----+------------------+-------+------+
+| pid | name             | price | sid  |
++-----+------------------+-------+------+
+|   2 | Parle-G Biscuits |    10 |    2 |
++-----+------------------+-------+------+
+1 row in set (0.00 sec)
+
+mysql> select * from (select * from product order by price limit 1) as p inner join suppliers s on s.sid=p.sid;
++-----+------------------+-------+------+-----+-------+
+| pid | name             | price | sid  | sid | name  |
++-----+------------------+-------+------+-----+-------+
+|   2 | Parle-G Biscuits |    10 |    2 |   2 | Parle |
++-----+------------------+-------+------+-----+-------+
+1 row in set (0.00 sec)
+
+mysql> select p.pid, p.name, p.price, s.name from (select * from product order by price limit 1) as p inner join suppliers s on s.sid=p.sid;
++-----+------------------+-------+-------+
+| pid | name             | price | name  |
++-----+------------------+-------+-------+
+|   2 | Parle-G Biscuits |    10 | Parle |
++-----+------------------+-------+-------+
+1 row in set (0.00 sec)
+
+mysql> select * from ledger;
++-----+------+------+------------+
+| lid | cid  | pid  | date       |
++-----+------+------+------------+
+|   1 |    1 |    8 | 2025-02-25 |
+|   2 |    1 |    6 | 2025-02-25 |
+|   3 |    1 |   25 | 2025-02-25 |
+|   4 |    2 |   21 | 2025-02-25 |
+|   5 |    3 |   21 | 2025-02-26 |
+|   6 |    3 |    7 | 2025-02-26 |
+|   7 |    1 |    6 | 2025-02-27 |
++-----+------+------+------------+
+7 rows in set (0.00 sec)
+
+mysql> select * from customers;
++-----+--------+
+| cid | name   |
++-----+--------+
+|   1 | Aniket |
+|   2 | Rahul  |
+|   3 | Ganesh |
+|   4 | Kishor |
+|   5 | Pawan  |
+|   6 | Hari   |
+|   7 | Mukund |
+|   8 | Pravin |
+|   9 | Kashi  |
++-----+--------+
+9 rows in set (0.00 sec)
+
+mysql> select * from product;
++-----+-----------------------------+---------+------+
+| pid | name                        | price   | sid  |
++-----+-----------------------------+---------+------+
+|   1 | Amul Milk                   |      30 |    1 |
+|   2 | Parle-G Biscuits            |      10 |    2 |
+|   3 | Britannia Bread             |      40 |    3 |
+|   4 | MDH Garam Masala            |      80 |    4 |
+|   5 | Haldiram?s Bhujia           |      60 |    5 |
+|   6 | Boat Rockerz 450 Headphones |    1999 |    6 |
+|   7 | Micromax IN Note 1          |   12000 |    7 |
+|   8 | Noise Smartwatch            |    3500 |    8 |
+|   9 | Voltas 1.5 Ton AC           |   35000 |    9 |
+|  10 | Reliance Jio Phone          |    2500 |   10 |
+|  11 | FabIndia Cotton Kurta       |    1500 |   11 |
+|  12 | Manyavar Sherwani           |    8000 |   12 |
+|  13 | Raymond Formal Suit         |   12000 |   13 |
+|  14 | Pantaloons Jeans            |    2000 |   14 |
+|  15 | Biba Salwar Kameez          |    3500 |   15 |
+|  16 | Prestige Pressure Cooker    |    2500 |   16 |
+|  17 | Hawkins Frying Pan          |    1200 |   17 |
+|  18 | Bajaj LED Bulb              |     200 |   18 |
+|  19 | Nilkamal Plastic Chair      |     900 |   19 |
+|  20 | Urban Ladder Coffee Table   |    5000 |   20 |
+|  21 | Tata Nexon Car              |  900000 |   21 |
+|  22 | Mahindra Scorpio SUV        | 1500000 |   22 |
+|  23 | Hero Splendor Bike          |   80000 |   23 |
+|  24 | Bajaj Pulsar 150            |  110000 |   24 |
+|  25 | TVS Jupiter Scooter         |   75000 |   25 |
+|  26 | Navneet Notebook            |      50 |   26 |
+|  27 | Classmate Pen Set           |     100 |   27 |
+|  28 | Camlin Watercolors          |     250 |   28 |
+|  29 | Luxor Permanent Marker      |      80 |   29 |
+|  30 | Hindustan Pencils (Apsara)  |      30 |   30 |
++-----+-----------------------------+---------+------+
+30 rows in set (0.00 sec)
+
+mysql> create procedure customerOrders(IN id int)
+    -> begin
+    -> ^C
+mysql> select * from ladger where cid = 1;
+ERROR 1146 (42S02): Table 'aniket.ladger' doesn't exist
+mysql> select * from ledger where cid = 1;
++-----+------+------+------------+
+| lid | cid  | pid  | date       |
++-----+------+------+------------+
+|   1 |    1 |    8 | 2025-02-25 |
+|   2 |    1 |    6 | 2025-02-25 |
+|   3 |    1 |   25 | 2025-02-25 |
+|   7 |    1 |    6 | 2025-02-27 |
++-----+------+------+------------+
+4 rows in set (0.00 sec)
+
+mysql> select l.pid, c.name, p.name, p.price, l.date from (select cid, pid, date from ledger where cid = 1) as l inner join customers c on c.cid=l.cid inner join product p on p.pid=l.pid;
++------+--------+-----------------------------+-------+------------+
+| pid  | name   | name                        | price | date       |
++------+--------+-----------------------------+-------+------------+
+|    8 | Aniket | Noise Smartwatch            |  3500 | 2025-02-25 |
+|    6 | Aniket | Boat Rockerz 450 Headphones |  1999 | 2025-02-25 |
+|   25 | Aniket | TVS Jupiter Scooter         | 75000 | 2025-02-25 |
+|    6 | Aniket | Boat Rockerz 450 Headphones |  1999 | 2025-02-27 |
++------+--------+-----------------------------+-------+------------+
+4 rows in set (0.00 sec)
+
+mysql> create procedure customerOrders(IN id int)
+    -> begin
+    ->  select l.pid, c.name, p.name, p.price, l.date from (select cid, pid, date from ledger where cid = id) as l inner join customers c on c.cid=l.cid inner join product p on p.pid=l.pid;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3
+mysql> delimiter //
+mysql> create procedure customerOrders(IN id int)
+    -> begin
+    ->  select l.pid, c.name, p.name, p.price, l.date from (select cid, pid, date from ledger where cid = id) as l inner join customers c on c.cid=l.cid inner join product p on p.pid=l.pid;
+    -> end 
+    -> //
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> call customerOrder(2);
+    -> //
+ERROR 1305 (42000): PROCEDURE aniket.customerOrder does not exist
+mysql> call customerOrders(2);
+    -> //
++------+-------+----------------+--------+------------+
+| pid  | name  | name           | price  | date       |
++------+-------+----------------+--------+------------+
+|   21 | Rahul | Tata Nexon Car | 900000 | 2025-02-25 |
++------+-------+----------------+--------+------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> call customerOrders(3)//
++------+--------+--------------------+--------+------------+
+| pid  | name   | name               | price  | date       |
++------+--------+--------------------+--------+------------+
+|   21 | Ganesh | Tata Nexon Car     | 900000 | 2025-02-26 |
+|    7 | Ganesh | Micromax IN Note 1 |  12000 | 2025-02-26 |
++------+--------+--------------------+--------+------------+
+2 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> call customerOrders(4)//
+Empty set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> select sum(price) from ledger;
+    -> //
+ERROR 1054 (42S22): Unknown column 'price' in 'field list'
+mysql> select sum(p.price) from ledger l inner join product p on p.pid=l.pid;
+    -> //
++--------------+
+| sum(p.price) |
++--------------+
+|      1894498 |
++--------------+
+1 row in set (0.00 sec)
+
+mysql> select sum(p.price) from ledger l inner join product p on p.pid=l.pid where l.date like "2025%"//
++--------------+
+| sum(p.price) |
++--------------+
+|      1894498 |
++--------------+
+1 row in set (0.00 sec)
+
+mysql> select sum(p.price) from ledger l inner join product p on p.pid=l.pid where l.date like "2026%"//
++--------------+
+| sum(p.price) |
++--------------+
+|         NULL |
++--------------+
+1 row in set (0.00 sec)
+
+mysql> select sum(p.price) from ledger l inner join product p on p.pid=l.pid where l.date like "2025%"//
++--------------+
+| sum(p.price) |
++--------------+
+|      1894498 |
++--------------+
+1 row in set (0.00 sec)
+
+mysql> create procedure yearTotalSales(IN year varchar(4))
+    -> begin
+    -> select sum(p.price) from ledger l inner join product p on p.pid=l.pid where l.date like year//
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3
+mysql> create procedure yearTotalSales(IN year varchar(4))
+    -> begin
+    -> select sum(p.price) from ledger l inner join product p on p.pid=l.pid where l.date like year;
+    -> end
+    -> //
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> call yearTotalSales("2025%")//
+ERROR 1406 (22001): Data too long for column 'year' at row 1
+mysql> drop procedure yearTotalSales;
+    -> //
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> create procedure yearTotalSales(IN year varchar(5))
+    -> begin
+    -> select sum(p.price) from ledger l inner join product p on p.pid=l.pid where l.date like year;
+    -> end
+    -> //
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> call yearTotalSales("2025%")//
++--------------+
+| sum(p.price) |
++--------------+
+|      1894498 |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> drop procedure yearTotalSales;
+    -> //
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> create procedure yearTotalSales(IN year varchar(5))
+    -> begin
+    -> select sum(p.price) as "Year total sales" from ledger l inner join product p on p.pid=l.pid where l.date like year;
+    -> end
+    -> //
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> call yearTotalsales("2025%");
+    -> //
++------------------+
+| Year total sales |
++------------------+
+|          1894498 |
++------------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> select * from ledger where date=(curdate()-"0000-01-00");
+    -> //
+Empty set, 1 warning (0.00 sec)
+
+mysql> select * from ledger where date=(curdate()-"0000-00-00");
+    -> //
+Empty set, 1 warning (0.00 sec)
+
+mysql> select curdate();
+    -> //
++------------+
+| curdate()  |
++------------+
+| 2025-02-28 |
++------------+
+1 row in set (0.00 sec)
+
+mysql> select curdate()-"0000-01-00"//
++------------------------+
+| curdate()-"0000-01-00" |
++------------------------+
+|               20250228 |
++------------------------+
+1 row in set, 1 warning (0.00 sec)
+
+mysql> select curdate()-date(0000-01-00)//
++----------------------------+
+| curdate()-date(0000-01-00) |
++----------------------------+
+|                       NULL |
++----------------------------+
+1 row in set, 1 warning (0.03 sec)
+
+mysql> select datediff(curdate(), "0000-01-00")//
++-----------------------------------+
+| datediff(curdate(), "0000-01-00") |
++-----------------------------------+
+|                              NULL |
++-----------------------------------+
+1 row in set, 1 warning (0.00 sec)
+
+mysql> select curdate() - DATE('0000-00-00')//
++--------------------------------+
+| curdate() - DATE('0000-00-00') |
++--------------------------------+
+|                           NULL |
++--------------------------------+
+1 row in set, 1 warning (0.00 sec)
+
+mysql> select curdate() - DATE('2000-00-00')//
++--------------------------------+
+| curdate() - DATE('2000-00-00') |
++--------------------------------+
+|                           NULL |
++--------------------------------+
+1 row in set, 1 warning (0.00 sec)
+
+mysql> select curdate() - DATE('2000-01-01')//
++--------------------------------+
+| curdate() - DATE('2000-01-01') |
++--------------------------------+
+|                         250127 |
++--------------------------------+
+1 row in set (0.00 sec)
+
+mysql> select * from employees limit 10;
+    -> //
++-----+---------+--------+------+
+| eid | name    | salary | did  |
++-----+---------+--------+------+
+|   1 | Alice   |  40000 |    1 |
+|   2 | Bob     |  32000 |    1 |
+|   3 | Charlie |  36000 |    1 |
+|   4 | David   |  34000 |    1 |
+|   5 | Emma    |  37000 |    1 |
+|   6 | Frank   |  38000 |    1 |
+|   7 | Grace   |  39000 |    1 |
+|   8 | Henry   |  40000 |    1 |
+|   9 | Ivy     |  41000 |    1 |
+|  10 | Jack    |  42000 |    1 |
++-----+---------+--------+------+
+10 rows in set (0.00 sec)
+
+mysql> delimiter ;
+mysql> show tables;
++--------------------+
+| Tables_in_aniket   |
++--------------------+
+| admission          |
+| alumnia            |
+| courses            |
+| customers          |
+| department         |
+| employeepastrecord |
+| employees          |
+| ledger             |
+| player             |
+| product            |
+| students           |
+| suppliers          |
+| teamalloccation    |
++--------------------+
+13 rows in set (0.00 sec)
+
+mysql> select * from admission;
+Empty set (0.00 sec)
+
+mysql> select * from alimnia;
+ERROR 1146 (42S02): Table 'aniket.alimnia' doesn't exist
+mysql> select * from alumnia;
+Empty set (0.00 sec)
+
+mysql> select * from product;
++-----+-----------------------------+---------+------+
+| pid | name                        | price   | sid  |
++-----+-----------------------------+---------+------+
+|   1 | Amul Milk                   |      30 |    1 |
+|   2 | Parle-G Biscuits            |      10 |    2 |
+|   3 | Britannia Bread             |      40 |    3 |
+|   4 | MDH Garam Masala            |      80 |    4 |
+|   5 | Haldiram?s Bhujia           |      60 |    5 |
+|   6 | Boat Rockerz 450 Headphones |    1999 |    6 |
+|   7 | Micromax IN Note 1          |   12000 |    7 |
+|   8 | Noise Smartwatch            |    3500 |    8 |
+|   9 | Voltas 1.5 Ton AC           |   35000 |    9 |
+|  10 | Reliance Jio Phone          |    2500 |   10 |
+|  11 | FabIndia Cotton Kurta       |    1500 |   11 |
+|  12 | Manyavar Sherwani           |    8000 |   12 |
+|  13 | Raymond Formal Suit         |   12000 |   13 |
+|  14 | Pantaloons Jeans            |    2000 |   14 |
+|  15 | Biba Salwar Kameez          |    3500 |   15 |
+|  16 | Prestige Pressure Cooker    |    2500 |   16 |
+|  17 | Hawkins Frying Pan          |    1200 |   17 |
+|  18 | Bajaj LED Bulb              |     200 |   18 |
+|  19 | Nilkamal Plastic Chair      |     900 |   19 |
+|  20 | Urban Ladder Coffee Table   |    5000 |   20 |
+|  21 | Tata Nexon Car              |  900000 |   21 |
+|  22 | Mahindra Scorpio SUV        | 1500000 |   22 |
+|  23 | Hero Splendor Bike          |   80000 |   23 |
+|  24 | Bajaj Pulsar 150            |  110000 |   24 |
+|  25 | TVS Jupiter Scooter         |   75000 |   25 |
+|  26 | Navneet Notebook            |      50 |   26 |
+|  27 | Classmate Pen Set           |     100 |   27 |
+|  28 | Camlin Watercolors          |     250 |   28 |
+|  29 | Luxor Permanent Marker      |      80 |   29 |
+|  30 | Hindustan Pencils (Apsara)  |      30 |   30 |
++-----+-----------------------------+---------+------+
+30 rows in set (0.00 sec)
+
+mysql> create index productPrice on product(price)
+    -> ;
+Query OK, 0 rows affected (0.10 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> select * from product;
++-----+-----------------------------+---------+------+
+| pid | name                        | price   | sid  |
++-----+-----------------------------+---------+------+
+|   1 | Amul Milk                   |      30 |    1 |
+|   2 | Parle-G Biscuits            |      10 |    2 |
+|   3 | Britannia Bread             |      40 |    3 |
+|   4 | MDH Garam Masala            |      80 |    4 |
+|   5 | Haldiram?s Bhujia           |      60 |    5 |
+|   6 | Boat Rockerz 450 Headphones |    1999 |    6 |
+|   7 | Micromax IN Note 1          |   12000 |    7 |
+|   8 | Noise Smartwatch            |    3500 |    8 |
+|   9 | Voltas 1.5 Ton AC           |   35000 |    9 |
+|  10 | Reliance Jio Phone          |    2500 |   10 |
+|  11 | FabIndia Cotton Kurta       |    1500 |   11 |
+|  12 | Manyavar Sherwani           |    8000 |   12 |
+|  13 | Raymond Formal Suit         |   12000 |   13 |
+|  14 | Pantaloons Jeans            |    2000 |   14 |
+|  15 | Biba Salwar Kameez          |    3500 |   15 |
+|  16 | Prestige Pressure Cooker    |    2500 |   16 |
+|  17 | Hawkins Frying Pan          |    1200 |   17 |
+|  18 | Bajaj LED Bulb              |     200 |   18 |
+|  19 | Nilkamal Plastic Chair      |     900 |   19 |
+|  20 | Urban Ladder Coffee Table   |    5000 |   20 |
+|  21 | Tata Nexon Car              |  900000 |   21 |
+|  22 | Mahindra Scorpio SUV        | 1500000 |   22 |
+|  23 | Hero Splendor Bike          |   80000 |   23 |
+|  24 | Bajaj Pulsar 150            |  110000 |   24 |
+|  25 | TVS Jupiter Scooter         |   75000 |   25 |
+|  26 | Navneet Notebook            |      50 |   26 |
+|  27 | Classmate Pen Set           |     100 |   27 |
+|  28 | Camlin Watercolors          |     250 |   28 |
+|  29 | Luxor Permanent Marker      |      80 |   29 |
+|  30 | Hindustan Pencils (Apsara)  |      30 |   30 |
++-----+-----------------------------+---------+------+
+30 rows in set (0.00 sec)
+
+mysql> desc product;
++-------+--------------+------+-----+---------+----------------+
+| Field | Type         | Null | Key | Default | Extra          |
++-------+--------------+------+-----+---------+----------------+
+| pid   | int          | NO   | PRI | NULL    | auto_increment |
+| name  | varchar(200) | NO   |     | NULL    |                |
+| price | int          | NO   | MUL | NULL    |                |
+| sid   | int          | YES  | MUL | NULL    |                |
++-------+--------------+------+-----+---------+----------------+
+4 rows in set (0.00 sec)
+
+mysql> drop index productPrice from product;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from product' at line 1
+mysql> drop index productPrice on product;
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> show indexs;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'indexs' at line 1
+mysql> show indexes;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+mysql> show index;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+mysql> Terminal close -- exit!

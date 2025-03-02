@@ -1,0 +1,81 @@
+1.Merge two sorted arrays
+Merge two sorted arrays into a single sorted array.
+
+Your Task : You  have to create class name as MergeSortedArray with following function 
+Void setArray(int a[],int b[]): this function can two array as input 
+void merge(): this function is responsible for merge two array 
+ int [ ] getMergedArray(): this function can return merge array as resultant array
+
+2.Rotate an array by k positions
+Rotate the elements of the array k times to the left or right.
+Example: Rotate an array to the right by k positions. For example, if the input array is [1, 2, 3, 4, 5] and k = 2, 
+The output should be [4, 5, 1, 2, 3].
+
+Your Task:  You have to create class name RotateArray with following function 
+void setArray(int a[]): this function can accept array as parameter
+ void rotate(int k): this function help us to rotate array from left to right
+ Int [] getResult(): this function can return resultant array
+
+3. Move all zeros to the end of the array
+Rearrange the array such that all zeros are moved to the end without changing the order of non-zero elements.
+ Example:
+Input: [0, 1, 9, 0, 5, 3, 0, 7] Output: [1, 9, 5, 3, 7, 0, 0, 0]
+
+
+4. Find the majority element
+Find the element that appears more than n/2 times in the array.
+Example: [3, 3, 4, 2, 4, 4, 2, 4, 4]
+The majority element is 4 because it appears 5 times, which is more than n/2 = 9/2 = 4.5.
+Output: 4
+
+5. Find the longest increasing subsequence
+Given an array, find the length of the longest increasing subsequence.
+To find the Longest Increasing Subsequence (LIS) in an array, we need to identify the longest subsequence in which each element is strictly greater than the previous one.
+Your Task: you have to create class name as FindLongSequence with two methods 
+void setValue(int a[]): this function is used for accept array as parameter
+Void findLongSubSequence(): this function can help us to find longest subsequence 
+Int [] getArray(): this function can return longest subsequence of array
+ 
+6. Find the subarray with the maximum sum (Kadane’s Algorithm)
+Implement Kadane’s algorithm to find the sum of the maximum subarray.
+Example: [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+Output:
+The subarray with the maximum sum is [4, -1, 2, 1], which has a sum of 6
+	
+Note: your task is to create class FindMaxSum with two methods 
+void setValue(int a[]): this function is used for accept array as parameter Void findMaxSum(): this function is used for find the maximum subsequence of array      Int [] getResult(): this function is used for return resultant array 	
+
+7. Move all negative numbers to the beginning
+Rearrange the array such that all negative numbers are moved to the front.
+Example:
+Original Array: [1, -3, 2, -2, 5, -1, 4] 
+Rearranged Array: [-3, -2, -1, 1, 2, 5, 4]
+Your Task:  You have to create class name as MoveNegative with constructor and methods 
+MoveNegative(int a[]): this constructor accept the array as parameter 
+void moveNegative(): this function can shift all negative values 
+int [] getResult(): this function can return resultant array
+  
+8. Find a pair in an array that sums to a specific value
+Find two elements in the array that sum to a given target value.
+Example:
+Array: [1, 4, 6, 2, 8, 3]
+Target Sum: 10
+Expected output:
+A pair that sums to 10: (2, 8) or (6, 4).
+
+Your Task: You have to write class name as FindSum with constructor and methods 
+FindSum(int a[]): this function is used for accept array as parameter 
+Void findPair(): this function is used for find the pair of element 
+Void show(): this function can show the pair of sum
+
+9. Find the longest common subsequence (LCS)
+Given two sequences, find their longest common subsequence.
+
+Example:
+Let’s take two strings as examples:
+String 1: "ABCBDAB"
+Expected output:
+The Longest Common Subsequence (LCS) is "BCAB", and its length is 4.
+Note: Your Task is to create class name as SubSequence with constructor 
+SubSequence(char []): this function can accept input as character sequence
+void findSubSequence(): this function can find the sub sequence and display it.
